@@ -1,0 +1,73 @@
+<!--Hero Image-->
+<img src="../assets/colosseoHero.jpg" class="img-fluid align-items-lg-center"/>
+
+<!--Titolo e descrizione di Roma-->
+<p class="fs-1 text-center roma"> Vieni a scoprire Roma</p>
+<p class="fs-5 text-center romadescription">Roma è una città ricca di storia, vanta uno dei patrimoni culturali maggiori al mondo. 
+  Calda e accogliente, a Roma c'è sempre qualcosa da fare o da visitare. Vieni a visarci per scoprire le radici del popolo romano.</p>
+
+
+  <!--Secondo titolo-->
+  <p class="fs-1 text-center roma">Attrazioni</p>
+
+<div class="container-fluid">
+  <!--Card-->
+  <div class="row row-cols-1 row-cols-md-5 g-5 justify-content-center">
+    <div class="col">
+        <div class="card text-bg-dark">
+            <img src="../assets/FontanaDiTrevi.jpg" class="card-img">
+            <div class="card-img-overlay">
+              <a class="pt-2 fs-6 text-center link"routerLink=""><h5 class="card-title fs-5 fw-bold text-light">Cinque motivi per cui visitare Roma</h5></a>
+              <p class="card-text fs-5">Perché Roma dovrebbe essere aggiunta alla tua lista dei viaggi?</p>
+              <div class="text-center">
+                <button type="button" class="btn btn-light">Scopri di più</button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="col">
+        <div class="card text-bg-dark">
+            <img src="../assets/Colosseo.jpg" class="card-img">
+            <div class="card-img-overlay">
+              <a class="pt-2 fs-6 text-center link"routerLink=""></a>
+              <h5 class="card-title fs-5 fw-bold text-light text-center">Attrazioni da vedere assolutamente</h5>
+              <p class="card-text fs-5">Pianifichi una visita a Roma? Vieni a scoprire le migliori attrazioni della città</p>
+              <div class="text-center">
+                <button type="button" class="btn btn-light">Scopri di più</button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="col">
+      <div class="card text-bg-dark">
+        <img src="../assets/Cupolone.jpg" class="card-img"/>
+        <div class="card-img-overlay">
+          <h5 class="card-title fs-5 fw-bold text-light text-center">Roma top 10</h5>
+          <p class="card-text fs-5">Stai per venire a Roma ed hai bisogno di un'ispirazione per la tua visita? Unisciti a noi</p>
+          <div class="text-center">
+            <button type="button" class="btn btn-light">Scopri di più</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!--Terzo titolo-->
+  <p class="fs-1 text-center roma">Qualche info</p>
+
+
+  <!--Card Info-->
+  <div class="container-fluid px-4 py-5" id="custom-cards">  
+    <div class="row row-cols-1 row-cols-lg-4 justify-content-center g-4 py-5">
+      <div class="col" *ngFor="let cardInfo of listaInfo">
+        <div class="card card-cover rounded-4">
+          <div class="d-flex flex-column h-100 p-4 pb-2 text-shadow-1">
+            <img src="../assets/{{cardInfo.img}}" class="img-fluid mx-auto d-block">
+            <p class="fs-4 fw-bold text-center">{{cardInfo.titolo}}</p>
+            <p class="pt-2 fs-6 text-center">{{cardInfo.testo}}</p>
+            <a class="pt-2 fs-6 text-center link"routerLink=""><p class="fw-bold">{{cardInfo.testo2}}</p></a>
+          </div>
+        </div>
+      </div>
+  </div>  

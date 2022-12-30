@@ -1,0 +1,50 @@
+/*Posizione dei titoli*/
+.fs-1.text-center.roma {
+    padding-top: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+/*Testo "descrittivo" di Roma sotto il primo titolo "Vieni a scoprire Roma"*/
+.fs-5.text-center.romadescription {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+/*Posizione delle tre schede sotto Attrazioni
+.row.row-cols-1.row-cols-md-3.g-3 {
+    padding-left: 15%;
+    padding-right: 15%;
+}*/
+
+/*Zero bordi nelle schede*/
+.card{
+    border: 0;
+}
+/*Card effect*/
+.card.text-bg-dark {
+    transition: all 0.3s;
+}
+.card.text-bg-dark:hover {
+    transform: scale(1.05);
+}
+/*Schede info*/
+.container-fluid.px-4.py-5 {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.card.card-cover.rounded-4 {
+    border: 0;
+}
+
+/*Link "maggiori informazioni"*/
+.pt-2.fs-6.text-center.link {
+    text-decoration: none;
+    color: black;
+}
+
+/*Card subtitle*/
+.card-text.fs-5 {
+    color: white;
+}
+
