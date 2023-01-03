@@ -18,7 +18,7 @@
 }
 
 /*Zero bordi nelle schede*/
-.card{
+.card {
     border: 0;
 }
 /*Card effect*/
@@ -47,4 +47,3 @@
 .card-text.fs-5 {
     color: white;
 }
-

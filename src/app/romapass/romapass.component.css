@@ -1,0 +1,33 @@
+/*Spazio tra hero image e card*/
+.img-fluid.align-items-lg-center {
+    padding-bottom: 5%;
+}
+
+/*Dimensione icone*/
+.img-fluid.mx-auto.d-block {
+    width: auto;
+    height: 10em;
+}
+/*Icone effect*/
+.img-fluid.mx-auto.d-block {
+    transition: all 0.3s;
+}
+.img-fluid.mx-auto.d-block:hover {
+    transform: scale(1.05);
+}
+
+/*Dimensione card*/
+.card-img {
+    height: 10%;
+}
+
+/*Link P.stop*/
+.pstop {
+    text-decoration: none;
+}
+
+/*Paragrafo Roma Pass*/
+.fs-5.text-start.romapassdescription {
+    padding-left: 15%;
+    padding-right: 15%;
+}
