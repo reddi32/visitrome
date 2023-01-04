@@ -1,0 +1,13 @@
+/*Testo del trasporto pubblico*/
+.container-fluid.text-center.trasporto.pubblico {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+/*link del sito leonardo express*/
+.leonardoexpress {
+    text-decoration: none;
+}
+.leonardoexpress2 {
+    text-decoration: none;
+}
