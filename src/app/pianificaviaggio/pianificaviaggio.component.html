@@ -1,9 +1,9 @@
 <!--Heo image-->
-<img src="" alt="">
+<img src="../assets/pianificaviaggioHero.png" alt="">
 
 <div class="container-fluid text-center trasporto pubblico">
   <!--Trasporto pubblico-->
-  <h1 class="fs-1 text-center">Trasporto pubblico</h1>
+  <h1 class="fs-1 text-center py-3">Trasporto pubblico</h1>
   <p class="text-center">Metro, tram e autobus. Il trasporto pubblico a Roma viene gestito da Atac, RomaTPL </p>
   <div class="text-center">
     <img src="../assets/tram.gif" alt="atac" class="img-fluid" width="150px">
@@ -45,8 +45,8 @@
     <li class="list-group-dotted py-1">Biglietto Leonardo Express - <a class="leonardoexpress2" href="https://www.trenitalia.com/it/treni_regionali/lazio/leonardo_express.html">vedi sito ufficiale</a></li>
   </ul>
 
-  <!--Taxy-->
-  <h1 class="fs-1 text-center">Prendi un taxi e gira per la città</h1>
+  <!--Taxi-->
+  <h1 class="fs-1 text-center py-3">Prendi un taxi e gira per la città</h1>
   <p class="text-start">Anche se il trasporto pubblico è più comodo per spostarsi in città, in alcune occasioni è più semplice prendere un taxi. Sei di fretta, troppi bagagli oppure non ti va di 
     prendere un autobus o una metro affollata? Ecco cosa devi sapere sui taxi a Roma.
   </p>
@@ -64,29 +64,88 @@
     <li class="list-group-dotted py-1">Supplemento per un'ora d'attesa - 27€</li>
   </ul>
   <p class="text-start">Le tariffe dagli aeroporti sono stabilite dalla legge: 48€ da Fiumicino e 30€ da Ciampino, fino in centro. Tali prezzi sono validi per quattro passeggeri con i rispettivi bagagli.</p>
+    <p class="text-start prezzo biglietti"><strong>Compagnie di taxi</strong></p>
+  <ul class="list-group-dotted text-start">
+    <li class="list-group-dotted py-1">Radio Taxi: 06-3570 <a class="taxi px-0" href="https://www.3570.it/">www.3570.it</a></li>
+      <a class="btn btn-outline-link" href="https://play.google.com/store/apps/details?id=it.ud.microtek.ITTaxi&hl=it">Play Store</a>
+      <a class="btn btn-outline-link" href="https://itunes.apple.com/it/app/it-taxi/id527559443?mt=8">App Store</a>
+    <li class="list-group-dotted py-1">Pronto Taxi: 06-6645 <a class="taxi px-0" href="https://6645.it/">www.6645.it</a></li>
+      <a class="btn btn-outline-link" href="https://play.google.com/store/apps/details?id=it.ud.microtek.InTaxi&hl=it&gl=US&pli=1">Play Store</a>
+      <a class="btn btn-outline-link" href="https://apps.apple.com/it/app/intaxi-il-tuo-taxi/id1258614882">App Store</a>
+    <li class="list-group-dotted py-1">Samarcanda: 06-5551 <a class="taxi px-0" href="https://065551.it/">www.065551.it</a></li>
+      <a class="btn btn-outline-link" href="https://play.google.com/store/apps/details?id=it.wetaxi.samarcandaplus&hl=it&gl=US">Play Store</a> 
+      <a class="btn btn-outline-link" href="https://apps.apple.com/us/app/samarcanda-plus/id1636444856">App Store</a> 
+    <li class="list-group-dotted py-1">Altre compagnie: 06-4994, 06-4157</li>
+  </ul>
+
+    <!--Card Info
+    <div class="container-fluid px-4 py-5" id="custom-cards">  
+      <div class="row row-cols-1 row-cols-lg-4 justify-content-center g-4 py-5">
+        <div class="col" *ngFor="let taxiInfo of listaTaxi">
+          <div class="card card-cover border-0">
+            <div class="d-flex flex-column h-100 p-4 pb-2 text-shadow-1">
+              <p class="fs-5 text-center">{{taxiInfo.compagnia}}</p>
+              <p class="fs-5 text-center">{{taxiInfo.numeroTelefono}}</p>
+              <a class="btn btn-outline-link" href="https://play.google.com/store/apps/details?id=it.ud.microtek.InTaxi&hl=it&gl=US&pli=1"><p class="fw-bold">{{taxiInfo.downloadPlayStore}}</p></a>
+              <a class="btn btn-outline-link" href="https://apps.apple.com/it/app/intaxi-il-tuo-taxi/id1258614882"><p class="fw-bold">{{taxiInfo.downloadAppStore}}</p></a>
+            </div>
+          </div>
+        </div>
+    </div>  
+    -->
+
 
   <!--Car Sharing-->
-  <h1 class="fs-1 text-center">Car Sharing</h1>
+  <h1 class="fs-1 text-center py-3">Car Sharing</h1>
   <p class="">Qui troverai altri mezzi di trasporto e servizi che puoi utilizzare per attraversare la città.</p>
+  <p class="text-start">Qui a Roma abbiamo diversi servizi di car sharing, scegli quello che preferisci e scendi in strada e cerca l'auto disponibile più vicino a te! Prenota e sali a bordo per spostarti ovunque in città. A fine noleggio potrai lasciare la tua 
+    vettura o il tuo scooter dove preferisci purché tu sia all'interno dell'area di copertura, non preoccuparti di pagare il parcheggio, per te le strisce blu sono gratuite. Abbiamo pensato anche al tuo shopping. Nei maggiori centri commerciali infatti troverai
+    un'area dedicata dove lasciare l'auto al tuo arrivo e noleggiarne un'altra quando avrai terminato le tue spese.
+  </p>
   <img src="../assets/car.gif" alt="car sharing" width="125">
-  <p class="text-start">Scendi in strada e cerca l'auto disponibile più vicino a te! Prenota e sali a bordo per spostarti ovunque in città. A fine noleggio potrai lasciare la tua 
-    vettura dove preferisci purché tu sia all'interno dell'area di copertura, non preoccuparti di pagare il parcheggio, per te le strisce blu sono gratuite.</p>
+  <!--Servizi di car sharing-->
+  <p class="text-start prezzo biglietti"><strong>Servizi disponibili</strong></p>
+  <ul class="list-group-dotted text-start">
+    <li class="list-group-dotted py-1"><a class="carsharing" href="https://romamobilita.it/it/carsharing">Car Sharing Roma</a></li>
+    <li class="list-group-dotted py-1"><a class="carsharing" href="https://www.share-now.com/it/it/">Share Now</a></li>
+    <li class="list-group-dotted py-1"><a class="carsharing" href="https://enjoy.eni.com/it/roma/home">Enjoy</a></li>
+    <li class="list-group-dotted py-1"><a class="carsharing" href="https://e-go.drivalia.com/it">E-Go</a></li>
+    <li class="list-group-dotted py-1"><a class="carsharing" href="https://cooltra.com/it/noleggio-al-minuto-ora/">Cooltra</a></li>
+    <li class="list-group-dotted py-1"><a class="carsharing" href="https://www.zigzagsharing.com/it/">Zig Zag</a></li>
+    <li class="list-group-dotted py-1"><a class="carsharing" href="https://movilidad.acciona.com/it_IT/roma/">Acciona</a></li>
+ </ul>
 
   <!--Biciclette e monopattini-->
-  <h1 class="fs-1 text-center">Biciclette e Monopattini</h1>
-  <p class="">Testo per bici</p>
-  <img src="../assets/cycling.gif" alt="biciclette elettriche" width="125">
-  <p class="">Testo per monopattini</p>
-  <img src="../assets/scooter.gif" alt="monopattini elettrici" width="125">
+  <h1 class="fs-1 text-center py-3">Biciclette e Monopattini</h1>
+  <p class="text-start">Se vuoi esplorare e vivere le varie atmosfere uniche di Roma in modo completamente indipendente, una bicicletta o un monopattino sono il mezzo ideale per viaggiare. 
+    Chiunque può salire in sella alla propria bicicletta e partire alla scoperta di Roma, la sua cultura e i suoi tesori storici. Se vuoi spostarti per La capitale ma non vuoi 
+    prendere i mezzi pubblici o devi fare semplicemente un viaggio breve, troverai per le strade del centro storico molti mezzi a tua disposizione. Diverse aziende hanno preso il 
+    via qui a Roma.
+  </p>
+  <div class="row row-cols row-cols-md-3 g-3 justify-content-center">
+    <div class="col-sm">
+      <img src="../assets/cycling.gif" alt="biciclette elettriche" width="125">
+      <img src="../assets/scooter.gif" alt="monopattini elettrici" width="125">
+    </div>
+  </div>
+  <div class="container py-4 text-center">
+        <p class="text-start prezzo biglietti"><strong>Servizi disponibili</strong></p>
+        <ul class="list-group-dotted text-start">
+          <li class="list-group-dotted py-1"><a class="carsharing" href="https://www.li.me/it-it/vehicles">Lime</a></li>
+          <li class="list-group-dotted py-1"><a class="carsharing" href="https://ridedott.com/it/ride-with-us/roma-2/">Dott</a></li>
+          <li class="list-group-dotted py-1"><a class="carsharing" href="https://www.tier.app/">Tier</a></li>
+          <li class="list-group-dotted py-1"><a class="carsharing" href="https://helbiz.com/">Helbiz</a></li>
+          <li class="list-group-dotted py-1"><a class="carsharing" href="https://www.bird.co/">Bird</a></li>
+          <li class="list-group-dotted py-1"><a class="carsharing" href="https://new-home.superpedestrian.com/link-e-scooter/">Link</a></li>
+          <li class="list-group-dotted py-1"><a class="carsharing" href="https://movilidad.acciona.com/it_IT/roma/">Acciona</a></li>
+       </ul>
+  </div>
 
 </div>
 
   <!--Roma Pass-->
   <div class="container col-xxl-8 py-4 justify-content-center">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div class="col-lg-4 offset-lg-1 p-0">
-        <img src="../assets/romapass.png" class="d-block mx-lg-auto img-fluid" alt="Roma Pass" width="700" height="700">
-      </div>
+    <div class="row flex-lg-row align-items-center g-5">
       <div class="col-lg-6">
         <h1 class="fs-1 lh-1 mb-3">Roma Pass</h1>
         <br>
@@ -123,6 +182,9 @@
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
           <button type="button" class="btn btn-outline-primary btn-lg px-4 me-md-2" routerLink="/romapass">Di più su Roma Pass</button>
         </div>
+      </div>
+      <div class="col-lg-4 offset-lg-1 p-0">
+        <img src="../assets/romapass.png" class="d-block mx-lg-auto img-fluid" alt="Roma Pass" width="500">
       </div>
     </div>
   </div>
