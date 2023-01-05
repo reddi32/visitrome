@@ -8,6 +8,7 @@ import { RomapassComponent } from './romapass/romapass.component';
 import { PianificaviaggioComponent } from './pianificaviaggio/pianificaviaggio.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,7 @@ import { PianificaviaggioComponent } from './pianificaviaggio/pianificaviaggio.c
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
