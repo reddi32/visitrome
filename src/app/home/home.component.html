@@ -3,7 +3,7 @@
 
 <!--Titolo e descrizione di Roma-->
 <h1 class="fs-1 text-center roma"> Vieni a scoprire Roma</h1>
-<p class="fs-5 text-center romadescription">Roma è una città ricca di storia, vanta uno dei patrimoni culturali maggiori al mondo. 
+<p class="fs-5 text-center romadescription">Roma è una città ricca di storia, vanta uno dei patrimoni culturali maggiori al mondo.
   Calda e accogliente, a Roma c'è sempre qualcosa da fare o da visitare. Vieni a visarci per scoprire le radici del popolo romano.</p>
 
 
@@ -58,7 +58,7 @@
 
 
   <!--Card Info-->
-  <div class="container-fluid px-4 py-5" id="custom-cards">  
+  <div class="container-fluid px-4 py-5" id="custom-cards">
     <div class="row row-cols-1 row-cols-lg-4 justify-content-center g-4 py-5">
       <div class="col" *ngFor="let cardInfo of listaInfo">
         <div class="card card-cover rounded-4">
@@ -66,14 +66,23 @@
             <img src="../assets/{{cardInfo.img}}" class="img-fluid mx-auto d-block">
             <p class="fs-4 fw-bold text-center">{{cardInfo.titolo}}</p>
             <p class="pt-2 fs-6 text-center">{{cardInfo.testo}}</p>
-            <a class="pt-2 fs-6 text-center link"routerLink="/pianificaviaggio"><p class="fw-bold">{{cardInfo.testo2}}</p></a>
+            <a class="pt-2 fs-6 text-center link"routerLink="/comearrivare"><p class="fw-bold">{{cardInfo.testo2}}</p></a>
           </div>
         </div>
       </div>
-  </div>  
+      <div class="col" *ngFor="let cardInfo of listaInfo2">
+        <div class="card card-cover rounded-4">
+          <div class="d-flex flex-column h-100 p-4 pb-2 text-shadow-1">
+            <img src="../assets/{{cardInfo.img}}" class="img-fluid mx-auto d-block">
+            <p class="fs-4 fw-bold text-center">{{cardInfo.titolo}}</p>
+            <p class="pt-2 fs-6 text-center">{{cardInfo.testo}}</p>
+            <a class="pt-2 fs-6 text-center link"routerLink="/muoversiaroma"><p class="fw-bold">{{cardInfo.testo2}}</p></a>
+          </div>
+        </div>
+  </div>
 
   <!--Carosello dove mangiare-->
-       
+
 
   <!--Roma Pass-->
   <div class="container col-xxl-8 py-4 justify-content-center">

@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Taxi } from '../model/taxi';
 
 @Component({
-  selector: 'app-pianificaviaggio',
-  templateUrl: './pianificaviaggio.component.html',
-  styleUrls: ['./pianificaviaggio.component.css']
+  selector: 'app-muoversiaroma',
+  templateUrl: './muoversiaroma.component.html',
+  styleUrls: ['./muoversiaroma.component.css']
 })
-export class PianificaviaggioComponent implements OnInit {
+export class MuoversiaromaComponent implements OnInit {
 
   //listaTaxi: Taxi[] = [];
   constructor() {

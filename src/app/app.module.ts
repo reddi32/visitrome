@@ -5,7 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { RomapassComponent } from './romapass/romapass.component';
-import { PianificaviaggioComponent } from './pianificaviaggio/pianificaviaggio.component';
+import { MuoversiaromaComponent } from './muoversiaroma/muoversiaroma.component';
+import { ComearrivareComponent } from './comearrivare/comearrivare.component';
 
 
 
@@ -14,7 +15,8 @@ import { PianificaviaggioComponent } from './pianificaviaggio/pianificaviaggio.c
     AppComponent,
     HomeComponent,
     RomapassComponent,
-    PianificaviaggioComponent,
+    MuoversiaromaComponent,
+    ComearrivareComponent,
   ],
   imports: [
     BrowserModule,
