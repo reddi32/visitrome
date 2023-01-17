@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { RomapassComponent } from './romapass/romapass.component';
 import { MuoversiaromaComponent } from './muoversiaroma/muoversiaroma.component';
 import { ComearrivareComponent } from './comearrivare/comearrivare.component';
+import { BlogComponent } from './blog/blog.component';
+import { BlogPostComponent } from './blog-post/blog-post.component';
 
 
 
@@ -17,6 +19,8 @@ import { ComearrivareComponent } from './comearrivare/comearrivare.component';
     RomapassComponent,
     MuoversiaromaComponent,
     ComearrivareComponent,
+    BlogComponent,
+    BlogPostComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,21 @@
+<div class="container-fluid px-4 py-5" id="custom-cards">
+    <div class="row row-cols-1 row-cols-lg-4 justify-content-center g-4 py-5">
+        <div class="container-fluid post">
+              <div class="col" *ngIf="blogPosts$ | async as blogPosts">
+                    <!--
+                    <pre>
+                        {{ blogPosts | json }}
+                    </pre>
+                    -->
+                    <!--Container per i post del blog-->
+                    <div class="col blog-posts-container" *ngFor="let blogPost of blogPosts.items">
+                        <img [src]="blogPost.fields.featuredImage.fields.file.url" alt="">
+                        <h2>{{blogPost.fields.title}}</h2>
+                        <p class="author">{{blogPost.fields.author}}</p>
+                        <p class="summary">{{blogPost.fields.summary}}</p>
+                        <a [routerLink]="['blog', blogPost.sys.id]">Leggi di più</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
