@@ -12,16 +12,22 @@ export class BlogPostComponent implements OnInit {
 
   constructor(private contentfulService: ContentfulService, private route: ActivatedRoute) { }
 
-  blogPosts$ : Observable<any> | undefined;
-
+  blogPost$ : Observable<any> | undefined;
+  contenuto : any;
   ngOnInit(): void {
     this.route.params.subscribe(
       params => {
         const id = params['id'];
 
-        this.blogPosts$ = this.contentfulService.getEntryById(id);
+        this.blogPost$ = this.contentfulService.getEntryById(id);
+
       }
     );
+   console.log(this.blogPost$?.forEach( (value : any) => console.log(value.fields.content.content[0].content.forEach((v : any) => console.log(v.marks[0])))));
+
+
+
+
   }
 
 }

@@ -11,7 +11,6 @@ import { BlogComponent } from './blog/blog.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
