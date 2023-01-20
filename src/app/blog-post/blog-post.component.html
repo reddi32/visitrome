@@ -13,9 +13,17 @@
                         <img [src]="blogPost.fields.featuredImage.fields.file.url" alt="">
                         <h2>{{blogPost.fields.title}}</h2>
                         <p class="author">{{blogPost.fields.author}}</p>
-
-                        <p class="content" *ngFor="let blogPost of blogPost.fields.content.content[0].content" >{{blogPost.value}}</p>
-                   <!-- </div>-->
+                        <p class="content" >
+                          <markdown ngPreserveWhitespaces>
+                            {{blogPost.fields.content}}
+                          </markdown>
+                        </p>
+                           <!-- <p class="content" *ngFor="let blogPost of blogPost.fields.content.content[0].content" >
+                            <markdown ngPreserveWhitespaces>
+                              {{blogPost.value}}
+                            </markdown>
+                          </p>
+                  </div>-->
                 </div>
         </div>
     </div>
