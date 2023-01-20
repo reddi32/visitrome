@@ -10,6 +10,7 @@ import { ComearrivareComponent } from './comearrivare/comearrivare.component';
 import { BlogComponent } from './blog/blog.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
 
+import { MarkdownModule } from 'ngx-markdown';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { BlogPostComponent } from './blog-post/blog-post.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MarkdownModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
