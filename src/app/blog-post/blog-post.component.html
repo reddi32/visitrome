@@ -1,30 +1,20 @@
-
-<div class="container-fluid px-4 py-5" id="custom-cards">
-    <div class="row row-cols-1 row-cols-lg-4 justify-content-center g-4 py-5">
-        <div class="container-fluid post">
-              <div class="col" *ngIf="blogPost$ | async as blogPost">
-                   <!--
-                    <pre>
-                        {{ blogPost | json }}
-                    </pre>
-
-                   Container per i post del blog-->
-                    <!--<div class="col posts-container" *ngFor="let blogPost of blogPosts.items">-->
-                        <img [src]="blogPost.fields.featuredImage.fields.file.url" alt="">
-                        <h2>{{blogPost.fields.title}}</h2>
-                        <p class="author">{{blogPost.fields.author}}</p>
-                        <p class="content" >
-                          <markdown ngPreserveWhitespaces>
-                            {{blogPost.fields.content}}
-                          </markdown>
-                        </p>
-                           <!-- <p class="content" *ngFor="let blogPost of blogPost.fields.content.content[0].content" >
-                            <markdown ngPreserveWhitespaces>
-                              {{blogPost.value}}
-                            </markdown>
-                          </p>
-                  </div>-->
-                </div>
-        </div>
+<div class="container-fluid text-center">
+  <div class="col" *ngIf="blogPost$ | async as blogPost">
+    <!--
+    <pre>
+      {{ blogPost | json }}
+    </pre>
+    Container per i post del blog-->
+    <!--Thanks to dev Ciro De Cristoforo -> Link his github https://github.com/CirodeCristofaro-->
+    <div class="container-fluid text-start">
+      <img [src]="blogPost.fields.featuredImage.fields.file.url" class="img-fluid">
+      <h2>{{blogPost.fields.title}}</h2>
+        <p class="fs-5 content" >
+          <markdown ngPreserveWhitespaces>
+            {{blogPost.fields.content}}
+          </markdown>
+        </p>
     </div>
+  </div>
 </div>
+

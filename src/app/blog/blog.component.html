@@ -8,13 +8,18 @@
                     </pre>
                     -->
                     <!--Container per i post del blog-->
-                    <div class="col blog-posts-container" *ngFor="let blogPost of blogPosts.items">
-                        <img [src]="blogPost.fields.featuredImage.fields.file.url" alt="">
-                        <h2>{{blogPost.fields.title}}</h2>
-                        <p class="author">{{blogPost.fields.author}}</p>
-                        <p class="summary">{{blogPost.fields.summary}}</p>
-                        <a [routerLink]="['/blogpost', blogPost.sys.id]">Leggi di più</a>
-                    </div>
+                    <!--<div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center py-3">-->
+                        <div class="row blog-posts-container" *ngFor="let blogPost of blogPosts.items">
+                            <div class="card card-cover rounded-4 border-0">
+                                <div class="d-flex flex-column h-100 p-2 text-shadow-1">
+                                    <img [src]="blogPost.fields.featuredImage.fields.file.url">
+                                    <h2>{{blogPost.fields.title}}</h2>
+                                    <p class="summary">{{blogPost.fields.summary}}</p>
+                                    <a [routerLink]="['/blogpost', blogPost.sys.id]" class="btn btn-light">Leggi di più</a>
+                                </div>
+                            </div>
+                        </div>
+                    <!--</div>-->
                 </div>
         </div>
     </div>
