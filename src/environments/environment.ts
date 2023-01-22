@@ -5,8 +5,15 @@
 export const environment = {
   production: false,
   spaceId: 'qtyaseyzmscl',
-  accessToken: 'bOnleupfBDNofsw_7IZ6JM0f5GxuCxqpucwW0mfWruc'
+  accessToken: 'bOnleupfBDNofsw_7IZ6JM0f5GxuCxqpucwW0mfWruc',
 };
+
+export const attraction = {
+  production: false,
+  spaceIdTwo: 'xm2434p0m1pl',
+  accessTokenTwo: 'h7aHJpMwryNrbf76SOjjOgzT6rTBDbQugKgo6_YJjJQ',
+};
+
 
 /*
  * For easier debugging in development mode, you can import the following file

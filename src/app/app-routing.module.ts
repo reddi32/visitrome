@@ -6,6 +6,8 @@ import { RomapassComponent } from './romapass/romapass.component';
 import { ComearrivareComponent } from './comearrivare/comearrivare.component';
 import { BlogComponent } from './blog/blog.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
+import { AttrazioniComponent } from './attrazioni/attrazioni.component';
+import { AttractionPostComponent } from './attraction-post/attraction-post.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -13,7 +15,9 @@ const routes: Routes = [
   { path: 'muoversiaroma', component: MuoversiaromaComponent},
   { path: 'comearrivare', component: ComearrivareComponent},
   { path: 'blog', component: BlogComponent},
-  { path: 'blogpost/:id', component: BlogPostComponent}
+  { path: 'blogpost/:id', component: BlogPostComponent},
+  { path: 'attrazioni', component: AttrazioniComponent},
+  { path: 'attractionpost/:id', component: AttractionPostComponent}
 ];
 
 @NgModule({

@@ -1,0 +1,12 @@
+<div class="container-fluid text-center">
+    <div class="col" *ngIf="attractionPosts$ | async as attractionPosts">
+    <div class="row-attraction-post-container" *ngFor="let attractionPost of attractionPosts.items">
+        <div class="container-fluid text-start">
+            <img [src]="attractionPost.fields.featuredImage.fields.file.url" class="img-fluid">
+            <h2>{{attractionPost.fields.title}}</h2>
+            <p>{{attractionPost.fields.summary}}</p>
+            <a [routerLink]="['/attractionpost', attractionPost.sys.id]" class="btn btn-light">Leggi di più</a>
+        </div>
+    </div>
+</div>
+</div>
