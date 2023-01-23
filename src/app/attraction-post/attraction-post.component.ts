@@ -15,13 +15,15 @@ export class AttractionPostComponent {
   attractionPosts$ : Observable<any> | undefined;
 
   ngOnInit(): void {
-    this.attractionPosts$ = this.contentfulsecondService.getAllEntriesAttraction();
 
     this.route.params.subscribe(
       params => {
         const id = params['id'];
+        this.attractionPosts$ = this.contentfulsecondService.getEntryByIdAttraction(id);
+
       }
     )
+    console.log(this.attractionPosts$);
   }
 
 }

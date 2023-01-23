@@ -1,10 +1,6 @@
 <div class="container-fluid text-center">
   <div class="col" *ngIf="blogPost$ | async as blogPost">
-    <!--
-    <pre>
-      {{ blogPost | json }}
-    </pre>
-    Container per i post del blog-->
+    <!--Container per i post del blog-->
     <!--Thanks to dev Ciro De Cristoforo -> Link his github https://github.com/CirodeCristofaro-->
     <div class="container-fluid text-start">
       <img [src]="blogPost.fields.featuredImage.fields.file.url" class="img-fluid">
