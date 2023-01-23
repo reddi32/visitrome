@@ -6,4 +6,9 @@
 
 .img-fluid {
   border-radius: 2.5%;
+  transition: all 0.2s;
+}
+/*Img effect*/
+.img-fluid:hover {
+  transform: scale(1.05);
 }
