@@ -15,6 +15,8 @@ export class HomeComponent implements OnInit {
   listaInfo2: Info[] = [];
 
   card: FirstCard[] = [];
+  card2: FirstCard[] = [];
+  card3: FirstCard[] =  [];
 
   constructor() {
     this.listaInfo.push(
@@ -27,10 +29,10 @@ export class HomeComponent implements OnInit {
     this.card.push(
       new FirstCard("FontanaDiTrevi.jpg", "Cinque motivi per cui visitare Roma", "Perché Roma dovrebbe essere aggiunta alla tua lista dei viaggi?", "Scopri di più")
     );
-    this.card.push(
+    this.card2.push(
       new FirstCard("Colosseo.jpg", "Attrazioni da vedere assolutamente", "Pianifichi una visita a Roma? Vieni a scoprire le migliori attrazioni della città", "Scopri di più")
     );
-    this.card.push(
+    this.card3.push(
       new FirstCard("Cupolone.jpg", "Roma top 10", "Stai per venire a Roma ed hai bisogno di un'ispirazione per la tua visita? Unisciti a noi", "Scopri di più")
     );
   }

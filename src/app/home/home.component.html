@@ -29,6 +29,30 @@
             </div>
           </div>
     </div>
+    <div class="col" *ngFor="let FirstCard of card2">
+      <div class="card text-bg-dark">
+          <img src="../assets/{{FirstCard.img}}" class="card-img">
+          <div class="card-img-overlay">
+            <h5 class="card-title fs-5 fw-bold text-light text-center">{{FirstCard.title}}</h5>
+            <p class="card-text fs-5">{{FirstCard.paragraph}}</p>
+            <div class="text-center">
+              <a class="btn btn-light" href="/blogpost/6aXAlAWwsO00lqExqS0vy1">{{FirstCard.link}}</a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="col" *ngFor="let FirstCard of card3">
+      <div class="card text-bg-dark">
+          <img src="../assets/{{FirstCard.img}}" class="card-img">
+          <div class="card-img-overlay">
+            <h5 class="card-title fs-5 fw-bold text-light text-center">{{FirstCard.title}}</h5>
+            <p class="card-text fs-5">{{FirstCard.paragraph}}</p>
+            <div class="text-center">
+              <a class="btn btn-light" href="/blogpost/574RmJU93IDu3zgq0JuUEB">{{FirstCard.link}}</a>
+            </div>
+          </div>
+        </div>
+    </div>
   </div>
 
   <!--Terzo titolo-->
