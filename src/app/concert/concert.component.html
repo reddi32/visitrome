@@ -1,0 +1,15 @@
+<div class="container-fluid text-center">
+    <div class="container-fluid">
+      <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center attraction-post-container" *ngIf="concertPosts$ | async as concertPosts">
+        <div class="col" *ngFor="let concertPost of concertPosts.items">
+          <div class="container-fluid text-start">
+              <img [src]="concertPost.fields.featuredImage.fields.file.url" class="img-fluid">
+              <h2 class="fs-4 py-1">{{concertPost.fields.title}}</h2>
+              <p>{{concertPost.fields.summary}}</p>
+              <a [routerLink]="['/attractionpost', concertPost.sys.id]" class="btn btn-outline-dark">Leggi di più</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

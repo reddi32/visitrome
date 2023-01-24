@@ -21,6 +21,12 @@ export class ComearrivareComponent implements OnInit {
     {col1: 'In taxi arrivi in città in 30 minuti', col2: '31€'},
   ]
 
+  pullman = [
+    {col1: 'Autobus dal Sud Italia verso Roma', col2: '6€'},
+    {col1: 'Autobus dal Sud Italia verso Roma', col2: '3€'},
+    {col1: 'Autobus dal Nord Italia verso Roma', col2: '3€'},
+    {col1: 'Autobus dal Nord Italia verso Roma', col2: '31€'},
+  ]
   constructor() { }
 
   ngOnInit(): void {

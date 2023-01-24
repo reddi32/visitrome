@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AttrazioniComponent } from './attrazioni.component';
+import { AttrazioniComponent } from './museieattrazioni.component';
 
 describe('AttrazioniComponent', () => {
   let component: AttrazioniComponent;

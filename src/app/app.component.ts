@@ -12,15 +12,14 @@ export class AppComponent {
   items = [
     {name: 'Cosa Fare', subitems: [
       {name: 'Roma Pass', route: '/romapass'},
-      {name: 'Attrazioni', route: '/attrazioni'},
-      {name: 'Mostre', route: '/mostre'},
+      {name: 'Musei e attrazioni', route: '/museieattrazioni'},
       {name: 'Vita notturna', route: '/vitanotturna'},
       {name: 'Roma in famiglia', route: '/romainfamiglia'},
       {name: 'Shopping', route: '/shopping'},
       {name: 'Blog', route: '/blog'}
     ]},
     {name: 'Calendario', subitems: [
-      {name: 'Concerti', route: '/concerti'},
+      {name: 'Concerti', route: '/concert'},
       {name: 'Cinema', route: '/cinema'},
       {name: 'Mostre', route: '/mostre'},
       {name: 'Vita notturna', route: '/vitanotturna'}

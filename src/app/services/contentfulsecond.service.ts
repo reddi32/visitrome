@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { createClient, Entry } from 'contentful';
 import { from } from 'rxjs';
-import { attraction } from 'src/environments/environment';
+import { attraction, concert } from 'src/environments/environment';
 
 
 @Injectable({
@@ -24,6 +24,21 @@ export class ContentfulsecondService {
 
   getEntryByIdAttraction(id: string) {
     const promise = this.client2.getEntry(id);
+    return from(promise);
+  }
+
+  private client3 = createClient({
+    space: concert.spaceIdTwo,
+    accessToken: concert.accessTokenThree
+  });
+
+  getAllEntriesConcert() {
+    const promise = this.client3.getEntries();
+    return from(promise);
+  }
+
+  getEntryByIdConcert(id: string) {
+    const promise = this.client3.getEntry(id);
     return from(promise);
   }
 }

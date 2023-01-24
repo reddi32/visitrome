@@ -11,8 +11,9 @@ import { BlogComponent } from './blog/blog.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
 
 import { MarkdownModule } from 'ngx-markdown';
-import { AttrazioniComponent } from './attrazioni/attrazioni.component';
+import { AttrazioniComponent } from './museieattrazioni/museieattrazioni.component';
 import { AttractionPostComponent } from './attraction-post/attraction-post.component';
+import { ConcertComponent } from './concert/concert.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { AttractionPostComponent } from './attraction-post/attraction-post.compo
     BlogPostComponent,
     AttrazioniComponent,
     AttractionPostComponent,
+    ConcertComponent,
   ],
   imports: [
     BrowserModule,

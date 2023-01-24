@@ -25,33 +25,37 @@
     C'è un treno diretto ogni 15 minuti in entrambe le direzioni.
   </p>
 
-  <table class="table table-hover text-start">
-    <thead>
-      <tr>
-        <th>Tipologia</th>
-        <th>Prezzo</th>
-      </tr>
-      <tr *ngFor="let item of items">
-        <td>{{item.col1}}</td>
-        <td>{{item.col2}}</td>
-      </tr>
-    </thead>
-  </table>
+  <div class="container-fluid">
+    <table class="table text-start">
+      <thead>
+        <tr>
+          <th>Tipologia</th>
+          <th>Prezzo</th>
+        </tr>
+        <tr *ngFor="let item of items">
+          <td>{{item.col1}}</td>
+          <td>{{item.col2}}</td>
+        </tr>
+      </thead>
+    </table>
+  </div>
   <p class="text-start">Per arrivare dall'aeroporto di Ciampino a Roma Centro (e viceversa) sono disponibili la linea bus 720 che lo collega con la stazione
     Laurentina della metro B e la linea bus 520 che lo collega con la stazione Cinecittà della metro A.
   </p>
-  <table class="table table-hover text-start">
-    <thead>
-      <tr>
-        <th>Tipologia</th>
-        <th>Prezzo</th>
-      </tr>
-      <tr *ngFor="let item of bus">
-        <td>{{item.col1}}</td>
-        <td>{{item.col2}}</td>
-      </tr>
-    </thead>
-  </table>
+  <div class="container-fluid">
+    <table class="table text-start">
+      <thead>
+        <tr>
+          <th>Tipologia</th>
+          <th>Prezzo</th>
+        </tr>
+        <tr *ngFor="let item of bus">
+          <td>{{item.col1}}</td>
+          <td>{{item.col2}}</td>
+        </tr>
+      </thead>
+    </table>
+  </div>
 
     <!--In treno-->
     <h1 class="fs-1 text-center">In treno</h1>
@@ -76,14 +80,31 @@
     <div class="text-center">
       <img src="../assets/bus.gif" alt="atac" class="img-fluid" width="150px">
     </div>
-    <ul class="list-group-dotted text-start">
-      <li class="list-group-dotted py-1"><a class="autobus" href="https://www.marozzivt.it/home">Marozzi</a> - Autobus dal Sud Italia verso Roma</li>
-      <li class="list-group-dotted py-1"><a class="autobus" href="https://www.autolineemoretti.it/Moretti/html/index.jsf">Moretti</a> - Autobus dal Sud Italia verso Roma</li>
-      <li class="list-group-dotted py-1"><a class="autobus" href="http://www.baltour.it/">Baltour</a> - Autobus dal Nord Italia verso Roma</li>
-      <li class="list-group-dotted py-1"><a class="autobus" href="http://www.flixbus.it/">Flixbus</a> - Autobus dal Nord Italia verso Roma</li>
-    </ul>
 
-    <!--Autobus-->
+    <div class="container-fluidS">
+      <table class="table">
+        <thead>
+          <tr>
+            <td><a class="autobus" href="https://www.marozzivt.it/home">Marozzi</a></td>
+            <td>Autobus dal Sud Italia verso Roma</td>
+          </tr>
+          <tr>
+            <td><a class="autobus" href="https://www.autolineemoretti.it/Moretti/html/index.jsf">Moretti</a></td>
+            <td>Autobus dal Sud Italia verso Roma</td>
+          </tr>
+          <tr>
+            <td><a class="autobus" href="http://www.baltour.it/">Baltour</a></td>
+            <td>Autobus dal Nord Italia verso Roma</td>
+          </tr>
+          <tr>
+            <td><a class="autobus" href="http://www.flixbus.it/">Flixbus</a></td>
+            <td>Autobus dal Nord Italia verso Roma</td>
+          </tr>
+        </thead>
+      </table>
+    </div>
+
+    <!--Macchina-->
     <h1 class="fs-1 text-center py-3">In macchina</h1>
     <p class="text-center">Se vuoi viaggiare con la massima comodità ed essere del tutto autonomo negli spostamenti, viaggiare con la tua auto
       è decisamente la scelta perfetta per te.

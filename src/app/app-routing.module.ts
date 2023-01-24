@@ -6,8 +6,9 @@ import { RomapassComponent } from './romapass/romapass.component';
 import { ComearrivareComponent } from './comearrivare/comearrivare.component';
 import { BlogComponent } from './blog/blog.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
-import { AttrazioniComponent } from './attrazioni/attrazioni.component';
+import { AttrazioniComponent } from './museieattrazioni/museieattrazioni.component';
 import { AttractionPostComponent } from './attraction-post/attraction-post.component';
+import { ConcertComponent } from './concert/concert.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -16,8 +17,9 @@ const routes: Routes = [
   { path: 'comearrivare', component: ComearrivareComponent},
   { path: 'blog', component: BlogComponent},
   { path: 'blogpost/:id', component: BlogPostComponent},
-  { path: 'attrazioni', component: AttrazioniComponent},
-  { path: 'attractionpost/:id', component: AttractionPostComponent}
+  { path: 'museieattrazioni', component: AttrazioniComponent},
+  { path: 'attractionpost/:id', component: AttractionPostComponent},
+  { path: 'concert', component: ConcertComponent}
 ];
 
 @NgModule({

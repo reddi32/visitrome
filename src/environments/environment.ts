@@ -14,6 +14,12 @@ export const attraction = {
   accessTokenTwo: 'h7aHJpMwryNrbf76SOjjOgzT6rTBDbQugKgo6_YJjJQ',
 };
 
+export const concert = {
+  production: false,
+  spaceIdTwo: 'xm2434p0m1pl',
+  accessTokenThree: '1T6lVm5WcdiXtQemaxpTk1V9V4n6SU0qWLjyB3szvGo',
+};
+
 
 /*
  * For easier debugging in development mode, you can import the following file

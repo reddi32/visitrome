@@ -4,9 +4,9 @@ import { Observable } from 'rxjs';
 import { ContentfulsecondService } from '../services/contentfulsecond.service';
 
 @Component({
-  selector: 'app-attrazioni',
-  templateUrl: './attrazioni.component.html',
-  styleUrls: ['./attrazioni.component.css']
+  selector: 'app-museieattrazioni',
+  templateUrl: './museieattrazioni.component.html',
+  styleUrls: ['./museieattrazioni.component.css']
 })
 export class AttrazioniComponent {
 
