@@ -10,39 +10,10 @@
     </button>
     <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cosa Fare</a>
+        <li class="nav-item dropdown disabled px-2" *ngFor="let item of items">
+          <a class="nav-link dropdown-toggle disabled" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">{{item.name}}</a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" routerLink="/romapass">Roma Pass</a></li>
-            <li><a class="dropdown-item" routerLink="/attrazioni">Attrazioni</a></li>
-            <li><a class="dropdown-item" href="">Mostre</a></li>
-            <li><a class="dropdown-item" href="">Vita notturna</a></li>
-            <li><a class="dropdown-item" href="">Roma in famiglia</a></li>
-            <li><a class="dropdown-item" href="">Shopping</a></li>
-            <li><a class="dropdown-item" routerLink="/blog">Blog</a></li>
-
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Calendario</a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="">Concerti</a></li>
-            <li><a class="dropdown-item" href="">Cinema</a></li>
-            <li><a class="dropdown-item" href="">Mostre</a></li>
-            <li><a class="dropdown-item" href="">Vita notturna</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Pianifica il tuo viaggio
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" routerLink="/comearrivare">Come arrivare</a></li>
-            <li><a class="dropdown-item" routerLink="/muoversiaroma">Muoversi per Roma</a></li>
-            <li><a class="dropdown-item" href="">I nostri itinerari</a></li>
-            <li><a class="dropdown-item" href="">Tourist Infopoint</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" routerLink="/romapass">Info</a></li>
+            <li *ngFor="let subitem of item.subitems"><a class="dropdown-item" [routerLink]="subitem.route">{{subitem.name}}</a></li>
           </ul>
         </li>
       </ul>
@@ -58,10 +29,7 @@
       <p class="col-md-4 mb-0 text-muted">&copy; 2022 Company, Inc</p>
 
       <ul class="nav col-md-4 justify-content-end">
-        <li class="nav-item"><a routerLink="" class="nav-link px-2 text-muted">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-        <li class="nav-item"><a routerLink="/faq" class="nav-link px-2 text-muted">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        <li class="nav-item px-2" *ngFor="let footer of footers">{{footer.name}}</li>
       </ul>
     </footer>
   </div>

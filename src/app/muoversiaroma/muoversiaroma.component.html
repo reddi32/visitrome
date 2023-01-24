@@ -16,89 +16,98 @@
   <p class="text-start">
     <strong>Dove comprare il tuo biglietto</strong>: si possono acquistare nelle biglietterie della metro, in edicola
     e nei tabaccai. Nelle stazioni della metro è possibile acquistare il proprio biglietto anche direttamente al tornello grazie ai pagamenti
-    contactless. È possibile utilizzare tutti i dispositivi compatibili con Google Pay o Apple Pay. Prossimamente sarà possibile anche su 
+    contactless. È possibile utilizzare tutti i dispositivi compatibili con Google Pay o Apple Pay. Prossimamente sarà possibile anche su
     autobus e tram.
   </p>
 
   <!--Linee aeroportuali-->
   <p class="text-start">
-    <strong>Linee aeroportuali</strong>: l'aeroporto di Fiumicino FCO dista 32 km dal centro di Roma. Al suo interno, è presente una stazione 
+    <strong>Linee aeroportuali</strong>: l'aeroporto di Fiumicino FCO dista 32 km dal centro di Roma. Al suo interno, è presente una stazione
     ferroviaria da cui partono la linea no-stop <a class="leonardoexpress" href="https://www.trenitalia.com/it/treni_regionali/lazio/leonardo_express.html">Leonardo Express</a> e
     la linea FL1. La linea Leonardo Express è una linea no-stop, collega l'aeroporto direttamente con la stazione Roma Termini, con partenze da e verso Fiumicino FCO ogni 15 minuti.
     Da Fiumicino FCO il servizio è attivo dalle ore 06:23 alle ore 23:23. Da Roma Termini il servizio è attivo dalle pre 05:35 alle ore 22:35.
     <br>
-    Dall'aeroporto di Ciampino sono disponibili la linea bus 720 che lo collega con la stazione Laurentina della metro B e la linea bus 520 che lo collega con la stazione Cinecittà 
-    della metro A. 
+    Dall'aeroporto di Ciampino sono disponibili la linea bus 720 che lo collega con la stazione Laurentina della metro B e la linea bus 520 che lo collega con la stazione Cinecittà
+    della metro A.
     <br>
     La stazione del treno più vicina si trova dentro la città di Ciampino, raggiungibile con bus Cotral, da cui partono i treni regionali verso la stazione Roma Termini.
   </p>
 
   <!--Costo dei biglietti-->
   <p class="text-start prezzo biglietti"><strong>Prezzo biglietti</strong></p>
-  <ul class="list-group-dotted text-start">
-    <li class="list-group-dotted py-1">Biglietto singolo - 1.50€</li>
-    <li class="list-group-dotted py-1">Biglietto multibit - 10 biglietti integrati 15€</li>
-    <li class="list-group-dotted py-1">Biglietto 24h - 7€</li>
-    <li class="list-group-dotted py-1">Biglietto 48h - 12.50€</li>
-    <li class="list-group-dotted py-1">Biglietto 72h - 18€</li>
-    <li class="list-group-dotted py-1">Biglietto settimanale - 24€</li>
-    <li class="list-group-dotted py-1">Biglietto Leonardo Express - <a class="leonardoexpress2" href="https://www.trenitalia.com/it/treni_regionali/lazio/leonardo_express.html">vedi sito ufficiale</a></li>
-  </ul>
+  <table class="table table-hover text-start">
+    <thead>
+      <tr>
+        <th>Tipologia</th>
+        <th>Prezzo</th>
+      </tr>
+      <tr *ngFor="let item of tickets">
+        <td>{{item.col1}}</td>
+        <td>{{item.col2}}</td>
+      </tr>
+      <tr>
+        <td>Biglietto Leonardo Express</td>
+        <td><a class="leonardoexpress2" href="https://www.trenitalia.com/it/treni_regionali/lazio/leonardo_express.html">Vedi sito ufficiale</a></td>
+      </tr>
+    </thead>
+  </table>
 
   <!--Taxi-->
   <h1 class="fs-1 text-center py-3">Prendi un taxi e gira per la città</h1>
-  <p class="text-start">Anche se il trasporto pubblico è più comodo per spostarsi in città, in alcune occasioni è più semplice prendere un taxi. Sei di fretta, troppi bagagli oppure non ti va di 
+  <p class="text-start">Anche se il trasporto pubblico è più comodo per spostarsi in città, in alcune occasioni è più semplice prendere un taxi. Sei di fretta, troppi bagagli oppure non ti va di
     prendere un autobus o una metro affollata? Ecco cosa devi sapere sui taxi a Roma.
   </p>
   <img src="../assets/taxi.gif" alt="atac" class="img-fluid" width="125px">
 
-  <ul class="list-group-dotted text-start">
-    <li class="list-group-dotted py-1">Quota fissa di partenza dalle 6:00 alle 22:00 - 3€</li>
-    <li class="list-group-dotted py-1">Quota fissa di partenza nei giorni festivi, dalle 6:00 alle 22:00 - 4.50€</li>
-    <li class="list-group-dotted py-1">Quota fissa di partenza in orario notturno - 6.50€</li>
-    <li class="list-group-dotted py-1">Prezzo per chilometro (tariffa 1) - 1.10€</li>
-    <li class="list-group-dotted py-1">Prezzo per chilometro (tariffa 2) - 1.30€</li>
-    <li class="list-group-dotted py-1">Prezzo per chilometro (tariffa 3) - 1.60€</li>
-    <li class="list-group-dotted py-1">Supplemento per ogni valigia aggiuntiva (è inclusa una per passeggero) - 1€</li>
-    <li class="list-group-dotted py-1">Supplemento per la prenotazione telefonica: 3,50€.</li>
-    <li class="list-group-dotted py-1">Supplemento per un'ora d'attesa - 27€</li>
-  </ul>
+  <table class="table table-hover text-start">
+    <thead>
+      <tr>
+        <th>Tipologia</th>
+        <th>Prezzo</th>
+      </tr>
+      <tr *ngFor="let item of taxi">
+        <td>{{item.col1}}</td>
+        <td>{{item.col2}}</td>
+      </tr>
+    </thead>
+  </table>
+
   <p class="text-start">Le tariffe dagli aeroporti sono stabilite dalla legge: 48€ da Fiumicino e 30€ da Ciampino, fino in centro. Tali prezzi sono validi per quattro passeggeri con i rispettivi bagagli.</p>
     <p class="text-start prezzo biglietti"><strong>Compagnie di taxi</strong></p>
-  <ul class="list-group-dotted text-start">
-    <li class="list-group-dotted py-1">Radio Taxi: 06-3570 <a class="taxi px-0" href="https://www.3570.it/">www.3570.it</a></li>
-      <a class="btn btn-outline-link" href="https://play.google.com/store/apps/details?id=it.ud.microtek.ITTaxi&hl=it">Play Store</a>
-      <a class="btn btn-outline-link" href="https://itunes.apple.com/it/app/it-taxi/id527559443?mt=8">App Store</a>
-    <li class="list-group-dotted py-1">Pronto Taxi: 06-6645 <a class="taxi px-0" href="https://6645.it/">www.6645.it</a></li>
-      <a class="btn btn-outline-link" href="https://play.google.com/store/apps/details?id=it.ud.microtek.InTaxi&hl=it&gl=US&pli=1">Play Store</a>
-      <a class="btn btn-outline-link" href="https://apps.apple.com/it/app/intaxi-il-tuo-taxi/id1258614882">App Store</a>
-    <li class="list-group-dotted py-1">Samarcanda: 06-5551 <a class="taxi px-0" href="https://065551.it/">www.065551.it</a></li>
-      <a class="btn btn-outline-link" href="https://play.google.com/store/apps/details?id=it.wetaxi.samarcandaplus&hl=it&gl=US">Play Store</a> 
-      <a class="btn btn-outline-link" href="https://apps.apple.com/us/app/samarcanda-plus/id1636444856">App Store</a> 
-    <li class="list-group-dotted py-1">Altre compagnie: 06-4994, 06-4157</li>
-  </ul>
-
-    <!--Card Info
-    <div class="container-fluid px-4 py-5" id="custom-cards">  
-      <div class="row row-cols-1 row-cols-lg-4 justify-content-center g-4 py-5">
-        <div class="col" *ngFor="let taxiInfo of listaTaxi">
-          <div class="card card-cover border-0">
-            <div class="d-flex flex-column h-100 p-4 pb-2 text-shadow-1">
-              <p class="fs-5 text-center">{{taxiInfo.compagnia}}</p>
-              <p class="fs-5 text-center">{{taxiInfo.numeroTelefono}}</p>
-              <a class="btn btn-outline-link" href="https://play.google.com/store/apps/details?id=it.ud.microtek.InTaxi&hl=it&gl=US&pli=1"><p class="fw-bold">{{taxiInfo.downloadPlayStore}}</p></a>
-              <a class="btn btn-outline-link" href="https://apps.apple.com/it/app/intaxi-il-tuo-taxi/id1258614882"><p class="fw-bold">{{taxiInfo.downloadAppStore}}</p></a>
-            </div>
-          </div>
-        </div>
-    </div>  
-    -->
-
+    <table class="table table-hover text-start">
+      <thead>
+        <tr>
+          <th>Tipologia</th>
+          <th>Prezzo</th>
+        </tr>
+        <tr>
+          <td>Radio Taxi: 06-3570</td>
+          <td><a class="taxi px-0" href="https://www.3570.it/">www.3570.it</a></td>
+          <td><a class="btn btn-outline-link" href="https://play.google.com/store/apps/details?id=it.ud.microtek.ITTaxi&hl=it">Play Store</a></td>
+          <a class="btn btn-outline-link" href="https://itunes.apple.com/it/app/it-taxi/id527559443?mt=8">App Store</a>
+        </tr>
+        <tr>
+          <td>Pronto Taxi: 06-6645</td>
+          <td><a class="taxi px-0" href="https://6645.it/">www.6645.it</a></td>
+          <td><a class="btn btn-outline-link" href="https://play.google.com/store/apps/details?id=it.ud.microtek.ITTaxi&hl=it">Play Store</a></td>
+          <td><a class="btn btn-outline-link" href="https://apps.apple.com/it/app/intaxi-il-tuo-taxi/id1258614882">App Store</a></td>
+        </tr>
+        <tr>
+          <td>Samarcanda: 06-5551</td>
+          <td><a class="taxi px-0" href="https://065551.it/">www.065551.it</a></td>
+          <td><a class="btn btn-outline-link" href="https://play.google.com/store/apps/details?id=it.wetaxi.samarcandaplus&hl=it&gl=US">Play Store</a></td>
+          <td><a class="btn btn-outline-link" href="https://apps.apple.com/us/app/samarcanda-plus/id1636444856">App Store</a></td>
+        </tr>
+        <tr>
+          <td>Altre compagnie: 06-4994, 06-4157</td>
+        </tr>
+      </thead>
+    </table>
 
   <!--Car Sharing-->
   <h1 class="fs-1 text-center py-3">Car Sharing</h1>
   <p class="">Qui troverai altri mezzi di trasporto e servizi che puoi utilizzare per attraversare la città.</p>
-  <p class="text-start">Qui a Roma abbiamo diversi servizi di car sharing, scegli quello che preferisci e scendi in strada e cerca l'auto disponibile più vicino a te! Prenota e sali a bordo per spostarti ovunque in città. A fine noleggio potrai lasciare la tua 
+  <p class="text-start">Qui a Roma abbiamo diversi servizi di car sharing, scegli quello che preferisci e scendi in strada e cerca l'auto disponibile più vicino a te! Prenota e sali a bordo per spostarti ovunque in città. A fine noleggio potrai lasciare la tua
     vettura o il tuo scooter dove preferisci purché tu sia all'interno dell'area di copertura, non preoccuparti di pagare il parcheggio, per te le strisce blu sono gratuite. Abbiamo pensato anche al tuo shopping. Nei maggiori centri commerciali infatti troverai
     un'area dedicata dove lasciare l'auto al tuo arrivo e noleggiarne un'altra quando avrai terminato le tue spese.
   </p>
@@ -117,9 +126,9 @@
 
   <!--Biciclette e monopattini-->
   <h1 class="fs-1 text-center py-3">Biciclette e Monopattini</h1>
-  <p class="text-start">Se vuoi esplorare e vivere le varie atmosfere uniche di Roma in modo completamente indipendente, una bicicletta o un monopattino sono il mezzo ideale per viaggiare. 
-    Chiunque può salire in sella alla propria bicicletta e partire alla scoperta di Roma, la sua cultura e i suoi tesori storici. Se vuoi spostarti per La capitale ma non vuoi 
-    prendere i mezzi pubblici o devi fare semplicemente un viaggio breve, troverai per le strade del centro storico molti mezzi a tua disposizione. Diverse aziende hanno preso il 
+  <p class="text-start">Se vuoi esplorare e vivere le varie atmosfere uniche di Roma in modo completamente indipendente, una bicicletta o un monopattino sono il mezzo ideale per viaggiare.
+    Chiunque può salire in sella alla propria bicicletta e partire alla scoperta di Roma, la sua cultura e i suoi tesori storici. Se vuoi spostarti per La capitale ma non vuoi
+    prendere i mezzi pubblici o devi fare semplicemente un viaggio breve, troverai per le strade del centro storico molti mezzi a tua disposizione. Diverse aziende hanno preso il
     via qui a Roma.
   </p>
   <div class="row row-cols row-cols-md-3 g-3 justify-content-center">

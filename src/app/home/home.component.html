@@ -3,10 +3,10 @@
 
 <!--Titolo e descrizione di Roma-->
 <h1 class="fs-1 text-center roma"> Vieni a scoprire Roma</h1>
-<p class="fs-5 text-center romadescription">Roma è la capitale d'Italia e una delle città più antiche del mondo. La città è ricca di storia e di arte, 
+<p class="fs-5 text-center romadescription">Roma è la capitale d'Italia e una delle città più antiche del mondo. La città è ricca di storia e di arte,
   con un patrimonio culturale unico al mondo. Roma è famosa per i suoi monumenti storici come il Colosseo, il Pantheon, fontana di Trevi e Piazza Navona.
-  La città è divisa in due parti: la Roma antica, con i suoi edifici storici, e la Roma moderna, con i suoi negozi, ristoranti e vita notturna. È una 
-  città vivace e piena di vita, con una varietà di eventi culturali e turistici durante tutto l'anno, tra cui concerti, festival, spettacoli teatrali e 
+  La città è divisa in due parti: la Roma antica, con i suoi edifici storici, e la Roma moderna, con i suoi negozi, ristoranti e vita notturna. È una
+  città vivace e piena di vita, con una varietà di eventi culturali e turistici durante tutto l'anno, tra cui concerti, festival, spettacoli teatrali e
   mostre d'arte. Cosa aspetti? Vieni a visitarci.
 </p>
 
@@ -17,49 +17,22 @@
 
   <!--Card-->
   <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center py-3">
-    <div class="col">
+    <div class="col" *ngFor="let FirstCard of card">
         <div class="card text-bg-dark">
-            <img src="../assets/FontanaDiTrevi.jpg" class="card-img">
+            <img src="../assets/{{FirstCard.img}}" class="card-img">
             <div class="card-img-overlay">
-              <h5 class="card-title fs-5 fw-bold text-light text-center">Cinque motivi per cui visitare Roma</h5>
-              <p class="card-text fs-5">Perché Roma dovrebbe essere aggiunta alla tua lista dei viaggi?</p>
+              <h5 class="card-title fs-5 fw-bold text-light text-center">{{FirstCard.title}}</h5>
+              <p class="card-text fs-5">{{FirstCard.paragraph}}</p>
               <div class="text-center">
-                <a class="btn btn-light" href="/blogpost/574RmJU93IDu3zgq0JuUEB">Scopri di più</a>
+                <a class="btn btn-light" href="/blogpost/574RmJU93IDu3zgq0JuUEB">{{FirstCard.link}}</a>
               </div>
             </div>
           </div>
-    </div>
-    <div class="col">
-        <div class="card text-bg-dark">
-            <img src="../assets/Colosseo.jpg" class="card-img">
-            <div class="card-img-overlay">
-              <a class="pt-2 fs-6 text-center link"routerLink=""></a>
-              <h5 class="card-title fs-5 text fw-bold text-light text-center">Attrazioni da vedere assolutamente</h5>
-              <p class="card-text fs-5">Pianifichi una visita a Roma? Vieni a scoprire le migliori attrazioni della città</p>
-              <div class="text-center">
-                <a class="btn btn-light" href="/blogpost/6aXAlAWwsO00lqExqS0vy1">Scopri di più</a>
-              </div>
-            </div>
-          </div>
-    </div>
-    <div class="col">
-      <div class="card text-bg-dark">
-        <img src="../assets/Cupolone.jpg" class="card-img"/>
-        <div class="card-img-overlay">
-          <h5 class="card-title fs-5 fw-bold text-light text-center">Roma top 10</h5>
-          <p class="card-text fs-5">Stai per venire a Roma ed hai bisogno di un'ispirazione per la tua visita? Unisciti a noi</p>
-          <div class="text-center">
-            <a class="btn btn-light">Scopri di più</a>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 
-
   <!--Terzo titolo-->
   <h1 class="fs-1 text-center roma">Qualche info</h1>
-
 
   <!--Card Info-->
   <div class="container-fluid px-4 py-5" id="custom-cards">
@@ -83,51 +56,8 @@
             <a class="pt-2 fs-6 text-center link"routerLink="/muoversiaroma"><p class="fw-bold">{{cardInfo.testo2}}</p></a>
           </div>
         </div>
-  </div>
+      </div>
 
-  <!--Carosello dove mangiare
-  <div id="cardCarousel" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div class="card">
-        <img class="card-img-top" src="image1.jpg" alt="image 1">
-        <div class="card-body">
-          <h5 class="card-title">Card Title</h5>
-          <p class="card-text">Card description or content goes here.</p>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="card">
-        <img class="card-img-top" src="image2.jpg" alt="image 2">
-        <div class="card-body">
-          <h5 class="card-title">Card Title</h5>
-          <p class="card-text">Card description or content goes here.</p>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="card">
-        <img class="card-img-top" src="image3.jpg" alt="image 3">
-        <div class="card-body">
-          <h5 class="card-title">Card Title</h5>
-          <p class="card-text">Card description or content goes here.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#cardCarousel" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#cardCarousel" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
-  -->
-  
 
   <!--Roma Pass-->
   <div class="container col-xxl-8 py-4 justify-content-center">
