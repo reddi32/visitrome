@@ -19,7 +19,7 @@ export class AppComponent {
       {name: 'Blog', route: '/blog'}
     ]},
     {name: 'Calendario', subitems: [
-      {name: 'Concerti', route: '/concert'},
+      {name: 'Concerti', route: '/notion'},
       {name: 'Cinema', route: '/cinema'},
       {name: 'Mostre', route: '/mostre'},
       {name: 'Vita notturna', route: '/vitanotturna'}

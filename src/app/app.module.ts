@@ -14,6 +14,9 @@ import { MarkdownModule } from 'ngx-markdown';
 import { AttrazioniComponent } from './museieattrazioni/museieattrazioni.component';
 import { AttractionPostComponent } from './attraction-post/attraction-post.component';
 import { ConcertComponent } from './concert/concert.component';
+import { NotionComponent } from './notion/notion.component';
+
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,11 +30,13 @@ import { ConcertComponent } from './concert/concert.component';
     AttrazioniComponent,
     AttractionPostComponent,
     ConcertComponent,
+    NotionComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MarkdownModule.forRoot(),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

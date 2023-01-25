@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
-import { ContentfulsecondService } from '../services/contentfulsecond.service';
+import { ContentfultirdService } from '../services/contentfultirdservice';
+
 
 @Component({
   selector: 'app-concert',
@@ -10,12 +11,12 @@ import { ContentfulsecondService } from '../services/contentfulsecond.service';
 })
 export class ConcertComponent {
 
-  constructor(private contentfulsecondService: ContentfulsecondService, private route: ActivatedRoute) {}
+  constructor(private contentfultirdService: ContentfultirdService, private route: ActivatedRoute) {}
 
   concertPosts$ : Observable<any> | undefined;
 
   ngOnInit(): void {
-    this.concertPosts$ = this.contentfulsecondService.getAllEntriesConcert();
+    this.concertPosts$ = this.contentfultirdService.getAllEntriesConcert();
 
     this.route.params.subscribe(
       params => {

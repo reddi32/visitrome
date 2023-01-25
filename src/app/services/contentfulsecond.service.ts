@@ -27,18 +27,4 @@ export class ContentfulsecondService {
     return from(promise);
   }
 
-  private client3 = createClient({
-    space: concert.spaceIdTwo,
-    accessToken: concert.accessTokenThree
-  });
-
-  getAllEntriesConcert() {
-    const promise = this.client3.getEntries();
-    return from(promise);
-  }
-
-  getEntryByIdConcert(id: string) {
-    const promise = this.client3.getEntry(id);
-    return from(promise);
-  }
 }
