@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NotionComponent } from './notion.component';
+import { ConcertPostComponent } from './concert-post.component';
 
-describe('NotionComponent', () => {
-  let component: NotionComponent;
-  let fixture: ComponentFixture<NotionComponent>;
+describe('ConcertPostComponent', () => {
+  let component: ConcertPostComponent;
+  let fixture: ComponentFixture<ConcertPostComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NotionComponent ]
+      declarations: [ ConcertPostComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(NotionComponent);
+    fixture = TestBed.createComponent(ConcertPostComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

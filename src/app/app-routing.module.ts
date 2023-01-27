@@ -9,7 +9,7 @@ import { BlogPostComponent } from './blog-post/blog-post.component';
 import { AttrazioniComponent } from './museieattrazioni/museieattrazioni.component';
 import { AttractionPostComponent } from './attraction-post/attraction-post.component';
 import { ConcertComponent } from './concert/concert.component';
-import { NotionComponent } from './notion/notion.component';
+import { ConcertPostComponent } from './concert-post/concert-post.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -21,7 +21,7 @@ const routes: Routes = [
   { path: 'museieattrazioni', component: AttrazioniComponent},
   { path: 'attractionpost/:id', component: AttractionPostComponent},
   { path: 'concert', component: ConcertComponent},
-  { path: 'notion', component: NotionComponent}
+  { path: 'concertpost/:id', component: ConcertPostComponent}
 ];
 
 @NgModule({

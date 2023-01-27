@@ -1,0 +1,14 @@
+.container-fluid.text-center {
+    padding-top: 2.5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.img-fluid {
+  border-radius: 2.5%;
+  transition: all 0.2s;
+}
+/*Img effect*/
+.img-fluid:hover {
+  transform: scale(1.05);
+}

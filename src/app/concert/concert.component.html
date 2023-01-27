@@ -6,7 +6,7 @@
               <img [src]="concertPost.fields.featuredImage.fields.file.url" class="img-fluid">
               <h2 class="fs-4 py-1">{{concertPost.fields.title}}</h2>
               <p>{{concertPost.fields.summary}}</p>
-              <a [routerLink]="['/attractionpost', concertPost.sys.id]" class="btn btn-outline-dark">Leggi di più</a>
+              <a [routerLink]="['/concertpost', concertPost.sys.id]" class="btn btn-outline-dark">Leggi di più</a>
           </div>
         </div>
       </div>
