@@ -1,0 +1,30 @@
+.container-fluid{
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.title{
+  padding-top: 2.5%;
+}
+
+.paragraph {
+  padding-top: 5%;
+}
+
+.termini-desk{
+  padding-top: 2.5%;
+}
+
+.card{
+  border: 0;
+}
+
+.link{
+  text-decoration: none;
+}
+
+.immagini{
+  padding-top: 2.5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}

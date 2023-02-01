@@ -1,129 +1,150 @@
 <!--Hero Image-->
-<img src="../assets/colosseoHero.jpg" class="img-fluid align-items-lg-center shadow"/>
+<img src="../assets/colosseoHero.jpg" class="img-fluid align-items-lg-center shadow" />
 
 <!--Titolo e descrizione di Roma-->
 <h1 class="fs-1 text-center roma"> Vieni a scoprire Roma</h1>
-<p class="fs-5 text-center romadescription">Roma è la capitale d'Italia e una delle città più antiche del mondo. La città è ricca di storia e di arte,
-  con un patrimonio culturale unico al mondo. Roma è famosa per i suoi monumenti storici come il Colosseo, il Pantheon, fontana di Trevi e Piazza Navona.
-  La città è divisa in due parti: la Roma antica, con i suoi edifici storici, e la Roma moderna, con i suoi negozi, ristoranti e vita notturna. È una
-  città vivace e piena di vita, con una varietà di eventi culturali e turistici durante tutto l'anno, tra cui concerti, festival, spettacoli teatrali e
+<p class="fs-5 text-center romadescription">Roma è la capitale d'Italia e una delle città più antiche del mondo. La
+  città è ricca di storia e di arte,
+  con un patrimonio culturale unico al mondo. Roma è famosa per i suoi monumenti storici come il Colosseo, il Pantheon,
+  fontana di Trevi e Piazza Navona.
+  La città è divisa in due parti: la Roma antica, con i suoi edifici storici, e la Roma moderna, con i suoi negozi,
+  ristoranti e vita notturna. È una
+  città vivace e piena di vita, con una varietà di eventi culturali e turistici durante tutto l'anno, tra cui concerti,
+  festival, spettacoli teatrali e
   mostre d'arte. Cosa aspetti? Vieni a visitarci.
 </p>
 
 
-  <!--Secondo titolo-->
-  <h1 class="fs-1 text-center roma">Attrazioni</h1>
+<!--Secondo titolo-->
+<h1 class="fs-1 text-center roma">Attrazioni</h1>
 
 
-  <!--Card-->
-  <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center py-3">
-    <div class="col" *ngFor="let FirstCard of card">
-        <div class="card text-bg-dark">
-            <img src="../assets/{{FirstCard.img}}" class="card-img">
-            <div class="card-img-overlay">
-              <h5 class="card-title fs-5 fw-bold text-light text-center">{{FirstCard.title}}</h5>
-              <p class="card-text fs-5">{{FirstCard.paragraph}}</p>
-              <div class="text-center">
-                <a class="btn btn-light" href="/blogpost/574RmJU93IDu3zgq0JuUEB">{{FirstCard.link}}</a>
-              </div>
-            </div>
-          </div>
-    </div>
-    <div class="col" *ngFor="let FirstCard of card2">
-      <div class="card text-bg-dark">
-          <img src="../assets/{{FirstCard.img}}" class="card-img">
-          <div class="card-img-overlay">
-            <h5 class="card-title fs-5 fw-bold text-light text-center">{{FirstCard.title}}</h5>
-            <p class="card-text fs-5">{{FirstCard.paragraph}}</p>
-            <div class="text-center">
-              <a class="btn btn-light" href="/blogpost/6aXAlAWwsO00lqExqS0vy1">{{FirstCard.link}}</a>
-            </div>
-          </div>
+<!--Card-->
+<div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center py-3">
+  <div class="col" *ngFor="let FirstCard of card">
+    <div class="card text-bg-dark">
+      <img src="../assets/{{FirstCard.img}}" class="card-img">
+      <div class="card-img-overlay">
+        <h5 class="card-title fs-5 fw-bold text-light text-center">{{FirstCard.title}}</h5>
+        <p class="card-text fs-5">{{FirstCard.paragraph}}</p>
+        <div class="text-center">
+          <a class="btn btn-light" href="/blogpost/574RmJU93IDu3zgq0JuUEB">{{FirstCard.link}}</a>
         </div>
+      </div>
     </div>
-    <div class="col" *ngFor="let FirstCard of card3">
-      <div class="card text-bg-dark">
-          <img src="../assets/{{FirstCard.img}}" class="card-img">
-          <div class="card-img-overlay">
-            <h5 class="card-title fs-5 fw-bold text-light text-center">{{FirstCard.title}}</h5>
-            <p class="card-text fs-5">{{FirstCard.paragraph}}</p>
-            <div class="text-center">
-              <a class="btn btn-light" href="/blogpost/574RmJU93IDu3zgq0JuUEB">{{FirstCard.link}}</a>
-            </div>
-          </div>
+  </div>
+  <div class="col" *ngFor="let FirstCard of card2">
+    <div class="card text-bg-dark">
+      <img src="../assets/{{FirstCard.img}}" class="card-img">
+      <div class="card-img-overlay">
+        <h5 class="card-title fs-5 fw-bold text-light text-center">{{FirstCard.title}}</h5>
+        <p class="card-text fs-5">{{FirstCard.paragraph}}</p>
+        <div class="text-center">
+          <a class="btn btn-light" href="/blogpost/6aXAlAWwsO00lqExqS0vy1">{{FirstCard.link}}</a>
         </div>
+      </div>
+    </div>
+  </div>
+  <div class="col" *ngFor="let FirstCard of card3">
+    <div class="card text-bg-dark">
+      <img src="../assets/{{FirstCard.img}}" class="card-img">
+      <div class="card-img-overlay">
+        <h5 class="card-title fs-5 fw-bold text-light text-center">{{FirstCard.title}}</h5>
+        <p class="card-text fs-5">{{FirstCard.paragraph}}</p>
+        <div class="text-center">
+          <a class="btn btn-light" href="/blogpost/574RmJU93IDu3zgq0JuUEB">{{FirstCard.link}}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Terzo titolo-->
+<h1 class="fs-1 text-center roma">Qualche info</h1>
+
+<!--Card Info-->
+<div class="container-fluid px-4 py-5" id="custom-cards">
+  <div class="row row-cols-1 row-cols-lg-4 justify-content-center g-4 py-5">
+    <div class="col" *ngFor="let cardInfo of listaInfo">
+      <div class="card card-cover rounded-4">
+        <div class="d-flex flex-column h-100 p-4 pb-2 text-shadow-1">
+          <img src="../assets/{{cardInfo.img}}" class="img-fluid mx-auto d-block">
+          <p class="fs-4 fw-bold text-center">{{cardInfo.titolo}}</p>
+          <p class="pt-2 fs-6 text-center">{{cardInfo.testo}}</p>
+          <a class="pt-2 fs-6 text-center link" routerLink="/comearrivare">
+            <p class="fw-bold">{{cardInfo.testo2}}</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col" *ngFor="let cardInfo of listaInfo2">
+      <div class="card card-cover rounded-4">
+        <div class="d-flex flex-column h-100 p-4 pb-2 text-shadow-1">
+          <img src="../assets/{{cardInfo.img}}" class="img-fluid mx-auto d-block">
+          <p class="fs-4 fw-bold text-center">{{cardInfo.titolo}}</p>
+          <p class="pt-2 fs-6 text-center">{{cardInfo.testo}}</p>
+          <a class="pt-2 fs-6 text-center link" routerLink="/muoversiaroma">
+            <p class="fw-bold">{{cardInfo.testo2}}</p>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 
-  <!--Terzo titolo-->
-  <h1 class="fs-1 text-center roma">Qualche info</h1>
-
-  <!--Card Info-->
-  <div class="container-fluid px-4 py-5" id="custom-cards">
-    <div class="row row-cols-1 row-cols-lg-4 justify-content-center g-4 py-5">
-      <div class="col" *ngFor="let cardInfo of listaInfo">
-        <div class="card card-cover rounded-4">
-          <div class="d-flex flex-column h-100 p-4 pb-2 text-shadow-1">
-            <img src="../assets/{{cardInfo.img}}" class="img-fluid mx-auto d-block">
-            <p class="fs-4 fw-bold text-center">{{cardInfo.titolo}}</p>
-            <p class="pt-2 fs-6 text-center">{{cardInfo.testo}}</p>
-            <a class="pt-2 fs-6 text-center link"routerLink="/comearrivare"><p class="fw-bold">{{cardInfo.testo2}}</p></a>
-          </div>
-        </div>
-      </div>
-      <div class="col" *ngFor="let cardInfo of listaInfo2">
-        <div class="card card-cover rounded-4">
-          <div class="d-flex flex-column h-100 p-4 pb-2 text-shadow-1">
-            <img src="../assets/{{cardInfo.img}}" class="img-fluid mx-auto d-block">
-            <p class="fs-4 fw-bold text-center">{{cardInfo.titolo}}</p>
-            <p class="pt-2 fs-6 text-center">{{cardInfo.testo}}</p>
-            <a class="pt-2 fs-6 text-center link"routerLink="/muoversiaroma"><p class="fw-bold">{{cardInfo.testo2}}</p></a>
-          </div>
-        </div>
-      </div>
-
-
   <!--Roma Pass-->
-  <div class="container col-xxl-8 py-4 justify-content-center">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div class="col-lg-4 offset-lg-1 p-0">
-        <img src="../assets/romapass.png" class="d-block mx-lg-auto img-fluid" alt="Roma Pass" width="700" height="700">
-      </div>
-      <div class="col-lg-6">
-        <h1 class="fs-1 lh-1 mb-3">Roma Pass</h1>
-        <br>
-        <ul class="list-group">
-          <li class="list-group">
-            <label class="form-check-label">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bus-front" viewBox="0 0 16 16">
-                <path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2H7Zm1-6c-1.876 0-3.426.109-4.552.226A.5.5 0 0 0 3 4.723v3.554a.5.5 0 0 0 .448.497C4.574 8.891 6.124 9 8 9c1.876 0 3.426-.109 4.552-.226A.5.5 0 0 0 13 8.277V4.723a.5.5 0 0 0-.448-.497A44.303 44.303 0 0 0 8 4Zm0-1c-1.837 0-3.353.107-4.448.22a.5.5 0 1 1-.104-.994A44.304 44.304 0 0 1 8 2c1.876 0 3.426.109 4.552.226a.5.5 0 1 1-.104.994A43.306 43.306 0 0 0 8 3Z"/>
-                <path d="M15 8a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1V2.64c0-1.188-.845-2.232-2.064-2.372A43.61 43.61 0 0 0 8 0C5.9 0 4.208.136 3.064.268 1.845.408 1 1.452 1 2.64V4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v3.5c0 .818.393 1.544 1 2v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5V14h6v1.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2c.607-.456 1-1.182 1-2V8ZM8 1c2.056 0 3.71.134 4.822.261.676.078 1.178.66 1.178 1.379v8.86a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 11.5V2.64c0-.72.502-1.301 1.178-1.379A42.611 42.611 0 0 1 8 1Z"/>
-              </svg>
-              Accesso gratuito e illimitato su tutto il trasporto pubblico urbano.
-            </label>
-          </li>
+  <div class="container-fluid">
+    <div class="container col p-4 justify-content-center">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-lg-4 offset-lg-1 p-0">
+          <img src="../assets/romapass.png" class="d-block mx-lg-auto img-fluid" alt="Roma Pass" width="700"
+            height="700">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="fs-1 lh-1 mb-3">Roma Pass</h1>
           <br>
-          <li class="list-group">
-            <label class="form-check-label">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-percent" viewBox="0 0 16 16">
-                <path d="M13.442 2.558a.625.625 0 0 1 0 .884l-10 10a.625.625 0 1 1-.884-.884l10-10a.625.625 0 0 1 .884 0zM4.5 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm7 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
-              </svg>
-              Uno o due musei o siti archeologici gratuiti, sconti e prezzi speciali per mostre, attrazioni e servizi turistici.
-            </label>
-          </li>
-          <br>
-          <li class="list-group">
-            <label class="form-check-label">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-postcard" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2ZM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4Zm7.5.5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7ZM2 5.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5ZM10.5 5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3ZM13 8h-2V6h2v2Z"/>
-              </svg>
-              Roma Pass è nominativa, vale 72 ore o 48 ore che scattano dal primo accesso al museo o sito archeologico, oppure al primo viaggio su un mezzo pubblico.
-            </label>
-          </li>
-          <br>
-        </ul>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-outline-primary btn-lg px-4 me-md-2" routerLink="/romapass">Di più su Roma Pass</button>
+          <ul class="list-group">
+            <li class="list-group">
+              <label class="form-check-label">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                  class="bi bi-bus-front" viewBox="0 0 16 16">
+                  <path
+                    d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2H7Zm1-6c-1.876 0-3.426.109-4.552.226A.5.5 0 0 0 3 4.723v3.554a.5.5 0 0 0 .448.497C4.574 8.891 6.124 9 8 9c1.876 0 3.426-.109 4.552-.226A.5.5 0 0 0 13 8.277V4.723a.5.5 0 0 0-.448-.497A44.303 44.303 0 0 0 8 4Zm0-1c-1.837 0-3.353.107-4.448.22a.5.5 0 1 1-.104-.994A44.304 44.304 0 0 1 8 2c1.876 0 3.426.109 4.552.226a.5.5 0 1 1-.104.994A43.306 43.306 0 0 0 8 3Z" />
+                  <path
+                    d="M15 8a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1V2.64c0-1.188-.845-2.232-2.064-2.372A43.61 43.61 0 0 0 8 0C5.9 0 4.208.136 3.064.268 1.845.408 1 1.452 1 2.64V4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v3.5c0 .818.393 1.544 1 2v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5V14h6v1.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2c.607-.456 1-1.182 1-2V8ZM8 1c2.056 0 3.71.134 4.822.261.676.078 1.178.66 1.178 1.379v8.86a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 11.5V2.64c0-.72.502-1.301 1.178-1.379A42.611 42.611 0 0 1 8 1Z" />
+                </svg>
+                Accesso gratuito e illimitato su tutto il trasporto pubblico urbano.
+              </label>
+            </li>
+            <br>
+            <li class="list-group">
+              <label class="form-check-label">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-percent"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M13.442 2.558a.625.625 0 0 1 0 .884l-10 10a.625.625 0 1 1-.884-.884l10-10a.625.625 0 0 1 .884 0zM4.5 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm7 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+                </svg>
+                Uno o due musei o siti archeologici gratuiti, sconti e prezzi speciali per mostre, attrazioni e servizi
+                turistici.
+              </label>
+            </li>
+            <br>
+            <li class="list-group">
+              <label class="form-check-label">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                  class="bi bi-postcard" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2ZM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4Zm7.5.5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7ZM2 5.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5ZM10.5 5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3ZM13 8h-2V6h2v2Z" />
+                </svg>
+                Roma Pass è nominativa, vale 72 ore o 48 ore che scattano dal primo accesso al museo o sito
+                archeologico, oppure al primo viaggio su un mezzo pubblico.
+              </label>
+            </li>
+            <br>
+          </ul>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-outline-primary btn-lg px-4 me-md-2" routerLink="/romapass">Di più su
+              Roma Pass</button>
+          </div>
         </div>
       </div>
     </div>

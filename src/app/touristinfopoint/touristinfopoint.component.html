@@ -1,0 +1,202 @@
+<!--Immagine tourist infopoint-->
+<img src="" alt="">
+
+<!--Container della pagina-->
+<div class="container-fluid">
+
+  <!--Titolo della pagina-->
+  <div class="title">
+    <h1 class="fs-1 text-center">Tourist Infopoint</h1>
+  </div>
+
+  <!--Paragrafi di descrizione-->
+  <div class="paragraph">
+    <p class="fw-bold py-1">Benvenuti nella capitale d'Italia.</p>
+    <p class="fw-bold py-1">
+      Qui su visitrome abbiamo tutte le informazioni di cui potresti aver bisogno riguardanti Roma e saremo lieti di
+      accogliervi
+      in uno dei nostri tourist infopoint.
+    </p>
+    <p class="text py-1">
+      Puoi trovare maggiori informazioni nei nostri desk nella stazione Termini, sul viale dei fori imperiali, a Castel
+      Sant'Angelo
+      e negli aeroporti di Fiumicino e Ciampino.
+    </p>
+  </div>
+
+  <!--Tourist infopoint-->
+  <div class="desk" *ngFor="let InfoPoint of listaDeskTermini">
+    <!--Titolo-->
+    <div class="title">
+      <h3 class="text-center text-bg-warning p-1" style="border-radius: 5px;">{{InfoPoint.title}}</h3>
+    </div>
+    <!--Orari-->
+    <div class="orari py-4">
+      <h4 class="text-center">{{InfoPoint.titoloOrari}}</h4>
+      <p class="text text-center">{{InfoPoint.orari}}</p>
+    </div>
+    <!--Posizione del desk-->
+    <div class="location">
+      <div class="card mb-3 mx-auto" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../assets/{{InfoPoint.img}}" class="img-fluid rounded-start" style="max-width: 128px;">
+          </div>
+          <div class="col-md-8 py-2">
+            <!--Luogo-->
+            <div class="card-body">
+              <p class="card-text">{{InfoPoint.via}}</p>
+              <a class="link"
+                href="https://www.turismoroma.it/it/luoghi/tourist-infopoint-termini">{{InfoPoint.link}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Tourist infopoint Fori Imperiali-->
+  <div class="fori-desk" *ngFor="let InfoPoint of listaDeskFori">
+    <!--Titolo-->
+    <div class="title">
+      <h3 class="text-center text-bg-warning p-1" style="border-radius: 5px;">{{InfoPoint.title}}</h3>
+    </div>
+    <!--Orari-->
+    <div class="orari py-4">
+      <h4 class="text-center">{{InfoPoint.titoloOrari}}</h4>
+      <p class="text text-center">{{InfoPoint.orari}}</p>
+    </div>
+    <!--Posizione del desk-->
+    <div class="location">
+      <div class="card mb-3 mx-auto" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../assets/{{InfoPoint.img}}" class="img-fluid rounded-start" style="max-width: 128px;">
+          </div>
+          <div class="col-md-8 py-4">
+            <!--Luogo-->
+            <div class="card-body">
+              <p class="card-text">{{InfoPoint.via}}</p>
+              <a class="link"
+                href="https://www.turismoroma.it/it/luoghi/tourist-infopoint-fori-imperiali">{{InfoPoint.link}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Tourist infopoint Via Menghetti-->
+  <div class="menghetti-desk" *ngFor="let InfoPoint of listaDeskMenghetti">
+    <!--Titolo-->
+    <div class="title">
+      <h3 class="text-center text-bg-warning p-1" style="border-radius: 5px;">{{InfoPoint.title}}</h3>
+    </div>
+    <!--Orari-->
+    <div class="orari py-4">
+      <h4 class="text-center">{{InfoPoint.titoloOrari}}</h4>
+      <p class="text text-center">{{InfoPoint.orari}}</p>
+    </div>
+    <!--Posizione del desk-->
+    <div class="location">
+      <div class="card mb-3 mx-auto" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../assets/{{InfoPoint.img}}" class="img-fluid rounded-start" style="max-width: 128px;">
+          </div>
+          <div class="col-md-8 py-4">
+            <!--Luogo-->
+            <div class="card-body">
+              <p class="card-text">{{InfoPoint.via}}</p>
+              <a class="link"
+                href="https://www.turismoroma.it/it/luoghi/tourist-infopoint-minghetti">{{InfoPoint.link}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Tourist infopoint Fiumicino-->
+  <div class="fiumicino-desk" *ngFor="let InfoPoint of listaDeskFiumicino">
+    <!--Titolo-->
+    <div class="title">
+      <h3 class="text-center text-bg-warning p-1" style="border-radius: 5px;">{{InfoPoint.title}}</h3>
+    </div>
+    <!--Orari-->
+    <div class="orari py-4">
+      <h4 class="text-center">{{InfoPoint.titoloOrari}}</h4>
+      <p class="text text-center">{{InfoPoint.orari}}</p>
+    </div>
+    <!--Posizione del desk-->
+    <div class="location">
+      <div class="card mb-3 mx-auto" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../assets/{{InfoPoint.img}}" class="img-fluid rounded-start" style="max-width: 128px;">
+          </div>
+          <div class="col-md-8 py-4">
+            <!--Luogo-->
+            <div class="card-body">
+              <p class="card-text">{{InfoPoint.via}}</p>
+              <a class="link"
+                href="https://www.turismoroma.it/it/luoghi/tourist-infopoint-fiumicino">{{InfoPoint.link}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Tourist infopoint Ciampino-->
+  <div class="fiumicino-desk" *ngFor="let InfoPoint of listaDeskCiampino">
+    <!--Titolo-->
+    <div class="title">
+      <h3 class="text-center text-bg-warning p-1" style="border-radius: 5px;">{{InfoPoint.title}}</h3>
+    </div>
+    <!--Orari-->
+    <div class="orari py-4">
+      <h4 class="text-center">{{InfoPoint.titoloOrari}}</h4>
+      <p class="text text-center">{{InfoPoint.orari}}</p>
+    </div>
+    <!--Posizione del desk-->
+    <div class="location">
+      <div class="card mb-3 mx-auto" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../assets/{{InfoPoint.img}}" class="img-fluid rounded-start" style="max-width: 128px;">
+          </div>
+          <div class="col-md-8 py-4">
+            <!--Luogo-->
+            <div class="card-body">
+              <p class="card-text">{{InfoPoint.via}}</p>
+              <a class="link"
+                href="https://www.turismoroma.it/it/luoghi/tourist-infopoint-fiumicino">{{InfoPoint.link}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!--Card-->
+  <div class="immagini">
+    <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center">
+      <div class="col">
+        <div class="card text-bg-dark">
+          <img src="../assets/castel-santangelo.jpg" class="card-img">
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-bg-dark">
+          <img src="../assets/san-pietro.jpg" class="card-img">
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-bg-dark">
+          <img src="../assets/piazza-navona.jpg" class="card-img">
+        </div>
+      </div>
+    </div>
+  </div>

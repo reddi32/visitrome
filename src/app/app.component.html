@@ -5,15 +5,18 @@
       <img src="../assets/colosseum-digital-art.png" class="colosseum-digital-art" width="38" height="30">
       Visit.Rome
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item dropdown disabled px-2" *ngFor="let item of items">
-          <a class="nav-link dropdown-toggle disabled" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">{{item.name}}</a>
+          <a class="nav-link dropdown-toggle disabled" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+            style="color: black;">{{item.name}}</a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li *ngFor="let subitem of item.subitems"><a class="dropdown-item" [routerLink]="subitem.route">{{subitem.name}}</a></li>
+            <li *ngFor="let subitem of item.subitems"><a class="dropdown-item"
+                [routerLink]="subitem.route">{{subitem.name}}</a></li>
           </ul>
         </li>
       </ul>
@@ -23,13 +26,36 @@
 
 <router-outlet></router-outlet>
 
-  <!--Footer-->
-  <div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <p class="col-md-4 mb-0 text-muted">&copy; 2022 Company, Inc</p>
-
-      <ul class="nav col-md-4 justify-content-end">
-        <li class="nav-item px-2" *ngFor="let footer of footers">{{footer.name}}</li>
+<!--Footer-->
+<div class="container">
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="col mb-3">
+      <a href="index.html" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+        <img src="../assets/colosseum-digital-art.png" alt="visitrome" width="58" height="50"
+          style="border-radius: 10px;">
+      </a>
+    </div>
+    <div class="col mb-3" *ngFor="let footer of footers">
+      <h5>{{footer.name}}</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2" *ngFor="let subitem of footer.subitems"><a class="dropdown-item"
+            [routerLink]="subitem.route">{{subitem.name}}</a></li>
       </ul>
-    </footer>
-  </div>
+    </div>
+    <div class="d-flex flex-column flex-sm-row justify-content-between px-5">
+      <p>&copy; 2022 Visitrome, Inc. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
+
+    <section class="d-flex flex-wrap align-items-center py-3 my-4 border-top">
+      <div class="container-fluid d-flex justify-content-center">
+        <div class="list-group list-group-horizontal text-center">
+          <li class="list-group px-3"><a class="link" href="/en/visitors/about-us/privacy-policy">Privacy policy</a></li>
+          <li class="list-group px-3"><a class="link" href="/en/visitors/about-us/general-terms-and-conditions-of-sale">Terms of use</a></li>
+          <li class="list-group px-3"><a class="link" href="/en/visitors/about-us/cookies-policy">Cookies</a></li>
+          <li class="list-group px-3"><a class="link" href="https://www.visit.brussels/en/visitors/about-us/general-terms-and-conditions-of-sale">General
+              conditions of sale</a></li>
+        </div>
+      </div>
+    </section>

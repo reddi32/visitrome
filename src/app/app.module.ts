@@ -17,6 +17,7 @@ import { ConcertComponent } from './concert/concert.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { ConcertPostComponent } from './concert-post/concert-post.component';
+import { TouristinfopointComponent } from './touristinfopoint/touristinfopoint.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ConcertPostComponent } from './concert-post/concert-post.component';
     AttractionPostComponent,
     ConcertComponent,
     ConcertPostComponent,
+    TouristinfopointComponent,
   ],
   imports: [
     BrowserModule,
