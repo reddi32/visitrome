@@ -19,6 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ConcertPostComponent } from './concert-post/concert-post.component';
 import { TouristinfopointComponent } from './touristinfopoint/touristinfopoint.component';
 
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +40,8 @@ import { TouristinfopointComponent } from './touristinfopoint/touristinfopoint.c
     BrowserModule,
     AppRoutingModule,
     MarkdownModule.forRoot(),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

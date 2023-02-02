@@ -8,7 +8,22 @@
   border-radius: 2.5%;
   transition: all 0.2s;
 }
+
 /*Img effect*/
 .img-fluid:hover {
   transform: scale(1.05);
+}
+
+/*Posizione dei filtri*/
+.container-fluid.text-center.form{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.btn.btn-outline-dark.filter{
+  border-radius: 10rem;
+}
+.btn.btn-outline-dark:hover{
+  background-color: black;
+  color: white;
 }

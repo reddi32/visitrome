@@ -1,12 +1,56 @@
+<div class="container-fluid text-center form">
+  <div class="container-fluid">
+    <div class="container-fluid">
+      <div class="form-check form-check-inline">
+        <input class="btn-check" type="checkbox" value="Attrazioni" [(ngModel)]="attrazioniSelected"
+          id="defaultCheck1" (change)="deselectOthers('attrazioniSelected')">
+        <label class="btn btn-outline-dark filter" for="defaultCheck1">
+          Attrazioni
+        </label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="btn-check" type="checkbox" value="Piazza" [(ngModel)]="piazzeSelected" id="defaultCheck2"
+          (change)="deselectOthers('piazzeSelected')">
+        <label class="btn btn-outline-dark filter" for="defaultCheck2">
+          Piazze
+        </label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="btn-check" type="checkbox" value="Museo" [(ngModel)]="museiSelected" id="defaultCheck3"
+          (change)="deselectOthers('museiSelected')">
+        <label class="btn btn-outline-dark filter" for="defaultCheck3">
+          Musei
+        </label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="btn-check" type="checkbox" value="Parco" [(ngModel)]="parchiSelected" id="defaultCheck4"
+          (change)="deselectOthers('parchiSelected')">
+        <label class="btn btn-outline-dark filter" for="defaultCheck4">
+          Parchi
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <div class="container-fluid text-center">
   <div class="container-fluid">
-    <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center attraction-post-container" *ngIf="attractionPosts$ | async as attractionPosts">
-      <div class="col" *ngFor="let attractionPost of attractionPosts.items">
-        <div class="container-fluid text-start">
+    <div class="form-check">
+      <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center attraction-post-container"
+        *ngIf="attractionPosts$ | async as attractionPosts">
+        <div class="col" *ngFor="let attractionPost of attractionPosts.items" [ngClass]="{'d-none': !((attrazioniSelected && attractionPost.fields.type === 'Attrazioni')
+             || (piazzeSelected && attractionPost.fields.type === 'Piazza')
+             || (museiSelected && attractionPost.fields.type === 'Museo')
+             || (parchiSelected && attractionPost.fields.type === 'Parchi')
+             || (!attrazioniSelected && !piazzeSelected && !museiSelected && !parchiSelected)
+            )}">
+          <div class="container-fluid text-start">
             <img [src]="attractionPost.fields.featuredImage.fields.file.url" class="img-fluid">
             <h2 class="fs-4 py-1">{{attractionPost.fields.title}}</h2>
             <p>{{attractionPost.fields.summary}}</p>
             <a [routerLink]="['/attractionpost', attractionPost.sys.id]" class="btn btn-outline-dark">Leggi di più</a>
+          </div>
         </div>
       </div>
     </div>
