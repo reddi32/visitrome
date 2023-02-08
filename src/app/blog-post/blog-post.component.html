@@ -3,14 +3,129 @@
     <!--Container per i post del blog-->
     <!--Thanks to dev Ciro De Cristoforo -> Link his github https://github.com/CirodeCristofaro-->
     <div class="container-fluid text-start">
-      <img [src]="blogPost.fields.featuredImage.fields.file.url" class="img-fluid">
-      <h2>{{blogPost.fields.title}}</h2>
-        <p class="fs-5 content" >
-          <markdown ngPreserveWhitespaces>
-            {{blogPost.fields.content}}
-          </markdown>
-        </p>
+
+      <!-- Hero image-->
+      <img [src]="blogPost.fields.featuredImage.fields.file.url" class="img-fluid head">
+
+      <!-- Titolo della pagina -->
+      <h2 class="title py-5">{{blogPost.fields.title}}</h2>
+
+      <!-- Storia e arte -->
+      <p class="fs-5 content">
+        <markdown ngPreserveWhitespaces>
+          {{blogPost.fields.content}}
+        </markdown>
+      </p>
+      <div class="immagini py-3">
+        <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center">
+          <div class="col">
+            <div class="card" style="border: 0;">
+              <img [src]="blogPost.fields.featuredImage2.fields.file.url" class="img-fluid">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="border: 0;">
+              <img [src]="blogPost.fields.featuredImage3.fields.file.url" class="img-fluid">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="border: 0;">
+              <img [src]="blogPost.fields.featuredImage4.fields.file.url" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cibo e cultura culinaria -->
+      <p class="fs-5 content py-3">
+        <markdown ngPreserveWhitespaces>
+          {{blogPost.fields.content2}}
+        </markdown>
+      </p>
+      <div class="immagini py-3">
+        <div class="row row-cols-1 row-cols-md-2 g-2 justify-content-center">
+          <div class="col">
+            <div class="card" style="border: 0;">
+              <img [src]="blogPost.fields.featuredImage5.fields.file.url" class="img-fluid">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="border: 0;">
+              <img [src]="blogPost.fields.featuredImage6.fields.file.url" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chiese e basiliche -->
+      <p class="fs-5 content py-3">
+        <markdown ngPreserveWhitespaces>
+          {{blogPost.fields.content3}}
+        </markdown>
+      </p>
+      <div class="immagini py-3">
+        <div class="row row-cols-1 row-cols-md-2 g-2 justify-content-center">
+          <div class="col">
+            <div class="card" style="border: 0;">
+              <img [src]="blogPost.fields.featuredImage7.fields.file.url" class="img-fluid">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="border: 0;">
+              <img [src]="blogPost.fields.featuredImage8.fields.file.url" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Paesaggi naturali-->
+      <p class="fs-5 content py-3">
+        <markdown ngPreserveWhitespaces>
+          {{blogPost.fields.content4}}
+        </markdown>
+      </p>
+      <div class="immagini py-3">
+        <div class="row row-cols-1 row-cols-md-2 g-2 justify-content-center">
+          <div class="col">
+            <div class="card" style="border: 0;">
+              <img [src]="blogPost.fields.featuredImage9.fields.file.url" class="img-fluid">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="border: 0;">
+              <img [src]="blogPost.fields.featuredImage10.fields.file.url" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vita nottruna -->
+      <p class="fs-5 content py-3">
+        <markdown ngPreserveWhitespaces>
+          {{blogPost.fields.content5}}
+        </markdown>
+      </p>
+      <div class="immagini py-3">
+        <div class="row row-cols-1 row-cols-md-2 g-2 justify-content-center">
+          <div class="col">
+            <div class="card" style="border: 0;">
+              <img [src]="blogPost.fields.featuredImage11.fields.file.url" class="img-fluid">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="border: 0;">
+              <img [src]="blogPost.fields.featuredImage12.fields.file.url" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Conclusioni-->
+      <p class="fs-5 content py-3">
+        <markdown ngPreserveWhitespaces>
+          {{blogPost.fields.content6}}
+        </markdown>
+      </p>
     </div>
   </div>
 </div>
-
