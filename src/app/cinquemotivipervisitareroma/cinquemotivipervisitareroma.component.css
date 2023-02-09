@@ -1,0 +1,62 @@
+.container-fluid{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.img-fluid{
+  border-radius: 10px;
+}
+
+.titolo{
+  padding-top: 4%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.paragrafo-introduttivo{
+  padding-top: 4%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.storia-arte{
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.cibo{
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.chiese-basiliche{
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.paesaggi-naturali{
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.vita-notturna{
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.conclusioni{
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 5%;
+  padding-right: 5%;
+}

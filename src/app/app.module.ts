@@ -20,6 +20,8 @@ import { ConcertPostComponent } from './concert-post/concert-post.component';
 import { TouristinfopointComponent } from './touristinfopoint/touristinfopoint.component';
 
 import { FormsModule } from '@angular/forms';
+import { CinquemotivipervisitareromaComponent } from './cinquemotivipervisitareroma/cinquemotivipervisitareroma.component';
+import { DavedereComponent } from './davedere/davedere.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,8 @@ import { FormsModule } from '@angular/forms';
     ConcertComponent,
     ConcertPostComponent,
     TouristinfopointComponent,
+    CinquemotivipervisitareromaComponent,
+    DavedereComponent,
   ],
   imports: [
     BrowserModule,
