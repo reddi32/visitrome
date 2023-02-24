@@ -1,7 +1,7 @@
 .container-fluid.text-center {
     padding-top: 2.5%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 /*
 .img-fluid.head {
@@ -14,9 +14,9 @@
   padding-right: 5%;
 }
 
-.fs-5.content{
-  padding-left: 5%;
-  padding-right: 5%;
+.fs-5.content.py-3{
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .img-fluid {
