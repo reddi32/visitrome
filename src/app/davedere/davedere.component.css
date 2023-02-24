@@ -1,6 +1,10 @@
 .container-fluid{
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.link{
+  text-decoration: none;
 }
 
 .img-fluid{
@@ -15,47 +19,47 @@
 
 .paragrafo-introduttivo{
   padding-top: 4%;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .colosseo{
   padding-bottom: 4%;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .pantheon{
   padding-top: 4%;
   padding-bottom: 4%;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .san-pietro{
   padding-top: 4%;
   padding-bottom: 4%;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
-.paesaggi-naturali{
+.castel-santangelo{
   padding-top: 4%;
   padding-bottom: 4%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
-.vita-notturna{
+.fontana-di-trevi{
   padding-top: 4%;
   padding-bottom: 4%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
-.conclusioni{
+.gianicolo{
   padding-top: 4%;
   padding-bottom: 4%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
 }

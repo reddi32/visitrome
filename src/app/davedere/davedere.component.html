@@ -19,9 +19,12 @@
     </h3>
   </div>
 
+  <!--Colosseo-->
   <div class="colosseo">
     <p class="fs-5">
-      Visitare Roma senza visitare il Colosseo e i Fori Imperiali è semplicemente inaccettabile. Il Colosseo è uno dei
+      Visitare Roma senza visitare il
+      <a href="attractionpost/4tP9FJb27DtbC5CtIhmswV" class="link">Colosseo</a> e i
+      <a href="attractionpost/5vcsumHciaDJjYRylKVrwD" class="link">Fori Imperiali</a> è semplicemente inaccettabile. Il Colosseo è uno dei
       monumenti più iconici e importanti, simbolo della storia e della cultura dell'antica Roma e ogni anno ospita
       milioni
       di visitatori da ogni parte del mondo. <br>
@@ -29,105 +32,145 @@
       unica di apprendere di più sulla vita quotidiana e le tradizioni degli antichi Romani.
     </p>
   </div>
-
-  <div class="immagini py-3">
+  <div class="immagini">
     <div class="container text-center">
-      <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center py-3">
-        <div class="col">
+      <div class="row row-cols-1 row-cols-md-3 g-2 justify-content-center py-3">
+        <div class="col-lg-5" *ngFor="let Cosavedere of cosavedere">
           <div class="card" style="border: 0;">
-            <img src="../assets/Colosseo-cosa-vedere.jpg" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="card" style="border: 0;">
-            <img src="../assets/colosseo-due.jpg" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="card fori" style="border: 0;">
-            <img src="../assets/arena-colosseo.jpg" class="img-fluid">
-          </div>
-        </div>
-        <div class="col">
-          <div class="card" style="border: 0;">
-            <img src="../assets/Fori-Imperiali.jpg" class="img-fluid">
-          </div>
-        </div>
-        <div class="col">
-          <div class="card" style="border: 0;">
-            <img src="../assets/fori-interni-due.jpg" class="img-fluid">
-          </div>
-        </div>
-        <div class="col">
-          <div class="card" style="border: 0;">
-            <img src="../assets/Fori-interni.jpg" class="img-fluid">
+            <img src="../assets/{{Cosavedere.img}}" class="img-fluid">
           </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!--Pantheon-->
   <div class="pantheon">
     <h3 class="fw-bold">Il Pantheon</h3>
     <p class="fs-5">
-      Il Pantheon è un esempio perfetto di architettura antica mantenutasi fino ad oggi in tutto il suo splendore.
-      Originariamente fu costruito come tempio per gli dei dell'antica Roma e successivamente, con l'avvento del cattolicesimo,
+      Il
+      <a href="attractionpost/2CjqmzUIZW4QtuUAo8CPRv" class="link">Pantheon</a>
+      è un esempio perfetto di architettura antica mantenutasi fino ad oggi in tutto il suo splendore.
+      Originariamente fu costruito come tempio per gli dei dell'antica Roma e successivamente, con l'avvento del
+      cattolicesimo,
       convertito in una chiesa cattolica. Questa transizione ha reso il Pantheon un luogo pieno di storia e significato.
       La cupola del Pantheon è un esempio di design ingegnoso che ha influenzato l'architettura per molti secoli.
       La luce naturale che entra dall'oculus è un altro elemento architettonico che merita di essere ammirato e studiato
-      Visitando il Pantheon è possibile imparare molto sulla storia e la cultura dell'antica Roma, aumentarai così il tuo bagaglio
+      Visitando il Pantheon è possibile imparare molto sulla storia e la cultura dell'antica Roma, aumentarai così il
+      tuo bagaglio
       culturale e amplierai la tua conoscenza sul popolo romano.
     </p>
   </div>
-
-  <div class="immagini py-3">
-    <div class="row row-cols-1 row-cols-md-2 g-2 justify-content-center">
-      <div class="col">
-        <div class="card" style="border: 0;">
-          <img src="../assets/pantheon-due.jpg" class="img-fluid">
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="border: 0;">
-          <img src="../assets/cupola-pantheon.jpg" class="img-fluid">
+  <div class="immagini">
+    <div class="container text-center">
+      <div class="row row-cols-1 row-cols-md-3 g-2 justify-content-center py-3">
+        <div class="col-lg-5" *ngFor="let Pantheon of pantheon">
+          <div class="card" style="border: 0;">
+            <img src="../assets/{{Pantheon.img}}" class="img-fluid">
+          </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!--San Pietro-->
   <div class="san-pietro">
     <h3 class="fw-bold">San Pietro</h3>
     <p class="fs-5">
-      San Pietro è una destinazione imperdibile per chiunque visiti Roma, sia che si tratti di un viaggiatore religioso o
-      semplicemente interessato alla storia e all'arte. La Basilica di San Pietro progettata da Michelangelo, Bernini e Bramante,
+      <a href="attractionpost/7lVAyfTvtTsmMlhLF52wDT" class="link">San Pietro</a>
+      è una destinazione imperdibile per chiunque visiti Roma, sia che si tratti di un viaggiatore religioso
+      o
+      semplicemente interessato alla storia e all'arte. La Basilica di San Pietro progettata da Michelangelo, Bernini e
+      Bramante,
       venne costruita dove San Pietro fu crocifisso.
-      La Cupola di Michelangelo, alta più di 136 metri, offre una vista panoramica mozzafiato sulla città di Roma e sui dintorni.
+      La Cupola di Michelangelo, alta più di 136 metri, offre una vista panoramica mozzafiato sulla città di Roma e sui
+      dintorni.
     </p>
   </div>
-
-  <div class="immagini py-3">
-    <div class="row row-cols-1 row-cols-md-2 g-2 justify-content-center">
-      <div class="col">
-        <div class="card" style="border: 0;">
-          <img src="../assets/san-pietro.jpg" class="img-fluid">
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="border: 0;">
-          <img src="../assets/vaticano.jpg" class="img-fluid">
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="border: 0;">
-          <img src="../assets/giardini-vaticani.jpg" class="img-fluid">
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="border: 0;">
-          <img src="../assets/san-pietro-interno.jpg" class="img-fluid">
+  <div class="immagini">
+    <div class="container text-center">
+      <div class="row row-cols-1 row-cols-md-3 g-2 justify-content-center py-3">
+        <div class="col-lg-5" *ngFor="let SanPietro of sanPietro">
+          <div class="card" style="border: 0;">
+            <img src="../assets/{{SanPietro.img}}" class="img-fluid">
+          </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!--Castel Sant'Angelo-->
+  <div class="castel-santangelo">
+    <h3 class="fw-bold">Castel Sant'Angelo</h3>
+    <p class="fs-5">
+      <a href="attractionpost/3S4r0WmtId1ytIFCHmVJSK" class="link">Castel Sant'Angelo</a>
+      è una fortezza storica situata sulle rive del fiume Tevere a Roma, Italia, costruita come mausoleo
+      per l'imperatore romano Adriano e la sua famiglia. Oggi, i visitatori possono visitare il castello e scoprire la sua storia,
+      tra cui il Museo Nazionale di Castel Sant'Angelo, che presenta opere d'arte, armi e altri manufatti del passato del castello.
+      Uno dei momenti salienti di una visita al Castello Sant'Angelo sono le spettacolari vedute di Roma dalla terrazza del castello,
+      comprese splendide vedute della Basilica di San Pietro e del Vaticano. Questo luogo iconico è un'attrazione imperdibile che
+      offre uno sguardo sulla ricca storia di Roma.
+    </p>
+  </div>
+  <div class="immagini">
+    <div class="container text-center">
+      <div class="row row-cols-1 row-cols-md-3 g-2 justify-content-center py-3">
+        <div class="col-lg-5" *ngFor="let CastelSantAngelo of castelSantAngelo">
+          <div class="card" style="border: 0;">
+            <img src="../assets/{{CastelSantAngelo.img}}" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!--Fontana di Trevi-->
+    <div class="fontana-di-trevi">
+      <h3 class="fw-bold">Fontana di Trevi</h3>
+      <p class="fs-5">
+        La
+        <a href="attractionpost/4cHYSKi1Z0DgkdPqnVhcrm" class="link">Fontana di Trevi</a>
+        è una delle fontane più famose al mondo, situata nel cuore di Roma. È stata costruita nel 1762
+        da Nicola Salvi, ed è un trionfante esempio dello stile barocco. Secondo la leggenda, lanciare una moneta nella fontana
+        garantisce il ritorno a Roma. La Fontana di Trevi è una destinazione da non perdere a Roma, con la sua stupefacente
+        bellezza e ricca storia.
+        La Fontana di Trevi è stata anche protagonista di numerosi film, tra cui "La Dolce Vita" di Federico Fellini e
+        "Vacanze Romane" con Audrey Hepburn e Gregory Peck. La fontana è un'icona della cultura popolare, che rappresenta
+        l'amore, la bellezza e la fortuna.
+      </p>
+    </div>
+    <div class="immagini">
+      <div class="container text-center">
+        <div class="row row-cols-1 row-cols-md-3 g-2 justify-content-center py-3">
+          <div class="col-lg-5" *ngFor="let FontanaDiTrevi of fontanaDiTrevi">
+            <div class="card" style="border: 0;">
+              <img src="../assets/{{FontanaDiTrevi.img}}" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Gianicolo-->
+    <div class="fontana-di-trevi">
+      <h3 class="fw-bold">Gianicolo</h3>
+      <p class="fs-5">
+        Il Gianicolo è una collina a Roma che offre una vista spettacolare sulla città eterna. È stato teatro di importanti
+        eventi storici e ospita numerose attrazioni turistiche come il Faro di Roma e la Fontana dell'Acqua Paola. La vera
+        bellezza del Gianicolo è la vista panoramica sulla città, ideale per scattare foto mozzafiato e godersi il tramonto
+        sulla città. Si consiglia di visitarlo a piedi o con il bus turistico che ferma sulla cima. In sintesi, il Gianicolo
+        è uno dei luoghi più belli di Roma e merita di essere visitato.
+      </p>
+    </div>
+    <div class="immagini">
+      <div class="container text-center">
+        <div class="row row-cols-1 row-cols-md-3 g-2 justify-content-center py-3">
+          <div class="col-lg-5" *ngFor="let Gianicolo of gianicolo">
+            <div class="card" style="border: 0;">
+              <img src="../assets/{{Gianicolo.img}}" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 </div>
