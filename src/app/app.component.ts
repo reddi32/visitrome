@@ -16,6 +16,7 @@ export class AppComponent {
       {name: 'Vita notturna', route: '/vitanotturna'},
       {name: 'Roma in famiglia', route: '/romainfamiglia'},
       {name: 'Shopping', route: '/shopping'},
+      {name: 'Dove mangiare', route: '/dovemangiare'},
       {name: 'Blog', route: '/blog'}
     ]},
     {name: 'Calendario', subitems: [
@@ -39,7 +40,9 @@ export class AppComponent {
       {name: 'Vita notturna', route: '/vitanotturna'},
       {name: 'Roma in famiglia', route: '/romainfamiglia'},
       {name: 'Shopping', route: '/shopping'},
+      {name: 'Dove mangiare', route: '/dovemangiare'},
       {name: 'Blog', route: '/blog'}
+
     ]},
     {name: 'Calendario', subitems: [
       {name: 'Concerti', route: '/concert'},

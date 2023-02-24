@@ -13,6 +13,12 @@ import { ConcertPostComponent } from './concert-post/concert-post.component';
 import { TouristinfopointComponent } from './touristinfopoint/touristinfopoint.component';
 import { CinquemotivipervisitareromaComponent } from './cinquemotivipervisitareroma/cinquemotivipervisitareroma.component';
 import { DavedereComponent } from './davedere/davedere.component';
+import { DovemangiareComponent } from './dovemangiare/dovemangiare.component';
+import { VitanotturnaComponent } from './vitanotturna/vitanotturna.component';
+import { RomainfamigliaComponent } from './romainfamiglia/romainfamiglia.component';
+import { ShoppingComponent } from './shopping/shopping.component';
+import { MostreComponent } from './mostre/mostre.component';
+import { ItinerariComponent } from './itinerari/itinerari.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -27,7 +33,14 @@ const routes: Routes = [
   { path: 'concertpost/:id', component: ConcertPostComponent},
   { path: 'touristinfopoint', component: TouristinfopointComponent},
   { path: 'cinquemotivipervisitareroma', component: CinquemotivipervisitareromaComponent},
-  { path: 'davedere', component: DavedereComponent}
+  { path: 'davedere', component: DavedereComponent},
+  { path: 'dovemangiare', component: DovemangiareComponent},
+  { path: 'vitanotturna', component: VitanotturnaComponent},
+  { path: 'romainfamiglia', component: RomainfamigliaComponent},
+  { path: 'shopping', component: ShoppingComponent},
+  { path: 'mostre', component: MostreComponent},
+  { path: 'itinerari', component: ItinerariComponent}
+
 ];
 
 @NgModule({

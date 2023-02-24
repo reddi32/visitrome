@@ -22,6 +22,12 @@ import { TouristinfopointComponent } from './touristinfopoint/touristinfopoint.c
 import { FormsModule } from '@angular/forms';
 import { CinquemotivipervisitareromaComponent } from './cinquemotivipervisitareroma/cinquemotivipervisitareroma.component';
 import { DavedereComponent } from './davedere/davedere.component';
+import { DovemangiareComponent } from './dovemangiare/dovemangiare.component';
+import { VitanotturnaComponent } from './vitanotturna/vitanotturna.component';
+import { RomainfamigliaComponent } from './romainfamiglia/romainfamiglia.component';
+import { ShoppingComponent } from './shopping/shopping.component';
+import { MostreComponent } from './mostre/mostre.component';
+import { ItinerariComponent } from './itinerari/itinerari.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +45,12 @@ import { DavedereComponent } from './davedere/davedere.component';
     TouristinfopointComponent,
     CinquemotivipervisitareromaComponent,
     DavedereComponent,
+    DovemangiareComponent,
+    VitanotturnaComponent,
+    RomainfamigliaComponent,
+    ShoppingComponent,
+    MostreComponent,
+    ItinerariComponent,
   ],
   imports: [
     BrowserModule,
