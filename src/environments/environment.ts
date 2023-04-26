@@ -20,6 +20,24 @@ export const concert = {
   accessTokenThree: 'oKJYd7XEoBw_N4xvonF7YTjW1fbm09XDN8RjUYRNHNo',
 };
 
+export const nightlife = {
+  production: false,
+  spaceId: 'lf4ch2ywnya9',
+  accessTokenFour: '_fLFYawpAzhR9YA0v-ORURdSJHSTO_ufJRKIVh4jLnw',
+};
+
+export const romainfamiglia = {
+  production: false,
+  spaceId: 'qc4xaf67kq5w',
+  accessTokenFive: '3Y3h1ZE-ZHsnDpvTcwzqNdSikAe6KX4YFZCt9VFGFQw'
+}
+
+export const shopping = {
+  production: false,
+  spaceId: 'fjfrv9iyyzab',
+  accessTokenSix: 'r0uk7vlAj60xvlwIMgRmQvegEWZsVArmllendEVzAJ0',
+};
+
 
 /*
  * For easier debugging in development mode, you can import the following file
