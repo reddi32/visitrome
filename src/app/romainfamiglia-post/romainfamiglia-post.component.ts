@@ -4,24 +4,22 @@ import { Observable } from 'rxjs';
 import { ContentfulfiveService } from '../services/contentfulfive.service';
 
 @Component({
-  selector: 'app-romainfamiglia',
-  templateUrl: './romainfamiglia.component.html',
-  styleUrls: ['./romainfamiglia.component.css']
+  selector: 'app-romainfamiglia-post',
+  templateUrl: './romainfamiglia-post.component.html',
+  styleUrls: ['./romainfamiglia-post.component.css']
 })
-export class RomainfamigliaComponent {
+export class RomainfamigliaPostComponent {
 
   constructor(private contentfulfiveService: ContentfulfiveService, private route: ActivatedRoute) {}
 
-  romainfamigliaPosts$ : Observable<any> | undefined;
+  romainfamigliaPost$ : Observable<any> | undefined;
 
   ngOnInit(): void {
-    this.romainfamigliaPosts$ = this.contentfulfiveService.getAllEntriesRomaInFamiglia();
-
     this.route.params.subscribe(
       params => {
         const id = params['id'];
+        this.romainfamigliaPost$ = this.contentfulfiveService.getEntryByIdRomaInFamiglia(id);
       }
     )
   }
-
 }

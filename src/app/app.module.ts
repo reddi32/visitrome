@@ -28,6 +28,9 @@ import { RomainfamigliaComponent } from './romainfamiglia/romainfamiglia.compone
 import { ShoppingComponent } from './shopping/shopping.component';
 import { MostreComponent } from './mostre/mostre.component';
 import { ItinerariComponent } from './itinerari/itinerari.component';
+import { NightlifePostComponent } from './nightlife-post/nightlife-post.component';
+import { RomainfamigliaPostComponent } from './romainfamiglia-post/romainfamiglia-post.component';
+import { ShoppingPostComponent } from './shopping-post/shopping-post.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +54,9 @@ import { ItinerariComponent } from './itinerari/itinerari.component';
     ShoppingComponent,
     MostreComponent,
     ItinerariComponent,
+    NightlifePostComponent,
+    RomainfamigliaPostComponent,
+    ShoppingPostComponent,
   ],
   imports: [
     BrowserModule,

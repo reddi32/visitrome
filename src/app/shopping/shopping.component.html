@@ -1,1 +1,17 @@
-<p>shopping works!</p>
+<!--Definisci bene il layout della pagina-->
+<p>shopping works! Ora prendi spunto da visit brussels</p>
+
+<div class="container-fluid text-center">
+    <div class="container-fluid">
+      <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center attraction-post-container" *ngIf="shoppingPosts$ | async as shoppingPosts">
+        <div class="col" *ngFor="let shoppingPost of shoppingPosts.items">
+          <div class="container-fluid text-start">
+              <img [src]="shoppingPost.fields.featuredImage.fields.file.url" class="img-fluid">
+              <h2 class="fs-4 py-1">{{shoppingPost.fields.title}}</h2>
+              <p>{{shoppingPost.fields.summary}}</p>
+              <a [routerLink]="['/shoppingpost', shoppingPost.sys.id]" class="btn btn-outline-dark">Leggi di più</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

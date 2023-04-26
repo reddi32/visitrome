@@ -1,0 +1,35 @@
+<div class="container-fluid text-center">
+    <div class="col" *ngIf="romainfamigliaPost$ | async as romainfamigliaPost">
+    <div class="row-attraction-post-container">
+        <div class="container-fluid text-start">
+          <h2 class="py-3">{{romainfamigliaPost.fields.title}}</h2>
+            <img [src]="romainfamigliaPost.fields.featuredImage.fields.file.url" class="img-fluid py-3">
+            <p class="fs-5 content py-3">
+                <markdown ngPreserveWhitespaces>
+                  {{romainfamigliaPost.fields.content}}
+                </markdown>
+              </p>
+            <p class="fs-5 location py-1">
+              <markdown ngPreserveWhitespaces>
+                {{romainfamigliaPost.fields.location}}
+              </markdown>
+             </p>
+             <p class="fs-5 location py-1">
+              <markdown ngPreserveWhitespaces>
+                {{romainfamigliaPost.fields.email}}
+              </markdown>
+             </p>
+             <p class="fs-5 location py-1">
+              <markdown ngPreserveWhitespaces>
+                {{romainfamigliaPost.fields.website}}
+              </markdown>
+             </p>
+             <p class="fs-5 location py-1">
+              <markdown ngPreserveWhitespaces>
+                {{romainfamigliaPost.fields.phone}}
+              </markdown>
+             </p>
+        </div>
+    </div>
+</div>
+</div>

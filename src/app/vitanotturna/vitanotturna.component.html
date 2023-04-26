@@ -1,1 +1,15 @@
-<p>vitanotturna works!</p>
+<div class="container-fluid text-center">
+    <div class="container-fluid">
+      <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center attraction-post-container" *ngIf="nightlifePosts$ | async as nightlifePosts">
+        <div class="col" *ngFor="let nightlifePost of nightlifePosts.items">
+          <div class="container-fluid text-start">
+              <img [src]="nightlifePost.fields.featuredImage.fields.file.url" class="img-fluid">
+              <h2 class="fs-4 py-1">{{nightlifePost.fields.title}}</h2>
+              <p>{{nightlifePost.fields.summary}}</p>
+              <a [routerLink]="['/nightlifepost', nightlifePost.sys.id]" class="btn btn-outline-dark">Leggi di più</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -4,25 +4,22 @@ import { Observable } from 'rxjs';
 import { ContentfulfourthService } from '../services/contentfulfourth.service';
 
 @Component({
-  selector: 'app-vitanotturna',
-  templateUrl: './vitanotturna.component.html',
-  styleUrls: ['./vitanotturna.component.css']
+  selector: 'app-nightlife-post',
+  templateUrl: './nightlife-post.component.html',
+  styleUrls: ['./nightlife-post.component.css']
 })
-export class VitanotturnaComponent {
+export class NightlifePostComponent {
 
   constructor(private contentfulfourthService: ContentfulfourthService, private route: ActivatedRoute) {}
 
   nightlifePosts$ : Observable<any> | undefined;
 
   ngOnInit(): void {
-    this.nightlifePosts$ = this.contentfulfourthService.getAllEntriesNightlife();
-
     this.route.params.subscribe(
       params => {
         const id = params['id'];
+        this.nightlifePosts$ = this.contentfulfourthService.getEntryByIdNightlife(id);
       }
     )
   }
-
-
 }

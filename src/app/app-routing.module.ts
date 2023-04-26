@@ -19,6 +19,8 @@ import { RomainfamigliaComponent } from './romainfamiglia/romainfamiglia.compone
 import { ShoppingComponent } from './shopping/shopping.component';
 import { MostreComponent } from './mostre/mostre.component';
 import { ItinerariComponent } from './itinerari/itinerari.component';
+import { NightlifePostComponent } from './nightlife-post/nightlife-post.component';
+import { ShoppingPostComponent } from './shopping-post/shopping-post.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -39,7 +41,11 @@ const routes: Routes = [
   { path: 'romainfamiglia', component: RomainfamigliaComponent},
   { path: 'shopping', component: ShoppingComponent},
   { path: 'mostre', component: MostreComponent},
-  { path: 'itinerari', component: ItinerariComponent}
+  { path: 'itinerari', component: ItinerariComponent},
+  { path: 'vitanotturna', component: VitanotturnaComponent},
+  { path: 'nightlifepost', component: NightlifePostComponent},
+  { path: 'shopping', component: ShoppingComponent},
+  { path: 'shoppingpost', component: ShoppingPostComponent}
 
 ];
 

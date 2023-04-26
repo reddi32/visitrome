@@ -4,22 +4,23 @@ import { Observable } from 'rxjs';
 import { ContentfulsixService } from '../services/contentfulsix.service';
 
 @Component({
-  selector: 'app-shopping',
-  templateUrl: './shopping.component.html',
-  styleUrls: ['./shopping.component.css']
+  selector: 'app-shopping-post',
+  templateUrl: './shopping-post.component.html',
+  styleUrls: ['./shopping-post.component.css']
 })
-export class ShoppingComponent {
+export class ShoppingPostComponent {
 
-  constructor(private contentfulsixservice: ContentfulsixService, private route: ActivatedRoute) {}
+  constructor(private contentfulsixService: ContentfulsixService, private route: ActivatedRoute) {}
 
   shoppingPosts$ : Observable<any> | undefined;
 
   ngOnInit(): void {
-    this.shoppingPosts$ = this.contentfulsixservice.getAllEntriesShopping();  
     this.route.params.subscribe(
       params => {
         const id = params['id'];
+        this.shoppingPosts$ = this.contentfulsixService.getEntryByShopping(id);
       }
     )
   }
+
 }
