@@ -1,0 +1,9 @@
+.container-fluid-hero {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.container-fluid-test.text-center.py-5{
+    padding-left: 20%;
+    padding-right: 20%;
+}
