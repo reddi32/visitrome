@@ -1,18 +1,14 @@
-<div class="container-fluid px-4 py-5" id="custom-cards">
-    <div class="row row-cols-1 row-cols-lg-4 justify-content-center g-4 py-5">
-        <div class="container-fluid post">
-            <div class="col" *ngIf="blogPosts$ | async as blogPosts">
-                <div class="row blog-posts-container" *ngFor="let blogPost of blogPosts.items">
-                    <div class="card card-cover rounded-4 border-0">
-                        <div class="d-flex flex-column h-100 p-2 text-shadow-1">
-                            <img [src]="blogPost.fields.featuredImage.fields.file.url">
-                            <h2>{{blogPost.fields.title}}</h2>
-                            <p class="summary">{{blogPost.fields.summary}}</p>
-                            <a [routerLink]="['/blogpost', blogPost.sys.id]" class="btn btn-outline-dark">Leggi di più</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div class="container-fluid text-center">
+    <div class="container-fluid">
+      <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center attraction-post-container" *ngIf="blogPosts$ | async as blogPosts">
+        <div class="col" *ngFor="let blogPost of blogPosts.items">
+          <div class="container-fluid text-start">
+              <img [src]="blogPost.fields.featuredImage.fields.file.url" class="img-fluid">
+              <h2 class="fs-4 py-1">{{blogPost.fields.title}}</h2>
+              <p>{{blogPost.fields.summary}}</p>
+              <a [routerLink]="['/blogPost', blogPost.sys.id]" class="btn btn-outline-dark">Leggi di più</a>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  </div>

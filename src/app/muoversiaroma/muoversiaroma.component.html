@@ -1,78 +1,96 @@
-<!--Heo image-->
-<img src="../assets/pianificaviaggioHero.png" class="img-fluid align-items-lg-center shadow" alt="muoversi a roma">
-
 <div class="container-fluid text-center trasporto pubblico py-5">
-  <!--Trasporto pubblico-->
-  <h1 class="fs-1 text-center py-3">Trasporto pubblico</h1>
-  <p class="text-center">Metro, tram e autobus. Il trasporto pubblico a Roma viene gestito da Atac, RomaTPL </p>
-  <div class="text-center">
-    <img src="../assets/tram.gif" alt="atac" class="img-fluid" width="150px">
-  </div>
 
-  <p class="text-start">
-    <strong>Tabella orari</strong>: 05:00 - mezzanotte - consulta sempre la tabella degli orari mostrata in fermata.
-  </p>
-  <!--Dove comprare il biglietto per autobus e metro-->
-  <p class="text-start">
-    <strong>Dove comprare il tuo biglietto</strong>: si possono acquistare nelle biglietterie della metro, in edicola
-    e nei tabaccai. Nelle stazioni della metro è possibile acquistare il proprio biglietto anche direttamente al tornello grazie ai pagamenti
-    contactless. È possibile utilizzare tutti i dispositivi compatibili con Google Pay o Apple Pay. Prossimamente sarà possibile anche su
-    autobus e tram.
-  </p>
+  <!--Heo image-->
+  <img src="../assets/pianificaviaggioHero.png" class="img-fluid align-items-lg-center shadow" alt="muoversi a roma">
+  <div class="container-fluid">
+    <!--Trasporto pubblico-->
+    <h1 class="fs-1 text-center py-3">Trasporto pubblico</h1>
+    <p class="text-center">Metro, tram e autobus. Il trasporto pubblico a Roma viene gestito da Atac, RomaTPL </p>
+    <div class="text-center">
+      <img src="../assets/tram.gif" alt="atac" class="img-fluid" width="150px">
+    </div>
 
-  <!--Linee aeroportuali-->
-  <p class="text-start">
-    <strong>Linee aeroportuali</strong>: l'aeroporto di Fiumicino FCO dista 32 km dal centro di Roma. Al suo interno, è presente una stazione
-    ferroviaria da cui partono la linea no-stop <a class="leonardoexpress" href="https://www.trenitalia.com/it/treni_regionali/lazio/leonardo_express.html">Leonardo Express</a> e
-    la linea FL1. La linea Leonardo Express è una linea no-stop, collega l'aeroporto direttamente con la stazione Roma Termini, con partenze da e verso Fiumicino FCO ogni 15 minuti.
-    Da Fiumicino FCO il servizio è attivo dalle ore 06:23 alle ore 23:23. Da Roma Termini il servizio è attivo dalle pre 05:35 alle ore 22:35.
-    <br>
-    Dall'aeroporto di Ciampino sono disponibili la linea bus 720 che lo collega con la stazione Laurentina della metro B e la linea bus 520 che lo collega con la stazione Cinecittà
-    della metro A.
-    <br>
-    La stazione del treno più vicina si trova dentro la città di Ciampino, raggiungibile con bus Cotral, da cui partono i treni regionali verso la stazione Roma Termini.
-  </p>
+    <p class="text-start">
+      <strong>Tabella orari</strong>: 05:00 - mezzanotte - consulta sempre la tabella degli orari mostrata in fermata.
+    </p>
+    <!--Dove comprare il biglietto per autobus e metro-->
+    <p class="text-start">
+      <strong>Dove comprare il tuo biglietto</strong>: si possono acquistare nelle biglietterie della metro, in edicola
+      e nei tabaccai. Nelle stazioni della metro è possibile acquistare il proprio biglietto anche direttamente al
+      tornello grazie ai pagamenti
+      contactless. È possibile utilizzare tutti i dispositivi compatibili con Google Pay o Apple Pay. Prossimamente sarà
+      possibile anche su
+      autobus e tram.
+    </p>
 
-  <!--Costo dei biglietti-->
-  <p class="text-start prezzo biglietti"><strong>Prezzo biglietti</strong></p>
-  <table class="table table-hover text-start">
-    <thead>
-      <tr>
-        <th>Tipologia</th>
-        <th>Prezzo</th>
-      </tr>
-      <tr *ngFor="let item of tickets">
-        <td>{{item.col1}}</td>
-        <td>{{item.col2}}</td>
-      </tr>
-      <tr>
-        <td>Biglietto Leonardo Express</td>
-        <td><a class="leonardoexpress2" href="https://www.trenitalia.com/it/treni_regionali/lazio/leonardo_express.html">Vedi sito ufficiale</a></td>
-      </tr>
-    </thead>
-  </table>
+    <!--Linee aeroportuali-->
+    <p class="text-start">
+      <strong>Linee aeroportuali</strong>: l'aeroporto di Fiumicino FCO dista 32 km dal centro di Roma. Al suo interno,
+      è
+      presente una stazione
+      ferroviaria da cui partono la linea no-stop <a class="leonardoexpress"
+        href="https://www.trenitalia.com/it/treni_regionali/lazio/leonardo_express.html">Leonardo Express</a> e
+      la linea FL1. La linea Leonardo Express è una linea no-stop, collega l'aeroporto direttamente con la stazione Roma
+      Termini, con partenze da e verso Fiumicino FCO ogni 15 minuti.
+      Da Fiumicino FCO il servizio è attivo dalle ore 06:23 alle ore 23:23. Da Roma Termini il servizio è attivo dalle
+      pre
+      05:35 alle ore 22:35.
+      <br>
+      Dall'aeroporto di Ciampino sono disponibili la linea bus 720 che lo collega con la stazione Laurentina della metro
+      B
+      e la linea bus 520 che lo collega con la stazione Cinecittà
+      della metro A.
+      <br>
+      La stazione del treno più vicina si trova dentro la città di Ciampino, raggiungibile con bus Cotral, da cui
+      partono
+      i treni regionali verso la stazione Roma Termini.
+    </p>
 
-  <!--Taxi-->
-  <h1 class="fs-1 text-center py-3">Prendi un taxi e gira per la città</h1>
-  <p class="text-start">Anche se il trasporto pubblico è più comodo per spostarsi in città, in alcune occasioni è più semplice prendere un taxi. Sei di fretta, troppi bagagli oppure non ti va di
-    prendere un autobus o una metro affollata? Ecco cosa devi sapere sui taxi a Roma.
-  </p>
-  <img src="../assets/taxi.gif" alt="atac" class="img-fluid" width="125px">
+    <!--Costo dei biglietti-->
+    <p class="text-start prezzo biglietti"><strong>Prezzo biglietti</strong></p>
+    <table class="table table-hover text-start">
+      <thead>
+        <tr>
+          <th>Tipologia</th>
+          <th>Prezzo</th>
+        </tr>
+        <tr *ngFor="let item of tickets">
+          <td>{{item.col1}}</td>
+          <td>{{item.col2}}</td>
+        </tr>
+        <tr>
+          <td>Biglietto Leonardo Express</td>
+          <td><a class="leonardoexpress2"
+              href="https://www.trenitalia.com/it/treni_regionali/lazio/leonardo_express.html">Vedi sito ufficiale</a>
+          </td>
+        </tr>
+      </thead>
+    </table>
 
-  <table class="table table-hover text-start">
-    <thead>
-      <tr>
-        <th>Tipologia</th>
-        <th>Prezzo</th>
-      </tr>
-      <tr *ngFor="let item of taxi">
-        <td>{{item.col1}}</td>
-        <td>{{item.col2}}</td>
-      </tr>
-    </thead>
-  </table>
+    <!--Taxi-->
+    <h1 class="fs-1 text-center py-3">Prendi un taxi e gira per la città</h1>
+    <p class="text-start">Anche se il trasporto pubblico è più comodo per spostarsi in città, in alcune occasioni è più
+      semplice prendere un taxi. Sei di fretta, troppi bagagli oppure non ti va di
+      prendere un autobus o una metro affollata? Ecco cosa devi sapere sui taxi a Roma.
+    </p>
+    <img src="../assets/taxi.gif" alt="atac" class="img-fluid" width="125px">
 
-  <p class="text-start">Le tariffe dagli aeroporti sono stabilite dalla legge: 48€ da Fiumicino e 30€ da Ciampino, fino in centro. Tali prezzi sono validi per quattro passeggeri con i rispettivi bagagli.</p>
+    <table class="table table-hover text-start">
+      <thead>
+        <tr>
+          <th>Tipologia</th>
+          <th>Prezzo</th>
+        </tr>
+        <tr *ngFor="let item of taxi">
+          <td>{{item.col1}}</td>
+          <td>{{item.col2}}</td>
+        </tr>
+      </thead>
+    </table>
+
+    <p class="text-start">Le tariffe dagli aeroporti sono stabilite dalla legge: 48€ da Fiumicino e 30€ da Ciampino,
+      fino
+      in centro. Tali prezzi sono validi per quattro passeggeri con i rispettivi bagagli.</p>
     <p class="text-start prezzo biglietti"><strong>Compagnie di taxi</strong></p>
     <table class="table table-hover text-start">
       <thead>
@@ -83,20 +101,26 @@
         <tr>
           <td>Radio Taxi: 06-3570</td>
           <td><a class="taxi px-0" href="https://www.3570.it/">www.3570.it</a></td>
-          <td><a class="btn btn-outline-link" href="https://play.google.com/store/apps/details?id=it.ud.microtek.ITTaxi&hl=it">Play Store</a></td>
+          <td><a class="btn btn-outline-link"
+              href="https://play.google.com/store/apps/details?id=it.ud.microtek.ITTaxi&hl=it">Play Store</a></td>
           <a class="btn btn-outline-link" href="https://itunes.apple.com/it/app/it-taxi/id527559443?mt=8">App Store</a>
         </tr>
         <tr>
           <td>Pronto Taxi: 06-6645</td>
           <td><a class="taxi px-0" href="https://6645.it/">www.6645.it</a></td>
-          <td><a class="btn btn-outline-link" href="https://play.google.com/store/apps/details?id=it.ud.microtek.ITTaxi&hl=it">Play Store</a></td>
-          <td><a class="btn btn-outline-link" href="https://apps.apple.com/it/app/intaxi-il-tuo-taxi/id1258614882">App Store</a></td>
+          <td><a class="btn btn-outline-link"
+              href="https://play.google.com/store/apps/details?id=it.ud.microtek.ITTaxi&hl=it">Play Store</a></td>
+          <td><a class="btn btn-outline-link" href="https://apps.apple.com/it/app/intaxi-il-tuo-taxi/id1258614882">App
+              Store</a></td>
         </tr>
         <tr>
           <td>Samarcanda: 06-5551</td>
           <td><a class="taxi px-0" href="https://065551.it/">www.065551.it</a></td>
-          <td><a class="btn btn-outline-link" href="https://play.google.com/store/apps/details?id=it.wetaxi.samarcandaplus&hl=it&gl=US">Play Store</a></td>
-          <td><a class="btn btn-outline-link" href="https://apps.apple.com/us/app/samarcanda-plus/id1636444856">App Store</a></td>
+          <td><a class="btn btn-outline-link"
+              href="https://play.google.com/store/apps/details?id=it.wetaxi.samarcandaplus&hl=it&gl=US">Play Store</a>
+          </td>
+          <td><a class="btn btn-outline-link" href="https://apps.apple.com/us/app/samarcanda-plus/id1636444856">App
+              Store</a></td>
         </tr>
         <tr>
           <td>Altre compagnie: 06-4994, 06-4157</td>
@@ -104,92 +128,119 @@
       </thead>
     </table>
 
-  <!--Car Sharing-->
-  <h1 class="fs-1 text-center py-3">Car Sharing</h1>
-  <p class="">Qui troverai altri mezzi di trasporto e servizi che puoi utilizzare per attraversare la città.</p>
-  <p class="text-start">Qui a Roma abbiamo diversi servizi di car sharing, scegli quello che preferisci e scendi in strada e cerca l'auto disponibile più vicino a te! Prenota e sali a bordo per spostarti ovunque in città. A fine noleggio potrai lasciare la tua
-    vettura o il tuo scooter dove preferisci purché tu sia all'interno dell'area di copertura, non preoccuparti di pagare il parcheggio, per te le strisce blu sono gratuite. Abbiamo pensato anche al tuo shopping. Nei maggiori centri commerciali infatti troverai
-    un'area dedicata dove lasciare l'auto al tuo arrivo e noleggiarne un'altra quando avrai terminato le tue spese.
-  </p>
-  <img src="../assets/car.gif" alt="car sharing" width="125">
-  <!--Servizi di car sharing-->
-  <p class="text-start prezzo biglietti"><strong>Servizi disponibili</strong></p>
-  <ul class="list-group-dotted text-start">
-    <li class="list-group-dotted py-1"><a class="carsharing" href="https://romamobilita.it/it/carsharing">Car Sharing Roma</a></li>
-    <li class="list-group-dotted py-1"><a class="carsharing" href="https://www.share-now.com/it/it/">Share Now</a></li>
-    <li class="list-group-dotted py-1"><a class="carsharing" href="https://enjoy.eni.com/it/roma/home">Enjoy</a></li>
-    <li class="list-group-dotted py-1"><a class="carsharing" href="https://e-go.drivalia.com/it">E-Go</a></li>
-    <li class="list-group-dotted py-1"><a class="carsharing" href="https://cooltra.com/it/noleggio-al-minuto-ora/">Cooltra</a></li>
-    <li class="list-group-dotted py-1"><a class="carsharing" href="https://www.zigzagsharing.com/it/">Zig Zag</a></li>
-    <li class="list-group-dotted py-1"><a class="carsharing" href="https://movilidad.acciona.com/it_IT/roma/">Acciona</a></li>
- </ul>
+    <!--Car Sharing-->
+    <h1 class="fs-1 text-center py-3">Car Sharing</h1>
+    <p class="">Qui troverai altri mezzi di trasporto e servizi che puoi utilizzare per attraversare la città.</p>
+    <p class="text-start">Qui a Roma abbiamo diversi servizi di car sharing, scegli quello che preferisci e scendi in
+      strada e cerca l'auto disponibile più vicino a te! Prenota e sali a bordo per spostarti ovunque in città. A fine
+      noleggio potrai lasciare la tua
+      vettura o il tuo scooter dove preferisci purché tu sia all'interno dell'area di copertura, non preoccuparti di
+      pagare il parcheggio, per te le strisce blu sono gratuite. Abbiamo pensato anche al tuo shopping. Nei maggiori
+      centri commerciali infatti troverai
+      un'area dedicata dove lasciare l'auto al tuo arrivo e noleggiarne un'altra quando avrai terminato le tue spese.
+    </p>
+    <img src="../assets/car.gif" alt="car sharing" width="125">
+    <!--Servizi di car sharing-->
+    <p class="text-start prezzo biglietti"><strong>Servizi disponibili</strong></p>
+    <ul class="list-group-dotted text-start">
+      <li class="list-group-dotted py-1"><a class="carsharing" href="https://romamobilita.it/it/carsharing">Car Sharing
+          Roma</a></li>
+      <li class="list-group-dotted py-1"><a class="carsharing" href="https://www.share-now.com/it/it/">Share Now</a>
+      </li>
+      <li class="list-group-dotted py-1"><a class="carsharing" href="https://enjoy.eni.com/it/roma/home">Enjoy</a></li>
+      <li class="list-group-dotted py-1"><a class="carsharing" href="https://e-go.drivalia.com/it">E-Go</a></li>
+      <li class="list-group-dotted py-1"><a class="carsharing"
+          href="https://cooltra.com/it/noleggio-al-minuto-ora/">Cooltra</a></li>
+      <li class="list-group-dotted py-1"><a class="carsharing" href="https://www.zigzagsharing.com/it/">Zig Zag</a></li>
+      <li class="list-group-dotted py-1"><a class="carsharing"
+          href="https://movilidad.acciona.com/it_IT/roma/">Acciona</a></li>
+    </ul>
 
-  <!--Biciclette e monopattini-->
-  <h1 class="fs-1 text-center py-3">Biciclette e Monopattini</h1>
-  <p class="text-start">Se vuoi esplorare e vivere le varie atmosfere uniche di Roma in modo completamente indipendente, una bicicletta o un monopattino sono il mezzo ideale per viaggiare.
-    Chiunque può salire in sella alla propria bicicletta e partire alla scoperta di Roma, la sua cultura e i suoi tesori storici. Se vuoi spostarti per La capitale ma non vuoi
-    prendere i mezzi pubblici o devi fare semplicemente un viaggio breve, troverai per le strade del centro storico molti mezzi a tua disposizione. Diverse aziende hanno preso il
-    via qui a Roma.
-  </p>
-  <div class="row row-cols row-cols-md-3 g-3 justify-content-center">
-    <div class="col-sm">
-      <img src="../assets/cycling.gif" alt="biciclette elettriche" width="125">
-      <img src="../assets/scooter.gif" alt="monopattini elettrici" width="125">
+    <!--Biciclette e monopattini-->
+    <h1 class="fs-1 text-center py-3">Biciclette e Monopattini</h1>
+    <p class="text-start">Se vuoi esplorare e vivere le varie atmosfere uniche di Roma in modo completamente
+      indipendente,
+      una bicicletta o un monopattino sono il mezzo ideale per viaggiare.
+      Chiunque può salire in sella alla propria bicicletta e partire alla scoperta di Roma, la sua cultura e i suoi
+      tesori
+      storici. Se vuoi spostarti per La capitale ma non vuoi
+      prendere i mezzi pubblici o devi fare semplicemente un viaggio breve, troverai per le strade del centro storico
+      molti mezzi a tua disposizione. Diverse aziende hanno preso il
+      via qui a Roma.
+    </p>
+    <div class="row row-cols row-cols-md-3 g-3 justify-content-center">
+      <div class="col-sm">
+        <img src="../assets/cycling.gif" alt="biciclette elettriche" width="125">
+        <img src="../assets/scooter.gif" alt="monopattini elettrici" width="125">
+      </div>
+    </div>
+    <div class="container py-4 text-center">
+      <p class="text-start prezzo biglietti"><strong>Servizi disponibili</strong></p>
+      <ul class="list-group-dotted text-start">
+        <li class="list-group-dotted py-1"><a class="carsharing" href="https://www.li.me/it-it/vehicles">Lime</a></li>
+        <li class="list-group-dotted py-1"><a class="carsharing"
+            href="https://ridedott.com/it/ride-with-us/roma-2/">Dott</a></li>
+        <li class="list-group-dotted py-1"><a class="carsharing" href="https://www.tier.app/">Tier</a></li>
+        <li class="list-group-dotted py-1"><a class="carsharing" href="https://helbiz.com/">Helbiz</a></li>
+        <li class="list-group-dotted py-1"><a class="carsharing" href="https://www.bird.co/">Bird</a></li>
+        <li class="list-group-dotted py-1"><a class="carsharing"
+            href="https://new-home.superpedestrian.com/link-e-scooter/">Link</a></li>
+        <li class="list-group-dotted py-1"><a class="carsharing"
+            href="https://movilidad.acciona.com/it_IT/roma/">Acciona</a></li>
+      </ul>
     </div>
   </div>
-  <div class="container py-4 text-center">
-        <p class="text-start prezzo biglietti"><strong>Servizi disponibili</strong></p>
-        <ul class="list-group-dotted text-start">
-          <li class="list-group-dotted py-1"><a class="carsharing" href="https://www.li.me/it-it/vehicles">Lime</a></li>
-          <li class="list-group-dotted py-1"><a class="carsharing" href="https://ridedott.com/it/ride-with-us/roma-2/">Dott</a></li>
-          <li class="list-group-dotted py-1"><a class="carsharing" href="https://www.tier.app/">Tier</a></li>
-          <li class="list-group-dotted py-1"><a class="carsharing" href="https://helbiz.com/">Helbiz</a></li>
-          <li class="list-group-dotted py-1"><a class="carsharing" href="https://www.bird.co/">Bird</a></li>
-          <li class="list-group-dotted py-1"><a class="carsharing" href="https://new-home.superpedestrian.com/link-e-scooter/">Link</a></li>
-          <li class="list-group-dotted py-1"><a class="carsharing" href="https://movilidad.acciona.com/it_IT/roma/">Acciona</a></li>
-       </ul>
-  </div>
 
-</div>
 
   <!--Roma Pass-->
-  <div class="container col-xxl-8 py-4 justify-content-center">
+  <div class="container col-md-8 py-4 justify-content-center">
     <div class="row flex-lg-row align-items-center g-5">
       <div class="col-lg-6">
-        <h1 class="fs-1 lh-1 mb-3">Roma Pass</h1>
+        <h1 class="fs-1 lh-1 mb-3 text-start">Roma Pass</h1>
         <br>
         <ul class="list-group">
           <li class="list-group">
-            <label class="form-check-label">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bus-front" viewBox="0 0 16 16">
-                <path d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2H7Zm1-6c-1.876 0-3.426.109-4.552.226A.5.5 0 0 0 3 4.723v3.554a.5.5 0 0 0 .448.497C4.574 8.891 6.124 9 8 9c1.876 0 3.426-.109 4.552-.226A.5.5 0 0 0 13 8.277V4.723a.5.5 0 0 0-.448-.497A44.303 44.303 0 0 0 8 4Zm0-1c-1.837 0-3.353.107-4.448.22a.5.5 0 1 1-.104-.994A44.304 44.304 0 0 1 8 2c1.876 0 3.426.109 4.552.226a.5.5 0 1 1-.104.994A43.306 43.306 0 0 0 8 3Z"/>
-                <path d="M15 8a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1V2.64c0-1.188-.845-2.232-2.064-2.372A43.61 43.61 0 0 0 8 0C5.9 0 4.208.136 3.064.268 1.845.408 1 1.452 1 2.64V4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v3.5c0 .818.393 1.544 1 2v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5V14h6v1.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2c.607-.456 1-1.182 1-2V8ZM8 1c2.056 0 3.71.134 4.822.261.676.078 1.178.66 1.178 1.379v8.86a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 11.5V2.64c0-.72.502-1.301 1.178-1.379A42.611 42.611 0 0 1 8 1Z"/>
+            <label class="form-check-label text-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bus-front"
+                viewBox="0 0 16 16">
+                <path
+                  d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2H7Zm1-6c-1.876 0-3.426.109-4.552.226A.5.5 0 0 0 3 4.723v3.554a.5.5 0 0 0 .448.497C4.574 8.891 6.124 9 8 9c1.876 0 3.426-.109 4.552-.226A.5.5 0 0 0 13 8.277V4.723a.5.5 0 0 0-.448-.497A44.303 44.303 0 0 0 8 4Zm0-1c-1.837 0-3.353.107-4.448.22a.5.5 0 1 1-.104-.994A44.304 44.304 0 0 1 8 2c1.876 0 3.426.109 4.552.226a.5.5 0 1 1-.104.994A43.306 43.306 0 0 0 8 3Z" />
+                <path
+                  d="M15 8a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1V2.64c0-1.188-.845-2.232-2.064-2.372A43.61 43.61 0 0 0 8 0C5.9 0 4.208.136 3.064.268 1.845.408 1 1.452 1 2.64V4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v3.5c0 .818.393 1.544 1 2v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5V14h6v1.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2c.607-.456 1-1.182 1-2V8ZM8 1c2.056 0 3.71.134 4.822.261.676.078 1.178.66 1.178 1.379v8.86a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 11.5V2.64c0-.72.502-1.301 1.178-1.379A42.611 42.611 0 0 1 8 1Z" />
               </svg>
               Accesso gratuito e illimitato su tutto il trasporto pubblico urbano.
             </label>
           </li>
           <br>
           <li class="list-group">
-            <label class="form-check-label">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-percent" viewBox="0 0 16 16">
-                <path d="M13.442 2.558a.625.625 0 0 1 0 .884l-10 10a.625.625 0 1 1-.884-.884l10-10a.625.625 0 0 1 .884 0zM4.5 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm7 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+            <label class="form-check-label text-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-percent"
+                viewBox="0 0 16 16">
+                <path
+                  d="M13.442 2.558a.625.625 0 0 1 0 .884l-10 10a.625.625 0 1 1-.884-.884l10-10a.625.625 0 0 1 .884 0zM4.5 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm7 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
               </svg>
-              Uno o due musei o siti archeologici gratuiti, sconti e prezzi speciali per mostre, attrazioni e servizi turistici.
+              Uno o due musei o siti archeologici gratuiti, sconti e prezzi speciali per mostre, attrazioni e servizi
+              turistici.
             </label>
           </li>
           <br>
           <li class="list-group">
-            <label class="form-check-label">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-postcard" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2ZM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4Zm7.5.5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7ZM2 5.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5ZM10.5 5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3ZM13 8h-2V6h2v2Z"/>
+            <label class="form-check-label text-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-postcard"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2ZM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4Zm7.5.5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7ZM2 5.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5ZM10.5 5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3ZM13 8h-2V6h2v2Z" />
               </svg>
-              Roma Pass è nominativa, vale 72 ore o 48 ore che scattano dal primo accesso al museo o sito archeologico, oppure al primo viaggio su un mezzo pubblico.
+              Roma Pass è nominativa, vale 72 ore o 48 ore che scattano dal primo accesso al museo o sito archeologico,
+              oppure al primo viaggio su un mezzo pubblico.
             </label>
           </li>
           <br>
         </ul>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-outline-primary btn-lg px-4 me-md-2" routerLink="/romapass">Di più su Roma Pass</button>
+          <button type="button" class="btn btn-outline-primary btn-lg px-4 me-md-2" routerLink="/romapass">Di più su
+            Roma
+            Pass</button>
         </div>
       </div>
       <div class="col-lg-4 offset-lg-1 p-0">
@@ -197,3 +248,4 @@
       </div>
     </div>
   </div>
+</div>

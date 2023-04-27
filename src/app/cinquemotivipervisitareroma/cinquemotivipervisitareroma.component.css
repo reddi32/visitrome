@@ -1,6 +1,7 @@
 .container-fluid{
-  padding-left: 10%;
-  padding-right: 10%;
+  margin: 0 auto;
+  padding: 1% 10%;
+  box-sizing: border-box;
 }
 
 .img-fluid{
@@ -8,55 +9,45 @@
 }
 
 .titolo{
-  padding-top: 4%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 4% 5%;
 }
 
 .paragrafo-introduttivo{
-  padding-top: 4%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 0 5%;
 }
 
 .storia-arte{
-  padding-top: 4%;
-  padding-bottom: 4%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 1% 5% 1% 5%;
 }
 
 .cibo{
-  padding-top: 4%;
-  padding-bottom: 4%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 1% 5% 1% 5%;
 }
 
 .chiese-basiliche{
-  padding-top: 4%;
-  padding-bottom: 4%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 1% 5% 1% 5%;
 }
 
 .paesaggi-naturali{
-  padding-top: 4%;
-  padding-bottom: 4%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 1% 5% 1% 5%;
 }
 
 .vita-notturna{
-  padding-top: 4%;
-  padding-bottom: 4%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 1% 5% 1% 5%;
 }
 
 .conclusioni{
-  padding-top: 4%;
-  padding-bottom: 4%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 1% 5% 1% 5%;
+}
+
+@media (max-width: 820px) {
+  .container-fluid {
+      padding: 0 7.5%;
+  }
+}
+
+@media (max-width: 767px) {
+  .container-fluid {
+      padding: 0;
+  }
 }
