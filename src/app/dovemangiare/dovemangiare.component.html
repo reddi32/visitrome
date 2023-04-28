@@ -1,1 +1,14 @@
-<p>dovemangiare works!</p>
+<div class="container-fluid text-center">
+    <div class="container-fluid">
+      <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center attraction-post-container" *ngIf="dovemangiarePosts$ | async as dovemangiarePosts">
+        <div class="col" *ngFor="let dovemangiarePosts$ of dovemangiarePosts.items">
+          <div class="container-fluid text-start">
+              <img [src]="dovemangiarePosts.fields.featuredImage.fields.file.url" class="img-fluid">
+              <h2 class="fs-4 py-1">{{dovemangiarePosts.fields.title}}</h2>
+              <p>{{dovemangiarePosts.fields.summary}}</p>
+              <a [routerLink]="['/dovemangiarepost', dovemangiarePosts.sys.id]" class="btn btn-outline-dark">Leggi di più</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

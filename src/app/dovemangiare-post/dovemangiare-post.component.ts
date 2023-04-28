@@ -3,23 +3,23 @@ import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
 import { ContentfulsevenService } from '../services/contentfulseven.service';
 
+
 @Component({
-  selector: 'app-dovemangiare',
-  templateUrl: './dovemangiare.component.html',
-  styleUrls: ['./dovemangiare.component.css']
+  selector: 'app-dovemangiare-post',
+  templateUrl: './dovemangiare-post.component.html',
+  styleUrls: ['./dovemangiare-post.component.css']
 })
-export class DovemangiareComponent {
+export class DovemangiarePostComponent {
 
   constructor(private contentfulsevenService: ContentfulsevenService, private route: ActivatedRoute) {}
 
-  dovemangiarePosts$ : Observable<any> | undefined;
+  dovemangiarePost$ : Observable<any> | undefined;
 
   ngOnInit(): void {
-    this.dovemangiarePosts$ = this.contentfulsevenService.getAllEntriesDoveMangiare();
-
     this.route.params.subscribe(
       params => {
         const id = params['id'];
+        this.dovemangiarePost$ = this.contentfulsevenService.getEntryByDoveMangiare(id);
       }
     )
   }

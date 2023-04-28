@@ -4,22 +4,21 @@ import { Observable } from 'rxjs';
 import { ContentfuleightService } from '../services/contentfuleight.service';
 
 @Component({
-  selector: 'app-mostre',
-  templateUrl: './mostre.component.html',
-  styleUrls: ['./mostre.component.css']
+  selector: 'app-mostre-post',
+  templateUrl: './mostre-post.component.html',
+  styleUrls: ['./mostre-post.component.css']
 })
-export class MostreComponent {
+export class MostrePostComponent {
 
-  constructor(private contentfuleighService: ContentfuleightService, private route: ActivatedRoute) {}
+  constructor(private contentfuleightService: ContentfuleightService, private route: ActivatedRoute) {}
 
   mostrePosts$ : Observable<any> | undefined;
 
   ngOnInit(): void {
-    this.mostrePosts$ = this.contentfuleighService.getAllEntriesMostre();
-
     this.route.params.subscribe(
       params => {
         const id = params['id'];
+        this.mostrePosts$ = this.contentfuleightService.getEntryByIdMostre(id);
       }
     )
   }
