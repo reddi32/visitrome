@@ -38,6 +38,17 @@ export const shopping = {
   accessTokenSix: 'r0uk7vlAj60xvlwIMgRmQvegEWZsVArmllendEVzAJ0',
 };
 
+export const dovemangiare = {
+  production: false,
+  spaceId: '4vq02h0ifzuk',
+  accessTokenSeven: 'e7a3uHmwr9fggyZpKdLeDfMGUgTtkYYBGMSaEQ2xFUQ',
+};
+
+export const mostre = {
+  production: false,
+  spaceId: 'idln42oblemg',
+  accessTokenEight: 'wRt2AxKwT8WHfoOtvNDOQjPySBG8S7IFGmRw5E9dLy8',
+};
 
 /*
  * For easier debugging in development mode, you can import the following file

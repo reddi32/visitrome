@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { FirstCard } from '../model/firstcard';
 import { Info } from '../model/info'
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -18,7 +19,7 @@ export class HomeComponent implements OnInit {
   card2: FirstCard[] = [];
   card3: FirstCard[] =  [];
 
-  constructor() {
+  constructor(private meta: Meta) {
     this.listaInfo.push(
       new Info ("road-map.png", "Aereo, treno, autobus o macchina? È semplice, tutte le strade portano a Roma", "Arrivare a Roma", "Maggiori informazioni")
     );
@@ -40,6 +41,12 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
 
+    this.meta.addTag({
+      name: 'description',
+      content: 'Benvenuti su VisitRome. Scopri la città eterna con la nostra guida online: musei, monumenti, attrazioni turistiche, \
+                eventi e molto altro ancora. Pianifica la tua visita a Roma e goditi tutte le meraviglie che questa città ha da offrire. Visita il nostro \
+                sito per trovare informazioni sui luoghi da visitare, i ristoranti, gli hotel e molto altro.'
+    });
   }
 
 }

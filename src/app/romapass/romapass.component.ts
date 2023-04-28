@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { romapass } from '../model/romacard';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-romapass',
@@ -9,7 +10,7 @@ import { romapass } from '../model/romacard';
 export class RomapassComponent implements OnInit {
 
   Romapass: romapass[] = [];
-  constructor() {
+  constructor(private meta: Meta) {
     this.Romapass.push(
       new romapass ("usingphone.png", "Scegli la durata del tuo Roma Pass (48 ore o 72 ore) e usalo dove preferisci.", "Step 1: Scegli")
     );
@@ -21,6 +22,14 @@ export class RomapassComponent implements OnInit {
     )
    }
   ngOnInit(): void {
+
+    this.meta.addTag({
+      name: 'description',
+      content: "Scopri i vantaggi di RomaPass, la carta che ti permette di risparmiare sui biglietti d'ingresso ai musei e ai parchi archeologici di Roma. \
+                Con RomaPass, goditi sconti e accessi gratuiti alle principali attrazioni turistiche della città. Leggi la nostra guida e scopri come RomaPass \
+                può aiutarti a goderti il tuo viaggio a Roma al massimo"
+    });
+
   }
 
 }

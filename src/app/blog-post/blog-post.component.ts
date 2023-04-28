@@ -23,7 +23,7 @@ export class BlogPostComponent implements OnInit {
 
       }
     );
-   console.log(this.blogPost$?.forEach( (value : any) => console.log(value.fields.content.content[0].content.forEach((v : any) => console.log(v.marks[0])))));
+   /*console.log(this.blogPost$?.forEach( (value : any) => console.log(value.fields.content.content[0].content.forEach((v : any) => console.log(v.marks[0])))));*/
 
 
 

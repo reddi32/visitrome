@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
 import { ContentfulsecondService } from '../services/contentfulsecond.service';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-museieattrazioni',
@@ -50,7 +51,7 @@ export class AttrazioniComponent implements OnInit {
     }
   }
 
-  constructor(private contentfulsecondService: ContentfulsecondService, private route: ActivatedRoute) {}
+  constructor(private contentfulsecondService: ContentfulsecondService, private route: ActivatedRoute, private meta: Meta) {}
 
   attractionPosts$ : Observable<any> | undefined;
 
@@ -62,6 +63,13 @@ export class AttrazioniComponent implements OnInit {
         const id = params['id'];
       }
     )
+
+    this.meta.addTag({
+      name: 'description',
+      content: 'Scopri le principali attrazioni e i musei di Roma nella nostra guida online. Dalle antiche rovine ai capolavori artistici, \
+                trova le principali attrazioni turistiche della Città Eterna. Leggi la nostra guida e scopri i tesori culturali di Roma, \
+                tra musei, monumenti e molto altro.'
+    });
   }
 
 
