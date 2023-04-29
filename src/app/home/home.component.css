@@ -58,6 +58,10 @@
     color: white;
 }
 
+.card-text.fs-5.text-center {
+    text-decoration: none;
+}
+
 @media (max-width: 1180px) {
   .fs-1.text-center.roma {
       padding: 2.5% 0;

@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
 import { ContentfulsecondService } from '../services/contentfulsecond.service';
 import { Meta } from '@angular/platform-browser';
+import { query } from '@angular/animations';
 
 @Component({
   selector: 'app-museieattrazioni',

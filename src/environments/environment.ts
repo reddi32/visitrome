@@ -50,6 +50,11 @@ export const mostre = {
   accessTokenEight: 'wRt2AxKwT8WHfoOtvNDOQjPySBG8S7IFGmRw5E9dLy8',
 };
 
+export const query = {
+  content_type: 'article',
+  order: 'fields.title'
+};
+
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
