@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+/*Link nelle card*/
+.card-title.fs-5.fw-bold.text-light.text-center {
+  text-decoration: none;
+}
+
 /*Posizione dei titoli*/
 .fs-1.text-center.roma {
     padding: 5% 15%;
@@ -53,6 +58,59 @@
     color: white;
 }
 
+@media (max-width: 1180px) {
+  .fs-1.text-center.roma {
+      padding: 2.5% 0;
+  }
+
+  .fs-5.text-center.romadescription {
+      padding: 2.5% 0;
+  }
+
+  /*Posizione delle tre schede sotto Attrazioni*/
+  .row.row-cols-1.row-cols-md-3.g-3 {
+      padding: 0 5%;
+  }
+
+  .card-title.fs-5.fw-bold.text-light.text-center {
+    padding: 0;
+    font-size: 8px;
+  }
+
+  .card-text.fs-5 {
+    padding: 0;
+    font-size: 4px;
+  }
+
+  .btn.btn-light {
+    display: none;
+  }
+
+  /*Zero bordi nelle schede*/
+  .card {
+      border: 0;
+  }
+
+  /*Card effect*/
+  .card.text-bg-dark {
+      transition: all 0.3s;
+  }
+
+  .card.text-bg-dark:hover {
+      transform: scale(1.05);
+  }
+
+  /*Schede info*/
+  .container-fluid.px-4.py-5 {
+      padding: 0;
+  }
+
+  .card.card-cover.rounded-4 {
+      border: 0;
+  }
+}
+
+
 @media (max-width: 820px) {
     .container-fluid {
         padding: 0 7.5%;
@@ -71,6 +129,10 @@
     /*Posizione delle tre schede sotto Attrazioni*/
     .row.row-cols-1.row-cols-md-3.g-3 {
         padding: 0 5%;
+    }
+
+    .btn.btn-light {
+      display:grid;
     }
 
     /*Zero bordi nelle schede*/

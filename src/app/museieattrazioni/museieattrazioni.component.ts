@@ -15,8 +15,9 @@ export class AttrazioniComponent implements OnInit {
   piazzeSelected = false;
   museiSelected = false;
   parchiSelected = false;
+  sitoarcheologicoSelected = false;
 
-  categories = ['Attrazioni', 'Piazza', 'Museo', 'Parco'];
+  categories = ['Attrazioni', 'Piazza', 'Museo', 'Parco', 'Sito archeologico'];
   selectedCategory: string | undefined;
 
   onCheckboxChange(category: string) {
@@ -33,21 +34,31 @@ export class AttrazioniComponent implements OnInit {
       this.piazzeSelected = false;
       this.museiSelected = false;
       this.parchiSelected = false;
+      this.sitoarcheologicoSelected = false;
     }
     if (selectedCategory === 'piazzeSelected') {
       this.attrazioniSelected = false;
       this.museiSelected = false;
       this.parchiSelected = false;
+      this.sitoarcheologicoSelected = false;
     }
     if (selectedCategory === 'museiSelected') {
       this.attrazioniSelected = false;
       this.piazzeSelected = false;
       this.parchiSelected = false;
+      this.sitoarcheologicoSelected = false;
     }
     if (selectedCategory === 'parchiSelected') {
       this.attrazioniSelected = false;
       this.piazzeSelected = false;
       this.museiSelected = false;
+      this.sitoarcheologicoSelected = false;
+    }
+    if (selectedCategory === 'sitoarcheologicoSelected') {
+      this.attrazioniSelected = false;
+      this.piazzeSelected = false;
+      this.museiSelected = false;
+      this.parchiSelected = false;
     }
   }
 

@@ -29,6 +29,13 @@
               Parchi
             </label>
           </div>
+          <div class="form-check form-check-inline">
+            <input class="btn-check" type="checkbox" value="Sito archeologico" [(ngModel)]="sitoarcheologicoSelected" id="defaultCheck5"
+              (change)="deselectOthers('sitoarcheologicoSelected')">
+            <label class="btn btn-outline-dark filter" for="defaultCheck5">
+              Sito archeologico
+            </label>
+          </div>
       </div>
     </div>
 
@@ -42,7 +49,8 @@
              || (piazzeSelected && attractionPost.fields.type === 'Piazza')
              || (museiSelected && attractionPost.fields.type === 'Museo')
              || (parchiSelected && attractionPost.fields.type === 'Parchi')
-             || (!attrazioniSelected && !piazzeSelected && !museiSelected && !parchiSelected)
+             || (sitoarcheologicoSelected && attractionPost.fields.type === 'Sito archeologico')
+             || (!attrazioniSelected && !piazzeSelected && !museiSelected && !parchiSelected && !sitoarcheologicoSelected)
             )}">
             <div class="container-fluid text-start">
               <img [src]="attractionPost.fields.featuredImage.fields.file.url" class="img-fluid">

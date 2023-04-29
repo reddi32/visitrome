@@ -28,13 +28,13 @@ export class HomeComponent implements OnInit {
     );
 
     this.card.push(
-      new FirstCard("FontanaDiTrevi.jpg", "Cinque motivi per cui visitare Roma", "Perché Roma dovrebbe essere aggiunta alla tua lista dei viaggi?", "Scopri di più")
+      new FirstCard("FontanaDiTrevi.jpg", "Cinque motivi per cui visitare Roma", "Perché visitare Roma?", "Scopri di più")
     );
     this.card2.push(
-      new FirstCard("Colosseo.jpg", "Attrazioni da vedere assolutamente", "Pianifichi una visita a Roma? Vieni a scoprire le migliori attrazioni della città", "Scopri di più")
+      new FirstCard("Colosseo.jpg", "Da vedere assolutamente", "Scopri le migliori attrazioni di Roma durante la tua visita.", "Scopri di più")
     );
     this.card3.push(
-      new FirstCard("Cupolone.jpg", "Roma top 10", "Stai per venire a Roma ed hai bisogno di un'ispirazione per la tua visita? Unisciti a noi", "Scopri di più")
+      new FirstCard("Cupolone.jpg", "Roma top 10", "Vieni con noi per trovare l'ispirazione per la tua visita a Roma.", "Scopri di più")
     );
   }
 

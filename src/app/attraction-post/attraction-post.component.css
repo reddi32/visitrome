@@ -40,4 +40,26 @@
   .container-fluid.text-center{
       padding: 0;
   }
+  .fs-5.content.py-3 {
+    padding: 0;
+  }
+  .fs-5.location.py-1{
+    padding: 0;
+  }
+
+  .fs-5.email.py-1{
+    padding: 0;
+  }
+
+  .fs-5.website.py-1{
+    padding: 0;
+  }
+
+  .fs-5.phone.py-1{
+    padding: 0;
+  }
+
+  .container-fluid.text-start {
+    padding: 0;
+  }
 }
