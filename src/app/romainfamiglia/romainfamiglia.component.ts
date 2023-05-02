@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
 import { ContentfulfiveService } from '../services/contentfulfive.service';
 import { Meta } from '@angular/platform-browser';
+import { ContentfulnineService } from '../services/contentfulnine.service';
 
 @Component({
   selector: 'app-romainfamiglia',
@@ -11,12 +12,21 @@ import { Meta } from '@angular/platform-browser';
 })
 export class RomainfamigliaComponent {
 
-  constructor(private contentfulfiveService: ContentfulfiveService, private route: ActivatedRoute, private meta: Meta) {}
+  constructor(private contentfulfiveService: ContentfulfiveService, private contentfulnineService: ContentfulnineService, private route: ActivatedRoute, private meta: Meta) {}
 
   romainfamigliaPosts$ : Observable<any> | undefined;
+  attivitaperbambiniPosts$ : Observable<any> | undefined;
 
   ngOnInit(): void {
     this.romainfamigliaPosts$ = this.contentfulfiveService.getAllEntriesRomaInFamiglia();
+
+    this.route.params.subscribe(
+      params => {
+        const id = params['id'];
+      }
+    )
+
+    this.attivitaperbambiniPosts$ = this.contentfulnineService.getAllEntriesAttivitaPerBambini();
 
     this.route.params.subscribe(
       params => {

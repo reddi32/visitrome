@@ -50,6 +50,12 @@ export const mostre = {
   accessTokenEight: 'wRt2AxKwT8WHfoOtvNDOQjPySBG8S7IFGmRw5E9dLy8',
 };
 
+export const attivitaperbambini = {
+  production: false,
+  spaceId: 'onpgvat0yryv',
+  accessTokenNine: 'fKLh1GI2oymvnCHx2kwu0oeNync_9g7m-H-KNEweScM',
+};
+
 export const query = {
   content_type: 'article',
   order: 'fields.title'

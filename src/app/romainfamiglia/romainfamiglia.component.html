@@ -18,6 +18,7 @@
     </p>
   </div>
 
+  <!--Carosello con i musei per bambini-->
   <div id="romainfamiglia-posts-carousel" class="carousel slide" data-bs-ride="carousel">
     <div id="carouselExampleDark" class="carousel carousel-dark slide">
       <!-- Wrapper for slides -->
@@ -25,11 +26,15 @@
         <div class="carousel-item active">
           <div class="container-fluid text-center">
             <div class="container-fluid">
-              <div class="row row-cols-2 row-cols-md-3 g-4 justify-content-start" *ngIf="romainfamigliaPosts$ | async as romainfamigliaPosts">
-                <div class="col" *ngFor="let romainfamigliaPosts of romainfamigliaPosts.items.slice(0, 3); let i = index">
+              <div class="row row-cols-2 row-cols-md-3 g-4 justify-content-start"
+                *ngIf="romainfamigliaPosts$ | async as romainfamigliaPosts">
+                <div class="col"
+                  *ngFor="let romainfamigliaPosts of romainfamigliaPosts.items.slice(0, 3); let i = index">
                   <div class="container-fluid text-start">
-                    <img [src]="romainfamigliaPosts.fields.featuredImage.fields.file.url" class="img-fluid">
-                    <a [routerLink]="['/romainfamigliapost', romainfamigliaPosts.sys.id]" class="fs-4 py-1"><h2 class="fs-4 py-1">{{romainfamigliaPosts.fields.title}}</h2></a>
+                    <img [src]="romainfamigliaPosts.fields.featuredImage.fields.file.url" class="img-fluid rounded">
+                    <a [routerLink]="['/romainfamigliapost', romainfamigliaPosts.sys.id]" class="fs-4 py-1">
+                      <h2 class="fs-4 py-1">{{romainfamigliaPosts.fields.title}}</h2>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -39,11 +44,15 @@
         <div class="carousel-item">
           <div class="container-fluid text-center">
             <div class="container-fluid">
-              <div class="row row-cols-2 row-cols-md-3 g-4 justify-content-start" *ngIf="romainfamigliaPosts$ | async as romainfamigliaPosts">
-                <div class="col" *ngFor="let romainfamigliaPosts of romainfamigliaPosts.items.slice(3, 6); let i = index">
+              <div class="row row-cols-2 row-cols-md-3 g-4 justify-content-start"
+                *ngIf="romainfamigliaPosts$ | async as romainfamigliaPosts">
+                <div class="col"
+                  *ngFor="let romainfamigliaPosts of romainfamigliaPosts.items.slice(3, 6); let i = index">
                   <div class="container-fluid text-start">
-                    <img [src]="romainfamigliaPosts.fields.featuredImage.fields.file.url" class="img-fluid">
-                    <a [routerLink]="['/romainfamigliapost', romainfamigliaPosts.sys.id]" class="fs-4 py-1"><h2 class="fs-4 py-1">{{romainfamigliaPosts.fields.title}}</h2></a>
+                    <img [src]="romainfamigliaPosts.fields.featuredImage.fields.file.url" class="img-fluid rounded">
+                    <a [routerLink]="['/romainfamigliapost', romainfamigliaPosts.sys.id]" class="fs-4 py-1">
+                      <h2 class="fs-4 py-1">{{romainfamigliaPosts.fields.title}}</h2>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -53,11 +62,15 @@
         <div class="carousel-item">
           <div class="container-fluid text-center">
             <div class="container-fluid">
-              <div class="row row-cols-2 row-cols-md-3 g-4 justify-content-start" *ngIf="romainfamigliaPosts$ | async as romainfamigliaPosts">
-                <div class="col" *ngFor="let romainfamigliaPosts of romainfamigliaPosts.items.slice(6, 9); let i = index">
+              <div class="row row-cols-2 row-cols-md-3 g-4 justify-content-start"
+                *ngIf="romainfamigliaPosts$ | async as romainfamigliaPosts">
+                <div class="col"
+                  *ngFor="let romainfamigliaPosts of romainfamigliaPosts.items.slice(6, 9); let i = index">
                   <div class="container-fluid text-start">
-                    <img [src]="romainfamigliaPosts.fields.featuredImage.fields.file.url" class="img-fluid">
-                    <a [routerLink]="['/romainfamigliapost', romainfamigliaPosts.sys.id]" class="fs-4 py-1"><h2 class="fs-4 py-1">{{romainfamigliaPosts.fields.title}}</h2></a>
+                    <img [src]="romainfamigliaPosts.fields.featuredImage.fields.file.url" class="img-fluid rounded">
+                    <a [routerLink]="['/romainfamigliapost', romainfamigliaPosts.sys.id]" class="fs-4 py-1">
+                      <h2 class="fs-4 py-1">{{romainfamigliaPosts.fields.title}}</h2>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -67,11 +80,15 @@
         <div class="carousel-item active">
           <div class="container-fluid text-center">
             <div class="container-fluid">
-              <div class="row row-cols-2 row-cols-md-3 g-4 justify-content-start" *ngIf="romainfamigliaPosts$ | async as romainfamigliaPosts">
-                <div class="col" *ngFor="let romainfamigliaPosts of romainfamigliaPosts.items.slice(9, 12); let i = index">
+              <div class="row row-cols-2 row-cols-md-3 g-4 justify-content-start"
+                *ngIf="romainfamigliaPosts$ | async as romainfamigliaPosts">
+                <div class="col"
+                  *ngFor="let romainfamigliaPosts of romainfamigliaPosts.items.slice(9, 12); let i = index">
                   <div class="container-fluid text-start">
-                    <img [src]="romainfamigliaPosts.fields.featuredImage.fields.file.url" class="img-fluid">
-                    <a [routerLink]="['/romainfamigliapost', romainfamigliaPosts.sys.id]" class="fs-4 py-1"><h2 class="fs-4 py-1">{{romainfamigliaPosts.fields.title}}</h2></a>
+                    <img [src]="romainfamigliaPosts.fields.featuredImage.fields.file.url" class="img-fluid rounded">
+                    <a [routerLink]="['/romainfamigliapost', romainfamigliaPosts.sys.id]" class="fs-4 py-1">
+                      <h2 class="fs-4 py-1">{{romainfamigliaPosts.fields.title}}</h2>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -87,22 +104,130 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-
     </div>
+  </div>
 
+  <div class="container-fluid py-5">
+    <h2 class="fs-2">Divertirsi in famiglia</h2>
 
-    <!--Articoli per vivere Roma con la propria famiglia
-<div class="container-fluid text-center">
-  <div class="container-fluid">
-    <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center attraction-post-container" *ngIf="romainfamigliaPosts$ | async as romainfamigliaPosts">
-      <div class="col" *ngFor="let romainfamigliaPosts of romainfamigliaPosts.items">
-        <div class="container-fluid text-start">
-          <img [src]="romainfamigliaPosts.fields.featuredImage.fields.file.url" class="img-fluid">
-          <h2 class="fs-4 py-1">{{romainfamigliaPosts.fields.title}}</h2>
-          <p>{{romainfamigliaPosts.fields.summary}}</p>
-          <a [routerLink]="['/romainfamigliapost', romainfamigliaPosts.sys.id]" class="btn btn-outline-dark">Leggi di più</a>
+    <p class="fs-5">
+      Il Teatro Verde è un altro luogo perfetto sia per le famiglie che visitano Roma sia per chi ci abita. Situato subito fuori la stazione Trastevere
+      portando qui i tuoi bambini offirai loro un pomeriggio molto diventernte, tra spettacoli e laboratori creativi.
+      Qui si possono vedere commedie, spettacoli musicali e molto altro ancora, in un'atmosfera rilassante e divertente.
+      Inoltre, per le famiglie che vogliono godersi una giornata fuori porta, Zoomarine è una delle destinazioni più popolari.
+      Si trova a circa un'ora di auto da Roma ed è il parco acquatico e tematico più grande d'Italia. Ci sono numerose attrazioni,
+      tra cui scivoli d'acqua, spettacoli di delfini e foche, e una grande piscina a onde.
+      Se invece non si vuole uscire dalla città, potete visitare Hydromania, un parco acquatico adatto a tutti, grandi e piccoli!
+      Non solo, ma ci sono anche altri parchi divertimento nei dintorni di Roma, come Cinecittà World, che offre un'esperienza cinematografica unica,
+      e Rainbow Magicland, che è un parco tematico con diverse attrazioni per tutte le età.
+    </p>
+  </div>
+
+  <!--Carosello con i luoghi per bambini-->
+  <div id="attivitaperbambini-posts-carousel py-5" class="carousel slide" data-bs-ride="carousel">
+    <div id="attivitaperbambini-posts-carousel" class="carousel carousel-dark slide">
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container-fluid text-center">
+            <div class="container-fluid">
+              <div class="row row-cols-2 row-cols-md-3 g-4 justify-content-start"
+                *ngIf="attivitaperbambiniPosts$ | async as attivitaperbambiniPosts">
+                <div class="col"
+                  *ngFor="let attivitaperbambiniPosts of attivitaperbambiniPosts.items.slice(0, 3); let i = index">
+                  <div class="container-fluid text-start">
+                    <img [src]="attivitaperbambiniPosts.fields.featuredImage.fields.file.url" class="img-fluid rounded">
+                    <a [routerLink]="['/romainfamigliapost', attivitaperbambiniPosts.sys.id]" class="fs-4 py-1">
+                      <h2 class="fs-4 py-1">{{attivitaperbambiniPosts.fields.title}}</h2>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="carousel-item">
+          <div class="container-fluid text-center">
+            <div class="container-fluid">
+              <div class="row row-cols-2 row-cols-md-3 g-4 justify-content-start"
+                *ngIf="attivitaperbambiniPosts$ | async as attivitaperbambiniPosts">
+                <div class="col"
+                  *ngFor="let attivitaperbambiniPosts of attivitaperbambiniPosts.items.slice(3, 6); let i = index">
+                  <div class="container-fluid text-start">
+                    <img [src]="attivitaperbambiniPosts.fields.featuredImage.fields.file.url" class="img-fluid rounded">
+                    <a [routerLink]="['/romainfamigliapost', attivitaperbambiniPosts.sys.id]" class="fs-4 py-1">
+                      <h2 class="fs-4 py-1">{{attivitaperbambiniPosts.fields.title}}</h2>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container-fluid text-center">
+            <div class="container-fluid">
+              <div class="row row-cols-2 row-cols-md-3 g-4 justify-content-start"
+                *ngIf="attivitaperbambiniPosts$ | async as attivitaperbambiniPosts">
+                <div class="col"
+                  *ngFor="let attivitaperbambiniPosts of attivitaperbambiniPosts.items.slice(6, 9); let i = index">
+                  <div class="container-fluid text-start">
+                    <img [src]="attivitaperbambiniPosts.fields.featuredImage.fields.file.url" class="img-fluid rounded">
+                    <a [routerLink]="['/romainfamigliapost', attivitaperbambiniPosts.sys.id]" class="fs-4 py-1">
+                      <h2 class="fs-4 py-1">{{attivitaperbambiniPosts.fields.title}}</h2>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--
+        <div class="carousel-item active">
+          <div class="container-fluid text-center">
+            <div class="container-fluid">
+              <div class="row row-cols-2 row-cols-md-3 g-4 justify-content-start"
+                *ngIf="attivitaperbambiniPosts$ | async as attivitaperbambiniPosts">
+                <div class="col"
+                  *ngFor="let attivitaperbambiniPosts of attivitaperbambiniPosts.items.slice(9, 12); let i = index">
+                  <div class="container-fluid text-start">
+                    <img [src]="attivitaperbambiniPosts.fields.featuredImage.fields.file.url" class="img-fluid">
+                    <a [routerLink]="['/romainfamigliapost', attivitaperbambiniPosts.sys.id]" class="fs-4 py-1">
+                      <h2 class="fs-4 py-1">{{attivitaperbambiniPosts.fields.title}}</h2>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#attivitaperbambini-posts-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#attivitaperbambini-posts-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
   </div>
-</div>-->
+
+
+  <!--Articoli per vivere Roma con la propria famiglia
+    <div class="container-fluid text-center">
+      <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center attraction-post-container"
+          *ngIf="romainfamigliaPosts$ | async as romainfamigliaPosts">
+          <div class="col" *ngFor="let romainfamigliaPosts of romainfamigliaPosts.items">
+            <div class="container-fluid text-start">
+              <img [src]="romainfamigliaPosts.fields.featuredImage.fields.file.url" class="img-fluid">
+              <h2 class="fs-4 py-1">{{romainfamigliaPosts.fields.title}}</h2>
+              <p>{{romainfamigliaPosts.fields.summary}}</p>
+              <a [routerLink]="['/romainfamigliapost', romainfamigliaPosts.sys.id]" class="btn btn-outline-dark">Leggi
+                di più</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>-->
+</div>
