@@ -2,27 +2,27 @@
     padding: 2.5% 15%;
 }
 
-.fs-5.content.py-3{
+.fs-6.content.py-3{
   padding-left: 5%;
   padding-right: 5%;
 }
 
-.fs-5.location.py-1{
+.fs-6.location.py-1{
   padding-left: 5%;
   padding-right: 5%;
 }
 
-.fs-5.email.py-1{
+.fs-6.email.py-1{
   padding-left: 5%;
   padding-right: 5%;
 }
 
-.fs-5.website.py-1{
+.fs-6.website.py-1{
   padding-left: 5%;
   padding-right: 5%;
 }
 
-.fs-5.phone.py-1{
+.fs-6.phone.py-1{
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -40,22 +40,22 @@
   .container-fluid.text-center{
       padding: 0;
   }
-  .fs-5.content.py-3 {
+  .fs-6.content.py-3 {
     padding: 0;
   }
-  .fs-5.location.py-1{
-    padding: 0;
-  }
-
-  .fs-5.email.py-1{
+  .fs-6.location.py-1{
     padding: 0;
   }
 
-  .fs-5.website.py-1{
+  .fs-6.email.py-1{
     padding: 0;
   }
 
-  .fs-5.phone.py-1{
+  .fs-6.website.py-1{
+    padding: 0;
+  }
+
+  .fs-6.phone.py-1{
     padding: 0;
   }
 

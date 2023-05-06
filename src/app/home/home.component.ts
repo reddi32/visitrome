@@ -14,6 +14,7 @@ export class HomeComponent implements OnInit {
 
   listaInfo: Info[] = [];
   listaInfo2: Info[] = [];
+  listaInfo3: Info[] = [];
 
   card: FirstCard[] = [];
   card2: FirstCard[] = [];
@@ -25,6 +26,9 @@ export class HomeComponent implements OnInit {
     );
     this.listaInfo2.push(
       new Info ("tram.png", "Muoversi in tram, autobus, metro, treno... Il trasporto è semplice a Roma", "Andare in giro", "Maggiori informazioni")
+    );
+    this.listaInfo3.push(
+      new Info("colosseum-2.png", "Siete già a Roma e volete suggerimenti su cosa fare? Venite nei nostri InfoPoint", "Uffici turistici", "Maggiori informazioin")
     );
 
     this.card.push(

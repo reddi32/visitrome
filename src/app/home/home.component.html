@@ -4,7 +4,7 @@
 
   <!--Titolo e descrizione di Roma-->
   <h1 class="fs-1 text-center roma"> Vieni a scoprire Roma</h1>
-  <p class="fs-5 text-center romadescription">Roma è la capitale d'Italia e una delle città più antiche del mondo. La
+  <p class="fs-6 text-center romadescription">Roma è la capitale d'Italia e una delle città più antiche del mondo. La
     città è ricca di storia e di arte,
     con un patrimonio culturale unico al mondo. Roma è famosa per i suoi monumenti storici come il Colosseo, il
     Pantheon,
@@ -28,8 +28,8 @@
       <div class="card text-bg-dark">
         <img src="../assets/{{FirstCard.img}}" class="card-img">
         <div class="card-img-overlay">
-          <a class="card-title fs-5 fw-bold text-light text-center" routerLink="/cinquemotivipervisitareroma"><h5 class="fs-5 fw-bold text-light">{{FirstCard.title}}</h5></a>
-          <a class="card-text fs-5 text-center" routerLink="/cinquemotivipervisitareroma"><p class="card-text fs-5 text-center">{{FirstCard.paragraph}}</p></a>
+          <a class="card-title fs-6 fw-bold text-light text-center" routerLink="/cinquemotivipervisitareroma"><h5 class="fs-6 fw-bold text-light">{{FirstCard.title}}</h5></a>
+          <a class="card-text fs-6 text-center" routerLink="/cinquemotivipervisitareroma"><p class="card-text fs-6 text-center">{{FirstCard.paragraph}}</p></a>
           <div class="text-center">
             <a class="btn btn-light" routerLink="/cinquemotivipervisitareroma">{{FirstCard.link}}</a>
           </div>
@@ -40,8 +40,8 @@
       <div class="card text-bg-dark">
         <img src="../assets/{{FirstCard.img}}" class="card-img">
         <div class="card-img-overlay">
-          <a class="card-title fs-5 fw-bold text-light text-center" routerLink="/davedere"><h5 class="fs-5 fw-bold text-light">{{FirstCard.title}}</h5></a>
-          <a class="card-text fs-5 text-center" routerLink="/davedere"><p class="card-text fs-5 text-center">{{FirstCard.paragraph}}</p></a>
+          <a class="card-title fs-6 fw-bold text-light text-center" routerLink="/davedere"><h5 class="fs-6 fw-bold text-light">{{FirstCard.title}}</h5></a>
+          <a class="card-text fs-6 text-center" routerLink="/davedere"><p class="card-text fs-6 text-center">{{FirstCard.paragraph}}</p></a>
           <div class="text-center">
             <a class="btn btn-light" routerLink="/davedere">{{FirstCard.link}}</a>
           </div>
@@ -52,8 +52,8 @@
       <div class="card text-bg-dark">
         <img src="../assets/{{FirstCard.img}}" class="card-img">
         <div class="card-img-overlay">
-          <a class="card-title fs-5 fw-bold text-light text-center" routerLink="/davedere"><h5 class="fs-5 fw-bold text-light">{{FirstCard.title}}</h5></a>
-          <p class="card-text fs-5 text-center">{{FirstCard.paragraph}}</p>
+          <a class="card-title fs-6 fw-bold text-light text-center" routerLink="/davedere"><h5 class="fs-6 fw-bold text-light">{{FirstCard.title}}</h5></a>
+          <p class="card-text fs-6 text-center">{{FirstCard.paragraph}}</p>
           <div class="text-center">
             <a class="btn btn-light" href="/blogpost/574RmJU93IDu3zgq0JuUEB">{{FirstCard.link}}</a>
           </div>
@@ -70,7 +70,7 @@
     <div class="row row-cols-1 row-cols-lg-4 justify-content-center g-4 py-5">
       <div class="col" *ngFor="let cardInfo of listaInfo">
         <div class="card card-cover rounded-4">
-          <div class="d-flex flex-column h-100 p-4 pb-2 text-shadow-1">
+          <div class="d-flex flex-column h-100 pb-2 text-shadow-1">
             <img src="../assets/{{cardInfo.img}}" class="img-fluid mx-auto d-block">
             <p class="fs-4 fw-bold text-center">{{cardInfo.titolo}}</p>
             <p class="pt-2 fs-6 text-center">{{cardInfo.testo}}</p>
@@ -82,7 +82,19 @@
       </div>
       <div class="col" *ngFor="let cardInfo of listaInfo2">
         <div class="card card-cover rounded-4">
-          <div class="d-flex flex-column h-100 p-4 pb-2 text-shadow-1">
+          <div class="d-flex flex-column h-100 pb-2 text-shadow-1">
+            <img src="../assets/{{cardInfo.img}}" class="img-fluid mx-auto d-block">
+            <p class="fs-4 fw-bold text-center">{{cardInfo.titolo}}</p>
+            <p class="pt-2 fs-6 text-center">{{cardInfo.testo}}</p>
+            <a class="pt-2 fs-6 text-center link" routerLink="/muoversiaroma">
+              <p class="fw-bold">{{cardInfo.testo2}}</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col" *ngFor="let cardInfo of listaInfo3">
+        <div class="card card-cover rounded-4">
+          <div class="d-flex flex-column h-100 pb-2 text-shadow-1">
             <img src="../assets/{{cardInfo.img}}" class="img-fluid mx-auto d-block">
             <p class="fs-4 fw-bold text-center">{{cardInfo.titolo}}</p>
             <p class="pt-2 fs-6 text-center">{{cardInfo.testo}}</p>

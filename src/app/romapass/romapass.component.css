@@ -33,7 +33,7 @@
 }
 
 /*Paragrafo Roma Pass*/
-.text-start.romapassdescription {
+.text-start.romapassdescription.fs-6 {
     padding: 0 10%;
 }
 
@@ -61,7 +61,7 @@
     .container-fluid {
         padding: 0;
     }
-    .text-start.romapassdescription {
+    .text-start.romapassdescription.fs-6 {
         padding: 0;
     }
     .row.row-cols.row-cols-md-3.g-3.justify-content-center{
