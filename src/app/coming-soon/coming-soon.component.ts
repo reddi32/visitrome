@@ -33,7 +33,7 @@ export class ComingSoonComponent {
     //console.log(this.emailForm);
 
     this.firebase.insertEmail(
-      'https://visitrome-379610-default-rtdb.europe-west1.firebasedatabase.app/email.json',
+      'https://visitrome-379610-default-rtdb.europe-west1.firebasedatabase.app/emailVitaNotturna.json',
       { email: this.emailForm.value.email }
     ).subscribe(data => { })
 
