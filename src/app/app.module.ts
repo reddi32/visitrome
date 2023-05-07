@@ -19,7 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ConcertPostComponent } from './concert-post/concert-post.component';
 import { TouristinfopointComponent } from './touristinfopoint/touristinfopoint.component';
 
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CinquemotivipervisitareromaComponent } from './cinquemotivipervisitareroma/cinquemotivipervisitareroma.component';
 import { DavedereComponent } from './davedere/davedere.component';
 import { DovemangiareComponent } from './dovemangiare/dovemangiare.component';
@@ -33,6 +33,7 @@ import { RomainfamigliaPostComponent } from './romainfamiglia-post/romainfamigli
 import { ShoppingPostComponent } from './shopping-post/shopping-post.component';
 import { DovemangiarePostComponent } from './dovemangiare-post/dovemangiare-post.component';
 import { MostrePostComponent } from './mostre-post/mostre-post.component';
+import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 
 @NgModule({
   declarations: [
@@ -61,13 +62,15 @@ import { MostrePostComponent } from './mostre-post/mostre-post.component';
     ShoppingPostComponent,
     DovemangiarePostComponent,
     MostrePostComponent,
+    ComingSoonComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MarkdownModule.forRoot(),
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
