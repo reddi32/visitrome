@@ -34,6 +34,7 @@ import { ShoppingPostComponent } from './shopping-post/shopping-post.component';
 import { DovemangiarePostComponent } from './dovemangiare-post/dovemangiare-post.component';
 import { MostrePostComponent } from './mostre-post/mostre-post.component';
 import { ComingSoonComponent } from './coming-soon/coming-soon.component';
+import { ComingSoonTwoComponent } from './coming-soon-two/coming-soon-two.component';
 
 @NgModule({
   declarations: [
@@ -63,6 +64,7 @@ import { ComingSoonComponent } from './coming-soon/coming-soon.component';
     DovemangiarePostComponent,
     MostrePostComponent,
     ComingSoonComponent,
+    ComingSoonTwoComponent,
   ],
   imports: [
     BrowserModule,

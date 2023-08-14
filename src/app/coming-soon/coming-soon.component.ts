@@ -42,5 +42,19 @@ export class ComingSoonComponent {
     this.hideSuccessMessage();
   }
 
+  onSubmitdue() {
+    //console.log(this.emailForm);
+
+    this.firebase.insertEmail(
+      'https://visitrome-379610-default-rtdb.europe-west1.firebasedatabase.app/emailDoveMangiare.json',
+      { email: this.emailForm.value.email }
+    ).subscribe(data => { })
+
+    this.emailForm.reset();
+    this.showSuccessMessage = true;
+    this.hideSuccessMessage();
+  }
+  
+
 
 }
