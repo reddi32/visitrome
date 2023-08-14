@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
       new Info ("tram.png", "Muoversi in tram, autobus, metro, treno... Il trasporto è semplice a Roma", "Andare in giro", "Maggiori informazioni")
     );
     this.listaInfo3.push(
-      new Info("colosseum-2.png", "Siete già a Roma e volete suggerimenti su cosa fare? Venite nei nostri InfoPoint", "Uffici turistici", "Maggiori informazioin")
+      new Info("colosseum-2.png", "Siete già a Roma e volete suggerimenti su cosa fare? Venite nei nostri InfoPoint", "Uffici turistici", "Maggiori informazioni")
     );
 
     this.card.push(

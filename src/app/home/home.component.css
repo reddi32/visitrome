@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.img-fluid {
+    border-radius: 10px;
+}
+
 /*Link nelle card*/
 .card-title.fs-6.fw-bold.text-light.text-center {
   text-decoration: none;
