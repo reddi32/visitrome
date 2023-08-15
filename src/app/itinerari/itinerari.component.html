@@ -1,1 +1,70 @@
-<p>itinerari works!</p>
+<div class="container-fluid py-1">
+
+    <!--Heo image-->
+    <img src="../assets/Itinerari.jpg" class="img-fluid shadow" alt="itinerari">
+
+    <!--Titolo-->
+    <h1 class="display-4 text-center py-5">Itinerari per tutti</h1>
+    <p class="fs-5 text-center">Ecco qualche itinerario per vivere un’esperienza unica durante il vostro viaggio a Roma.
+        Fidatevi di noi: conosciamo questa capitale come le nostre tasche.
+    </p>
+    <!--Card Info-->
+    <h1 class="display-5 text-center py-5">Vacanze in famiglia, in coppia o con gli amici</h1>
+
+    <div class="container-fluid px-4" id="custom-cards">
+        <div class="row row-cols-1 row-cols-lg-4 justify-content-center g-4 py-5">
+            <div class="col" *ngFor="let itinerariCard of itinerariInfo">
+                <div class="card card-cover rounded-4">
+                    <div class="d-flex flex-column h-100 pb-2 text-shadow-1">
+                        <img src="../assets/{{itinerariCard.img}}" class="img-fluid mx-auto d-block">
+                        <p class="fs-4 fw-bold text-start">{{itinerariCard.titolo}}</p>
+                        <p class="pt-2 fs-6 text-start">{{itinerariCard.testo}}</p>
+                        <a class="pt-2 fs-6 text-start link" routerLink="/comearrivare">
+                            <p class="fw-bold">{{itinerariCard.testo2}}</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col" *ngFor="let itinerariCard of itinerariInfo2">
+                <div class="card card-cover rounded-4">
+                    <div class="d-flex flex-column h-100 pb-2 text-shadow-1">
+                        <img src="../assets/{{itinerariCard.img}}" class="img-fluid mx-auto d-block">
+                        <p class="fs-4 fw-bold text-start">{{itinerariCard.titolo}}</p>
+                        <p class="pt-2 fs-6 text-start">{{itinerariCard.testo}}</p>
+                        <a class="pt-2 fs-6 text-start link" routerLink="/muoversiaroma">
+                            <p class="fw-bold">{{itinerariCard.testo2}}</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col" *ngFor="let itinerariCard of itinerariInfo3">
+                <div class="card card-cover rounded-4">
+                    <div class="d-flex flex-column h-100 pb-2 text-shadow-1">
+                        <img src="../assets/{{itinerariCard.img}}" class="img-fluid mx-auto d-block">
+                        <p class="fs-4 fw-bold text-start">{{itinerariCard.titolo}}</p>
+                        <p class="pt-2 fs-6 text-start">{{itinerariCard.testo}}</p>
+                        <a class="pt-2 fs-6 text-start link" routerLink="/touristinfopoint">
+                            <p class="fw-bold">{{itinerariCard.testo2}}</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="px-4 pt-5 my-5 text-center">
+        <h1 class="display-4">Fai il pieno di cultura!</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="fs-5 mb-4">Siete appassionati di architettura, storia e arte in generale? Ecco le nostre camminate e itinerari per fare il pieno di cultura.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3" routerLink="/museieattrazioni">Scopri i musei</button>
+            </div>
+        </div>
+        <div class="overflow-hidden" style="max-height: 40vh;">
+            <div class="container px-5">
+                <img src="../../assets/arena-colosseo.jpg" class="img-fluid rounded-3 shadow-lg mb-4" alt="Example image"
+                    width="700" height="500" loading="lazy">
+            </div>
+        </div>
+    </div>
+</div>

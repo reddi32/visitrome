@@ -1,0 +1,72 @@
+.container-fluid.py-1{
+    margin: 0 auto;
+    padding: 0 10%;
+    box-sizing: border-box;
+}
+
+.img-fluid {
+    border-radius: 10px;
+}
+
+/*Primo paragrafo*/
+.fs-5.text-center {
+    padding: 0 15%;
+}
+
+/*Zero bordi nelle schede*/
+.card {
+    border: 0;
+}
+
+.px-4.pt-5.my-5.text-center {
+    background-color: #b5e48c;
+    border-radius: 10px;
+}
+
+@media (max-width: 912px) {
+    .container-fluid.py-1 {
+        padding: 0 5%;
+    }
+    .overflow-hidden {
+        height: 25vh;
+    }
+}
+
+@media (max-width: 820px) {
+    .container-fluid.py-1 {
+        padding: 0 5%;
+    }
+    .overflow-hidden {
+        height: 25vh;
+    }
+}
+
+@media (max-width: 767px) {
+    .container-fluid.py-1 {
+        padding: 0;
+    }
+    .overflow-hidden {
+        height: 15vh;
+    }
+    .px-4.my-5.text-center {
+        padding: 0;
+    }
+}
+
+@media (max-width: 540px) {
+    .container-fluid.py-1 {
+        padding: 0 5%;
+    }
+    .overflow-hidden {
+        height: 25vh;
+    }
+}
+
+@media (max-width: 412px) {
+    .container-fluid.py-1 {
+        padding: 0 5%;
+    }
+    .overflow-hidden {
+        height: 12.5vh;
+    }
+}
