@@ -11,7 +11,7 @@ import { ContentfulnineService } from '../services/contentfulnine.service';
 })
 export class RomainfamigliaPostComponent {
 
-  constructor(private contentfulfiveService: ContentfulfiveService, private contentfulnineService: ContentfulnineService,private route: ActivatedRoute) {}
+  constructor(private contentfulfiveService: ContentfulfiveService, private contentfulnineService: ContentfulnineService, private route: ActivatedRoute) {}
 
   romainfamigliaPost$ : Observable<any> | undefined;
   attivitaperbambiniPosts$ : Observable<any> | undefined;

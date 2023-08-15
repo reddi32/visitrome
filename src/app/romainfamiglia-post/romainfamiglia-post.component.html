@@ -1,35 +1,69 @@
 <div class="container-fluid text-center">
-    <div class="col" *ngIf="romainfamigliaPost$ | async as romainfamigliaPost">
+  <div class="col" *ngIf="romainfamigliaPost$ | async as romainfamigliaPost">
     <div class="row-attraction-post-container">
-        <div class="container-fluid text-start">
-          <h2 class="py-3">{{romainfamigliaPost.fields.title}}</h2>
-            <img [src]="romainfamigliaPost.fields.featuredImage.fields.file.url" class="img-fluid py-3">
-            <p class="fs-6 content py-3">
-                <markdown ngPreserveWhitespaces>
-                  {{romainfamigliaPost.fields.content}}
-                </markdown>
-              </p>
-            <p class="fs-6 location py-1">
-              <markdown ngPreserveWhitespaces>
-                {{romainfamigliaPost.fields.location}}
-              </markdown>
-             </p>
-             <p class="fs-6 email py-1">
-              <markdown ngPreserveWhitespaces>
-                {{romainfamigliaPost.fields.email}}
-              </markdown>
-             </p>
-             <p class="fs-6 website py-1">
-              <markdown ngPreserveWhitespaces>
-                {{romainfamigliaPost.fields.website}}
-              </markdown>
-             </p>one piece odyssey download pc free
-             <p class="fs-6 phone py-1">
-              <markdown ngPreserveWhitespaces>
-                {{romainfamigliaPost.fields.phone}}
-              </markdown>
-             </p>
-        </div>
+      <div class="container-fluid text-start">
+        <h2 class="py-3">{{romainfamigliaPost.fields.title}}</h2>
+        <img [src]="romainfamigliaPost.fields.featuredImage.fields.file.url" class="img-fluid py-3">
+        <p class="fs-6 content py-3">
+          <markdown ngPreserveWhitespaces>
+            {{romainfamigliaPost.fields.content}}
+          </markdown>
+        </p>
+        <p class="fs-6 location py-1">
+          <markdown ngPreserveWhitespaces>
+            {{romainfamigliaPost.fields.location}}
+          </markdown>
+        </p>
+        <p class="fs-6 email py-1">
+          <markdown ngPreserveWhitespaces>
+            {{romainfamigliaPost.fields.email}}
+          </markdown>
+        </p>
+        <p class="fs-6 website py-1">
+          <markdown ngPreserveWhitespaces>
+            {{romainfamigliaPost.fields.website}}
+          </markdown>
+        </p>
+        <p class="fs-6 phone py-1">
+          <markdown ngPreserveWhitespaces>
+            {{romainfamigliaPost.fields.phone}}
+          </markdown>
+        </p>
+      </div>
     </div>
-</div>
+  </div>
+
+  <div class="col" *ngIf="attivitaperbambiniPosts$ | async as attivitaperbambiniPost">
+    <div class="row-attraction-post-container">
+      <div class="container-fluid text-start">
+        <h2 class="py-3">{{attivitaperbambiniPost.fields.title}}</h2>
+        <img [src]="attivitaperbambiniPost.fields.featuredImage.fields.file.url" class="img-fluid py-3">
+        <p class="fs-6 content py-3">
+          <markdown ngPreserveWhitespaces>
+            {{attivitaperbambiniPost.fields.content}}
+          </markdown>
+        </p>
+        <p class="fs-6 location py-1">
+          <markdown ngPreserveWhitespaces>
+            {{attivitaperbambiniPost.fields.location}}
+          </markdown>
+        </p>
+        <p class="fs-6 email py-1">
+          <markdown ngPreserveWhitespaces>
+            {{attivitaperbambiniPost.fields.email}}
+          </markdown>
+        </p>
+        <p class="fs-6 website py-1">
+          <markdown ngPreserveWhitespaces>
+            {{attivitaperbambiniPost.fields.website}}
+          </markdown>
+        </p>
+        <p class="fs-6 phone py-1">
+          <markdown ngPreserveWhitespaces>
+            {{attivitaperbambiniPost.fields.phone}}
+          </markdown>
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
