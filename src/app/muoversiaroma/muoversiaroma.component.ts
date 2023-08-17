@@ -16,6 +16,7 @@ export class MuoversiaromaComponent implements OnInit {
     {col1: 'Biglietto 48h', col2: '12.50€'},
     {col1: 'Biglietto 72h', col2: '18€'},
     {col1: 'Biglietto settimanale', col2: '24€'},
+    {col1: 'Biglietto Leonardo Express', col2: '<a href="https://www.trenitalia.com/it/treni_regionali/lazio/leonardo_express.html">Vedi sito ufficiale</a>'},
   ]
 
   taxi = [

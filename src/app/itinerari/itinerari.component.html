@@ -16,10 +16,10 @@
             <div class="col" *ngFor="let itinerariCard of itinerariInfo">
                 <div class="card card-cover rounded-4">
                     <div class="d-flex flex-column h-100 pb-2 text-shadow-1">
-                        <img src="../assets/{{itinerariCard.img}}" class="img-fluid mx-auto d-block">
+                        <img src="../assets/{{itinerariCard.img}}" class="img-fluid mx-auto d-block shadow">
                         <p class="fs-4 fw-bold text-start">{{itinerariCard.titolo}}</p>
                         <p class="pt-2 fs-6 text-start">{{itinerariCard.testo}}</p>
-                        <a class="pt-2 fs-6 text-start link" routerLink="/comearrivare">
+                        <a class="pt-2 fs-6 text-start link" routerLink="/viaggioinfamiglia">
                             <p class="fw-bold">{{itinerariCard.testo2}}</p>
                         </a>
                     </div>
@@ -28,7 +28,7 @@
             <div class="col" *ngFor="let itinerariCard of itinerariInfo2">
                 <div class="card card-cover rounded-4">
                     <div class="d-flex flex-column h-100 pb-2 text-shadow-1">
-                        <img src="../assets/{{itinerariCard.img}}" class="img-fluid mx-auto d-block">
+                        <img src="../assets/{{itinerariCard.img}}" class="img-fluid mx-auto d-block shadow">
                         <p class="fs-4 fw-bold text-start">{{itinerariCard.titolo}}</p>
                         <p class="pt-2 fs-6 text-start">{{itinerariCard.testo}}</p>
                         <a class="pt-2 fs-6 text-start link" routerLink="/muoversiaroma">
@@ -40,7 +40,7 @@
             <div class="col" *ngFor="let itinerariCard of itinerariInfo3">
                 <div class="card card-cover rounded-4">
                     <div class="d-flex flex-column h-100 pb-2 text-shadow-1">
-                        <img src="../assets/{{itinerariCard.img}}" class="img-fluid mx-auto d-block">
+                        <img src="../assets/{{itinerariCard.img}}" class="img-fluid mx-auto d-block shadow">
                         <p class="fs-4 fw-bold text-start">{{itinerariCard.titolo}}</p>
                         <p class="pt-2 fs-6 text-start">{{itinerariCard.testo}}</p>
                         <a class="pt-2 fs-6 text-start link" routerLink="/touristinfopoint">
@@ -51,6 +51,31 @@
             </div>
         </div>
     </div>
+
+
+    <div class="container-fluid">
+        <h1 class="display-5 text-center">Nuovi itinerari in arrivo</h1>
+        <main class="form-signin w-100 m-auto">
+          <form [formGroup]="emailForm" (ngSubmit)="onSubmit()">
+            <div class="container-fluid text-center">
+              <img class="mb-4 img-fluid" src="../assets/coming-soon.gif" alt="">
+            </div>
+      
+            <p>Rimani connesso per scoprire cosa fare a Roma!</p>
+      
+            <div class="form-floating">
+              <input class="form-control" type="email" name="email" id="floatingInput" placeholder="name@example.com"
+                formControlName="email">
+              <label for="floatingInput">Indirizzo email</label>
+              <p *ngIf="!emailForm.get('email')?.valid && emailForm.get('email')?.touched">Inserisci una mail valida</p>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit" [disabled]="!emailForm.valid">Aggiornami</button>
+            <div *ngIf="showSuccessMessage" class="alert alert-success mt-3">
+              Email inviata correttamente!
+            </div>
+          </form>
+        </main>
+      </div>
 
     <div class="px-4 pt-5 my-5 text-center">
         <h1 class="display-4">Fai il pieno di cultura!</h1>
@@ -67,4 +92,7 @@
             </div>
         </div>
     </div>
+
+
+      
 </div>

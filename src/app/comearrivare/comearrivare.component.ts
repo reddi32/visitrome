@@ -25,10 +25,10 @@ export class ComearrivareComponent implements OnInit {
   ]
 
   pullman = [
-    {col1: 'Autobus dal Sud Italia verso Roma', col2: '6€'},
-    {col1: 'Autobus dal Sud Italia verso Roma', col2: '3€'},
-    {col1: 'Autobus dal Nord Italia verso Roma', col2: '3€'},
-    {col1: 'Autobus dal Nord Italia verso Roma', col2: '31€'},
+    {col1: 'Autobus dal Sud Italia verso Roma', col2: '<a href="https://www.marozzivt.it/home">Marozzi</a>'},
+    {col1: 'Autobus dal Sud Italia verso Roma', col2: '<a href="https://www.autolineemoretti.it/Moretti/html/index.jsf">Moretti</a>'},
+    {col1: 'Autobus dal Nord Italia verso Roma', col2: '<a href="http://www.baltour.it/">Baltour</a>'},
+    {col1: 'Autobus dal Nord Italia verso Roma', col2: '<a href="http://www.flixbus.it/">Flixbus</a>'},
   ]
 
   ngOnInit(): void {

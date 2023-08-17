@@ -1,0 +1,46 @@
+<div class="container-fluid py-1">
+
+    <h1 class="display-5 text-center py-5">Una viaggio indimenticabile in famiglia</h1>
+
+    <!--Heo image-->
+    <img src="../assets/family2.jpg" class="img-fluid mx-auto d-block shadow" alt="itinerari">
+
+    <div class="container py-5">
+    <p class="fs-5 text-start fw-bold">
+        Venire a Roma in famiglia è davvero un’ottima idea! Ci sono molte cose da fare e tanti luoghi da scoprire, questo è sicuro.
+    </p>
+    <p class="fs-5 text-start fw-bold">
+        Per questo motivo, vi abbiamo preparato un bel programma con tante attività diverse che vi porteranno alla scoperta della città, dei musei e del cibo. 
+        Ecco la nostra guida!
+    </p>
+    </div>
+
+    <h1 class="display-5 text-center py-5">Scopri il programma di 3 giorni</h1>
+
+    <div class="container py-5">
+        <ul class="nav nav-tabs justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" [class.active]="selectedTab === 1" (click)="selectTab(1)" [ngClass]="{'has-underline': selectedTab === 1}">Giorno 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [class.active]="selectedTab === 2" (click)="selectTab(2)" [ngClass]="{'has-underline': selectedTab === 2}">Giorno 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [class.active]="selectedTab === 3" (click)="selectTab(3)" [ngClass]="{'has-underline': selectedTab === 3}">Giorno 3</a>
+            </li>
+          </ul>
+  
+        <div class="tab-content">
+            <div class="tab-pane" [ngClass]="{'active': selectedTab === 1}">
+              <app-giorno1 *ngIf="selectedTab === 1"></app-giorno1>
+            </div>
+            <div class="tab-pane" [ngClass]="{'active': selectedTab === 2}">
+              <app-giorno2 *ngIf="selectedTab === 2"></app-giorno2>
+            </div>
+            <div class="tab-pane" [ngClass]="{'active': selectedTab === 3}">
+              <app-giorno3 *ngIf="selectedTab === 3"></app-giorno3>
+            </div>
+        </div>
+    </div>
+
+</div>

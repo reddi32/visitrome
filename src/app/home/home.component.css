@@ -54,8 +54,33 @@
 /*Link "maggiori informazioni"*/
 .pt-2.fs-6.text-center.link {
     text-decoration: none;
-    color: black;
+    position: relative;
+    color: #333; /* Colore del testo del link */
+    transition: color 0.3s; /* Effetto transizione del colore del testo */
 }
+
+.pt-2.fs-6.text-center.link::before {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Altezza della barra di sottolineatura */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Spessore della barra di sottolineatura */
+    background-color: #252422; /* Colore della barra di sottolineatura */
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.pt-2.fs-6.text-center.link:hover {
+    color: #252422; /* Cambio colore del testo al passaggio del mouse */
+  }
+  
+.pt-2.fs-6.text-center.link:hover::before {
+    opacity: 1;
+    transform: scaleX(1);
+  }
 
 /*Card subtitle*/
 .card-text.fs-6 {

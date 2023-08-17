@@ -35,6 +35,11 @@ import { DovemangiarePostComponent } from './dovemangiare-post/dovemangiare-post
 import { MostrePostComponent } from './mostre-post/mostre-post.component';
 import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 import { ComingSoonTwoComponent } from './coming-soon-two/coming-soon-two.component';
+import { ViaggioinfamigliaComponent } from './viaggioinfamiglia/viaggioinfamiglia.component';
+import { Giorno1Component } from './viaggioinfamiglia/giorno1/giorno1.component';
+import { Giorno2Component } from './viaggioinfamiglia/giorno2/giorno2.component';
+import { Giorno3Component } from './viaggioinfamiglia/giorno3/giorno3.component';
+
 
 @NgModule({
   declarations: [
@@ -65,6 +70,10 @@ import { ComingSoonTwoComponent } from './coming-soon-two/coming-soon-two.compon
     MostrePostComponent,
     ComingSoonComponent,
     ComingSoonTwoComponent,
+    ViaggioinfamigliaComponent,
+    Giorno1Component,
+    Giorno2Component,
+    Giorno3Component,
   ],
   imports: [
     BrowserModule,

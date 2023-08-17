@@ -5,7 +5,7 @@
   <img src="../assets/arrivarearoma.png" class="img-fluid shadow" alt="muoversi a roma">
   <div class="container-fluid general">
     <!--Trasporto pubblico-->
-    <h1 class="fs-1 text-center">Se sei a Roma, sei nel cuore dell'Italia <br> Letteralmente e figurativamente</h1>
+    <h1 class="fs-1 text-center py-5">Se sei a Roma, sei nel cuore dell'Italia <br> Letteralmente e figurativamente</h1>
     <p class="text-start py-3">La città occupa anche una posizione altamente strategica. Arrivi nel centro di Roma in
       treno dalle principali
       stazioni italiane presenti nelle altre città. Grazie all'aeroporto di Fiumicino, in totale sono 105 le compagnie
@@ -34,12 +34,12 @@
       <table class="table text-start">
         <thead>
           <tr>
-            <th>Tipologia</th>
-            <th>Prezzo</th>
+            <th class="text-start">Tipologia</th>
+            <th class="text-end">Prezzo</th>
           </tr>
           <tr *ngFor="let item of items">
-            <td>{{item.col1}}</td>
-            <td>{{item.col2}}</td>
+            <td class="text-start">{{item.col1}}</td>
+            <td class="text-end">{{item.col2}}</td>
           </tr>
         </thead>
       </table>
@@ -52,12 +52,12 @@
       <table class="table text-start">
         <thead>
           <tr>
-            <th>Tipologia</th>
-            <th>Prezzo</th>
+            <th class="text-start">Tipologia</th>
+            <th class="text-end">Prezzo</th>
           </tr>
           <tr *ngFor="let item of bus">
-            <td>{{item.col1}}</td>
-            <td>{{item.col2}}</td>
+            <td class="text-start">{{item.col1}}</td>
+            <td class="text-end">{{item.col2}}</td>
           </tr>
         </thead>
       </table>
@@ -65,7 +65,7 @@
 
     <!--In treno-->
     <h1 class="fs-1 text-center">In treno</h1>
-    <p class="text-center py-3">Il treno è uno dei migliori mezzi di trasporto per raggiungere Roma dalle varie città.
+    <p class="text-center py-3">Il treno è uno dei migliori mezzi di trasporto per raggiungere Roma dalle varie città.
     </p>
     <div class="text-center">
       <img src="../assets/train.gif" alt="atac" class="img-fluid" width="150px">
@@ -93,23 +93,15 @@
     </div>
 
     <div class="container-fluid">
-      <table class="table">
+      <table class="table text-start">
         <thead>
           <tr>
-            <td><a class="autobus" href="https://www.marozzivt.it/home">Marozzi</a></td>
-            <td>Autobus dal Sud Italia verso Roma</td>
+            <th class="text-start">Compagnia</th>
+            <th class="text-end">Provenienza</th>
           </tr>
-          <tr>
-            <td><a class="autobus" href="https://www.autolineemoretti.it/Moretti/html/index.jsf">Moretti</a></td>
-            <td>Autobus dal Sud Italia verso Roma</td>
-          </tr>
-          <tr>
-            <td><a class="autobus" href="http://www.baltour.it/">Baltour</a></td>
-            <td>Autobus dal Nord Italia verso Roma</td>
-          </tr>
-          <tr>
-            <td><a class="autobus" href="http://www.flixbus.it/">Flixbus</a></td>
-            <td>Autobus dal Nord Italia verso Roma</td>
+          <tr *ngFor="let item of pullman">
+            <td [innerHTML]="item.col2" class="text-start"></td>
+            <td class="text-end">{{item.col1}}</td>
           </tr>
         </thead>
       </table>

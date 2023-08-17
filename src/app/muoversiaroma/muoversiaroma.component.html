@@ -51,18 +51,12 @@
     <table class="table table-hover text-start">
       <thead>
         <tr>
-          <th>Tipologia</th>
-          <th>Prezzo</th>
+          <th class="text-start">Tipologia</th>
+          <th class="text-end">Prezzo</th>
         </tr>
         <tr *ngFor="let item of tickets">
-          <td>{{item.col1}}</td>
-          <td>{{item.col2}}</td>
-        </tr>
-        <tr>
-          <td>Biglietto Leonardo Express</td>
-          <td><a class="leonardoexpress2"
-              href="https://www.trenitalia.com/it/treni_regionali/lazio/leonardo_express.html">Vedi sito ufficiale</a>
-          </td>
+          <td class="text-start">{{item.col1}}</td>
+          <td class="text-end" [innerHTML]="item.col2">{{item.col2}}</td>
         </tr>
       </thead>
     </table>
@@ -78,12 +72,12 @@
     <table class="table table-hover text-start">
       <thead>
         <tr>
-          <th>Tipologia</th>
-          <th>Prezzo</th>
+          <th class="text-start">Tipologia</th>
+          <th class="text-end">Prezzo</th>
         </tr>
         <tr *ngFor="let item of taxi">
-          <td>{{item.col1}}</td>
-          <td>{{item.col2}}</td>
+          <td class="text-start">{{item.col1}}</td>
+          <td class="text-end">{{item.col2}}</td>
         </tr>
       </thead>
     </table>
@@ -95,35 +89,30 @@
     <table class="table table-hover text-start">
       <thead>
         <tr>
-          <th>Tipologia</th>
-          <th>Prezzo</th>
+          <th class="text-start">Tipologia</th>
+          <th class="text-center">Prezzo</th>
+          <th class="text-end">Download</th>
         </tr>
         <tr>
-          <td>Radio Taxi: 06-3570</td>
-          <td><a class="taxi px-0" href="https://www.3570.it/">www.3570.it</a></td>
-          <td><a class="btn btn-outline-link"
-              href="https://play.google.com/store/apps/details?id=it.ud.microtek.ITTaxi&hl=it">Play Store</a></td>
-          <a class="btn btn-outline-link" href="https://itunes.apple.com/it/app/it-taxi/id527559443?mt=8">App Store</a>
-        </tr>
-        <tr>
-          <td>Pronto Taxi: 06-6645</td>
-          <td><a class="taxi px-0" href="https://6645.it/">www.6645.it</a></td>
-          <td><a class="btn btn-outline-link"
-              href="https://play.google.com/store/apps/details?id=it.ud.microtek.ITTaxi&hl=it">Play Store</a></td>
-          <td><a class="btn btn-outline-link" href="https://apps.apple.com/it/app/intaxi-il-tuo-taxi/id1258614882">App
-              Store</a></td>
-        </tr>
-        <tr>
-          <td>Samarcanda: 06-5551</td>
-          <td><a class="taxi px-0" href="https://065551.it/">www.065551.it</a></td>
-          <td><a class="btn btn-outline-link"
-              href="https://play.google.com/store/apps/details?id=it.wetaxi.samarcandaplus&hl=it&gl=US">Play Store</a>
+          <td class="text-start">Radio Taxi: 06-3570</td>
+          <td class="text-center"><a class="taxi px-0" href="https://www.3570.it/">www.3570.it</a></td>
+          <td class="text-end"><a class="btn btn-outline-link" href="https://play.google.com/store/apps/details?id=it.ud.microtek.ITTaxi&hl=it">Play Store</a>
+                               <a class="btn btn-outline-link" href="https://itunes.apple.com/it/app/it-taxi/id527559443?mt=8">App Store</a>
           </td>
-          <td><a class="btn btn-outline-link" href="https://apps.apple.com/us/app/samarcanda-plus/id1636444856">App
-              Store</a></td>
         </tr>
         <tr>
-          <td>Altre compagnie: 06-4994, 06-4157</td>
+          <td class="text-start">Pronto Taxi: 06-6645</td>
+          <td class="text-center"><a class="taxi px-0" href="https://6645.it/">www.6645.it</a></td>
+          <td class="text-end"><a class="btn btn-outline-link" href="https://play.google.com/store/apps/details?id=it.ud.microtek.ITTaxi&hl=it">Play Store</a>
+                               <a class="btn btn-outline-link" href="https://apps.apple.com/it/app/intaxi-il-tuo-taxi/id1258614882">App Store</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="text-start">Samarcanda: 06-5551</td>
+          <td class="text-center"><a class="taxi px-0" href="https://065551.it/">www.065551.it</a></td>
+          <td class="text-end"><a class="btn btn-outline-link" href="https://play.google.com/store/apps/details?id=it.wetaxi.samarcandaplus&hl=it&gl=US">Play Store</a>
+                               <a class="btn btn-outline-link" href="https://apps.apple.com/us/app/samarcanda-plus/id1636444856">App Store</a>
+          </td>
         </tr>
       </thead>
     </table>
@@ -174,7 +163,6 @@
         <img src="../assets/scooter.gif" alt="monopattini elettrici" width="125">
       </div>
     </div>
-    <div class="container py-4 text-center">
       <p class="text-start prezzo biglietti"><strong>Servizi disponibili</strong></p>
       <ul class="list-group-dotted text-start">
         <li class="list-group-dotted py-1"><a class="carsharing" href="https://www.li.me/it-it/vehicles">Lime</a></li>
@@ -188,11 +176,9 @@
         <li class="list-group-dotted py-1"><a class="carsharing"
             href="https://movilidad.acciona.com/it_IT/roma/">Acciona</a></li>
       </ul>
-    </div>
 
 
   <!--Roma Pass-->
-  <div class="container py-4 justify-content-center">
     <div class="row flex-lg-row align-items-center g-5">
       <div class="col-lg-6">
         <h1 class="fs-1 lh-1 mb-3 text-start">Roma Pass</h1>
@@ -246,5 +232,4 @@
         <img src="../assets/romapass.png" class="d-block mx-lg-auto img-fluid" alt="Roma Pass" width="500">
       </div>
     </div>
-  </div>
 </div>

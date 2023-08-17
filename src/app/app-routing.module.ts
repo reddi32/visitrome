@@ -24,6 +24,7 @@ import { ShoppingPostComponent } from './shopping-post/shopping-post.component';
 import { DovemangiarePostComponent } from './dovemangiare-post/dovemangiare-post.component';
 import { MostrePostComponent } from './mostre-post/mostre-post.component';
 import { RomainfamigliaPostComponent } from './romainfamiglia-post/romainfamiglia-post.component';
+import { ViaggioinfamigliaComponent } from './viaggioinfamiglia/viaggioinfamiglia.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -51,7 +52,8 @@ const routes: Routes = [
   { path: 'nightlifepost/:id', component: NightlifePostComponent},
   { path: 'shopping', component: ShoppingComponent},
   { path: 'shoppingpost/:id', component: ShoppingPostComponent},
-  { path: 'dovemangiarepost/:id', component: DovemangiarePostComponent}
+  { path: 'dovemangiarepost/:id', component: DovemangiarePostComponent},
+  { path: 'viaggioinfamiglia', component: ViaggioinfamigliaComponent}
 
 
 ];
