@@ -1,1 +1,54 @@
-<p>giorno3 works!</p>
+<div class="container-fluid py-1">
+
+    <p class="fs-4 fw-bold text-start py-5">Giorno 3 - Ghetto ebraico e dintorni</p>
+  
+    <p class="fs-6 text-start py-3">
+        Oggi ci immergeremo nella ricca storia e nella bellezza artistica della città, esplorando luoghi significativi e affascinanti. Preparatevi per una 
+        giornata indimenticabile che vi porterà a conoscere il Ghetto Ebraico, opere d'arte straordinarie e uno dei tesori antichi più preziosi.
+    </p>
+  
+    <img src="../assets/Ghetto.jpg" class="img-fluid mx-auto d-block shadow" alt="itinerari">
+  
+    <span><br></span>
+  
+    <p class="fs-6 text-start">
+        Cominciamo la giornata con una visita al Ghetto Ebraico, un luogo che racchiude una parte importante della storia di Roma. Camminando per le strade di 
+        questo quartiere affascinante, sarete avvolti da un'atmosfera che riporta alle tradizioni ebraiche secolari. 
+    </p>
+    <p class="fs-6 text-start">
+        Fate tappa alla rinomata Sinagoga di Roma, un simbolo di resilienza e fede. La sua architettura maestosa vi lascerà senza parole, mentre esplorerete l'interno 
+        decorato con dettagli intricati e simbolismo profondo. Questo luogo vi offrirà una prospettiva unica sulla presenza ebraica nella storia di Roma.
+    </p>
+  
+    <img src="../assets/SantaMariaMaggiore.jpg" class="img-fluid mx-auto d-block shadow" alt="itinerari">
+  
+    <span><br></span>
+  
+    <p class="fs-6 text-start">
+        Nel pomeriggio, ci immergeremo nell'arte sacra e nella bellezza architettonica della città. La Basilica di Santa Maria Maggiore vi accoglierà con la sua imponente 
+        facciata e l'interno magnificamente decorato. Gli affreschi, le sculture e gli altari raccontano storie di fede e devozione, offrendo uno spettacolo visivo emozionante.
+    </p>
+    <p class="fs-6 text-start">
+        Dopo aver ammirato la basilica, dirigetevi verso la Fontana dell'Aquilone, una gemma nascosta che vi sorprenderà con la sua grazia e la sua eleganza. L'acqua che scorre e 
+        le sculture artistiche creano un'atmosfera rilassante, ideale per una pausa riflessiva.
+    </p>
+  
+    <img src="../assets/pantheon-2.jpg" class="img-fluid mx-auto d-block shadow" alt="itinerari">
+  
+    <span><br></span>
+    
+    <p class="fs-6 text-start">
+        La sera ci porta al Pantheon, un'antica meraviglia che continua a incantare i visitatori di tutto il mondo. Questo tempio, dedicato agli dei dell'antica Roma, 
+        si distingue per il suo imponente cupolone e per la perfetta armonia delle sue proporzioni. Entrando nel Pantheon, vi troverete circondati dalla grandezza 
+        dell'architettura romana e dalla suggestiva luce che penetra attraverso l'oculo al centro della cupola. Un'esperienza che vi lascerà senza dubbio affascinati.
+    </p>
+  
+    <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center py-3">
+        <div class="col" *ngFor="let Viaggioinfamiglia of Viaggioinfamiglia">
+          <div class="card" style="border: 0;">
+            <img src="../assets/{{Viaggioinfamiglia.img}}" class="img-fluid">
+          </div>
+        </div>
+    </div>
+  
+  </div>

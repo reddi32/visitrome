@@ -1,0 +1,46 @@
+<div class="container-fluid py-1">
+
+    <h1 class="display-5 text-center py-5">Una viaggio indimenticabile in famiglia</h1>
+
+    <!--Heo image-->
+    <img src="../assets/couple_1.jpg" class="img-fluid mx-auto d-block shadow" alt="itinerari">
+
+    <div class="container py-5">
+    <p class="fs-5 text-start fw-bold">
+        Sei in cerca di ispirazione per un viaggio romantico a Bruxelles con la tua dolce metà?
+        Lasciatevi conquistare dagli splendidi monumenti, le strade cosparse di sampietrini, le passeggiate romantiche e i ristoranti tipici della capitale d'Italia. 
+    </p>
+    <p class="fs-5 text-start fw-bold">
+        Non dovete pensare a nulla perché abbiamo preparato un itinerario che vi farà battere forte il cuore per tutto il viaggio.
+    </p>
+    </div>
+
+    <h1 class="display-5 text-center py-5">Scopri il programma di 3 giorni</h1>
+
+    <div class="container py-5">
+        <ul class="nav nav-tabs justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" [class.active]="selectedTab === 1" (click)="selectTab(1)" [ngClass]="{'has-underline': selectedTab === 1}">Giorno 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [class.active]="selectedTab === 2" (click)="selectTab(2)" [ngClass]="{'has-underline': selectedTab === 2}">Giorno 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [class.active]="selectedTab === 3" (click)="selectTab(3)" [ngClass]="{'has-underline': selectedTab === 3}">Giorno 3</a>
+            </li>
+          </ul>
+  
+        <div class="tab-content">
+            <div class="tab-pane" [ngClass]="{'active': selectedTab === 1}">
+              <app-giorno7 *ngIf="selectedTab === 1"></app-giorno7>
+            </div>
+            <div class="tab-pane" [ngClass]="{'active': selectedTab === 2}">
+              <app-giorno8 *ngIf="selectedTab === 2"></app-giorno8>
+            </div>
+            <div class="tab-pane" [ngClass]="{'active': selectedTab === 3}">
+              <app-giorno9 *ngIf="selectedTab === 3"></app-giorno9>
+            </div>
+        </div>
+    </div>
+
+</div>

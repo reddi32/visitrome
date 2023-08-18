@@ -1,0 +1,51 @@
+<div class="container-fluid py-1">
+
+    <p class="fs-4 fw-bold text-start py-5">Giorno 2 - Musei Vaticani, Castel Sant'Angelo</p>
+  
+    <p class="fs-6 text-start py-3">
+        Se il tuo obiettivo è scoprire la magia di Roma in famiglia, il secondo giorno del tuo viaggio sarà una continua avventura. Questa giornata ricca di tesori artistici, 
+        storia e autenticità ti porterà alla scoperta dei Musei Vaticani, dell'imponente Castel Sant'Angelo e della vivace anima del quartiere di Trastevere.
+    </p>
+  
+    <img src="../assets/vatican.jpg" class="img-fluid mx-auto d-block shadow" alt="itinerari">
+  
+    <span><br></span>
+  
+    <p class="fs-6 text-start">
+        La tua giornata inizia con un'immersione nei tesori artistici e religiosi dei Musei Vaticani. Questo complesso museale è famoso in tutto il mondo per la sua 
+        collezione eclettica di opere d'arte, tra cui sculture, dipinti, arazzi e reperti archeologici. La visita alla Cappella Sistina sarà un momento magico, 
+        con l'opportunità di ammirare il soffitto affrescato da Michelangelo.
+    </p>
+    <p class="fs-6 text-start">
+        Dopo aver maravigliato i tuoi occhi nella Cappella Sistina, dirigi i passi verso la maestosa Basilica di San Pietro. Questa struttura sacra di proporzioni 
+        strabilianti è una delle chiese più significative al mondo e un'icona della fede cristiana. Goditi la bellezza architettonica e spirituale di questa imponente basilica.
+    </p>
+  
+    <img src="../assets/castel.jpg" class="img-fluid mx-auto d-block shadow" alt="itinerari">
+  
+    <span><br></span>
+  
+    <p class="fs-6 text-start">
+        Nel pomeriggio, concediti una visita a Castel Sant'Angelo, un castello dal fascino intramontabile. Questo antico mausoleo imperiale, trasformato in fortezza medievale, 
+        è un connubio di storia e architettura. Ammira l'imponente struttura mentre ti immergi nelle vicende che l'hanno resa uno dei simboli di Roma.
+    </p>
+  
+    <img src="../assets/trastevere.jpg" class="img-fluid mx-auto d-block shadow" alt="itinerari">
+  
+    <span><br></span>
+    
+    <p class="fs-6 text-start">
+        La serata è dedicata all'esplorazione del quartiere di Trastevere, un luogo che incanta con i suoi vicoli pittoreschi e l'atmosfera bohémien. 
+        Questo quartiere è rinomato per le sue stradine acciottolate, le facciate colorate e i ristoranti accoglienti. Gusta una cena tradizionale e poi passeggiando, 
+        ammira le piazze e le fontane, prima di immergerti nella vita notturna tra bar e locali.
+    </p>
+  
+        <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center py-3">
+          <div class="col" *ngFor="let Viaggioinfamiglia of Viaggioinfamiglia">
+            <div class="card" style="border: 0;">
+              <img src="../assets/{{Viaggioinfamiglia.img}}" class="img-fluid">
+            </div>
+          </div>
+        </div>
+  
+  </div>

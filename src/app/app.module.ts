@@ -39,6 +39,15 @@ import { ViaggioinfamigliaComponent } from './viaggioinfamiglia/viaggioinfamigli
 import { Giorno1Component } from './viaggioinfamiglia/giorno1/giorno1.component';
 import { Giorno2Component } from './viaggioinfamiglia/giorno2/giorno2.component';
 import { Giorno3Component } from './viaggioinfamiglia/giorno3/giorno3.component';
+import { ViaggioconamiciComponent } from './viaggioconamici/viaggioconamici.component';
+import { Giorno4Component } from './viaggioconamici/giorno4/giorno4.component';
+import { Giorno5Component } from './viaggioconamici/giorno5/giorno5.component';
+import { Giorno6Component } from './viaggioconamici/giorno6/giorno6.component';
+import { ViaggioincoppiaComponent } from './viaggioincoppia/viaggioincoppia.component';
+import { Giorno7Component } from './viaggioincoppia/giorno7/giorno7.component';
+import { Giorno8Component } from './viaggioincoppia/giorno8/giorno8.component';
+import { Giorno9Component } from './viaggioincoppia/giorno9/giorno9.component';
+
 
 
 @NgModule({
@@ -74,6 +83,14 @@ import { Giorno3Component } from './viaggioinfamiglia/giorno3/giorno3.component'
     Giorno1Component,
     Giorno2Component,
     Giorno3Component,
+    ViaggioconamiciComponent,
+    Giorno4Component,
+    Giorno5Component,
+    Giorno6Component,
+    ViaggioincoppiaComponent,
+    Giorno7Component,
+    Giorno8Component,
+    Giorno9Component,
   ],
   imports: [
     BrowserModule,

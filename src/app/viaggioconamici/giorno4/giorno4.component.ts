@@ -3,25 +3,27 @@ import { Meta } from '@angular/platform-browser';
 import { Viaggioinfamiglia } from 'src/app/model/viaggioinfamiglia';
 
 @Component({
-  selector: 'app-giorno3',
-  templateUrl: './giorno3.component.html',
-  styleUrls: ['./giorno3.component.css']
+  selector: 'app-giorno4',
+  templateUrl: './giorno4.component.html',
+  styleUrls: ['./giorno4.component.css']
 })
-export class Giorno3Component {
+export class Giorno4Component {
 
   Viaggioinfamiglia: Viaggioinfamiglia[] = [];
 
   constructor(private meta: Meta) {
     this.Viaggioinfamiglia.push(
-      new Viaggioinfamiglia ("sinagoga.jpg")
+      new Viaggioinfamiglia ("Fori-Imperiali-1.jpg")
     );
     this.Viaggioinfamiglia.push(
-      new Viaggioinfamiglia ("FontanaAquilone.jpg")
+      new Viaggioinfamiglia ("piazza-navona-1.jpg")
     );
     this.Viaggioinfamiglia.push(
-      new Viaggioinfamiglia ("CampoDeFiori.jpg")
+      new Viaggioinfamiglia ("pantheon-1.jpg")
     );
-  
+    this.Viaggioinfamiglia.push(
+      new Viaggioinfamiglia ("piazzadispagna-1.jpg")
+    );
   }
 
   ngOnInit(): void {
@@ -32,5 +34,4 @@ export class Giorno3Component {
     });
 
   }
-
 }
