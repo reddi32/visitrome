@@ -13,16 +13,10 @@ export class Giorno4Component {
 
   constructor(private meta: Meta) {
     this.Viaggioinfamiglia.push(
-      new Viaggioinfamiglia ("Fori-Imperiali-1.jpg")
-    );
-    this.Viaggioinfamiglia.push(
       new Viaggioinfamiglia ("piazza-navona-1.jpg")
     );
     this.Viaggioinfamiglia.push(
       new Viaggioinfamiglia ("pantheon-1.jpg")
-    );
-    this.Viaggioinfamiglia.push(
-      new Viaggioinfamiglia ("piazzadispagna-1.jpg")
     );
   }
 

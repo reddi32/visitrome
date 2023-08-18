@@ -1,48 +1,52 @@
 <div class="container-fluid py-1">
 
-    <h1 class="display-5 text-center py-5">Una viaggio indimenticabile in famiglia</h1>
+  <h1 class="display-5 text-center py-5">Una vacanza con gli amici a Roma</h1>
 
-    <!--Heo image-->
-    <img src="../assets/friends_1.jpg" class="img-fluid mx-auto d-block shadow" alt="itinerari">
+  <!--Heo image-->
+  <img src="../assets/friends_1.jpg" class="img-fluid mx-auto d-block shadow" alt="itinerari">
 
-    <div class="container py-5">
+  <div class="container py-5">
     <p class="fs-5 text-start fw-bold">
-      Avete voglia di divertirvi? Ecco ciò che fa al caso vostro! Che ne direste di una vacanza di tre giorni con gli amici? Non dovete pensare a nulla perché abbiamo 
-      già la destinazione perfetta: Roma! <br>
-      È l’occasione ideale per godervi i tanti caffè e ristoranti, fare il pieno di cultura, immergervi nei secoli di storia e divertirvi fino alle prime ore del mattino. 
+      Avete voglia di divertirvi? Ecco ciò che fa al caso vostro! Che ne direste di una vacanza di tre giorni con gli
+      amici? Non dovete pensare a nulla perché abbiamo
+      già la destinazione perfetta: Roma!
     </p>
     <p class="fs-5 text-start fw-bold">
-      E in più, l’atmosfera caratteristica che regna a Roma non lascia nessuno indifferente. Dopotutto, che vita sarebbe senza una bella dose di autoironia e voglia di vivere?
+      E in più, l’atmosfera caratteristica che regna a Roma non lascia nessuno indifferente. Dopotutto, che vita sarebbe
+      senza una bella dose di autoironia e voglia di vivere?
       Venite a scoprirlo, con moderazione, in compagnia dei vostri amici!
     </p>
-    </div>
+  </div>
 
-    <h1 class="display-5 text-center py-5">Scopri il programma di 3 giorni</h1>
+  <h1 class="display-5 text-center py-5">Scopri il programma di 3 giorni</h1>
 
-    <div class="container py-5">
-        <ul class="nav nav-tabs justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link" [class.active]="selectedTab === 1" (click)="selectTab(1)" [ngClass]="{'has-underline': selectedTab === 1}">Giorno 1</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" [class.active]="selectedTab === 2" (click)="selectTab(2)" [ngClass]="{'has-underline': selectedTab === 2}">Giorno 2</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" [class.active]="selectedTab === 3" (click)="selectTab(3)" [ngClass]="{'has-underline': selectedTab === 3}">Giorno 3</a>
-            </li>
-          </ul>
-  
-        <div class="tab-content">
-            <div class="tab-pane" [ngClass]="{'active': selectedTab === 1}">
-              <app-giorno4 *ngIf="selectedTab === 1"></app-giorno4>
-            </div>
-            <div class="tab-pane" [ngClass]="{'active': selectedTab === 2}">
-              <app-giorno5 *ngIf="selectedTab === 2"></app-giorno5>
-            </div>
-            <div class="tab-pane" [ngClass]="{'active': selectedTab === 3}">
-              <app-giorno6 *ngIf="selectedTab === 3"></app-giorno6>
-            </div>
-        </div>
+  <div class="container py-5">
+    <ul class="nav nav-tabs justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" [class.active]="selectedTab === 1" (click)="selectTab(1)"
+          [ngClass]="{'has-underline': selectedTab === 1}">Giorno 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [class.active]="selectedTab === 2" (click)="selectTab(2)"
+          [ngClass]="{'has-underline': selectedTab === 2}">Giorno 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [class.active]="selectedTab === 3" (click)="selectTab(3)"
+          [ngClass]="{'has-underline': selectedTab === 3}">Giorno 3</a>
+      </li>
+    </ul>
+
+    <div class="tab-content">
+      <div class="tab-pane" [ngClass]="{'active': selectedTab === 1}">
+        <app-giorno4 *ngIf="selectedTab === 1"></app-giorno4>
+      </div>
+      <div class="tab-pane" [ngClass]="{'active': selectedTab === 2}">
+        <app-giorno5 *ngIf="selectedTab === 2"></app-giorno5>
+      </div>
+      <div class="tab-pane" [ngClass]="{'active': selectedTab === 3}">
+        <app-giorno6 *ngIf="selectedTab === 3"></app-giorno6>
+      </div>
     </div>
+  </div>
 
 </div>
