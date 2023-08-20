@@ -1,1 +1,57 @@
-<p>giorno8 works!</p>
+<div class="container-fluid py-1">
+
+    <p class="fs-4 fw-bold text-start py-5">Giorno 2 - Panorami incantevoli e romantici</p>
+
+    <p class="fs-6 text-start py-3">
+        Benvenuti nel secondo giorno del vostro viaggio a Roma, dove l'atmosfera romantica e i panorami mozzafiato vi
+        condurranno in un'avventura indimenticabile. Questa giornata è dedicata all'amore e alla bellezza, mentre
+        esplorate il Giardino degli Aranci e vi godete una romantica gita in barca sul Tevere.
+    </p>
+
+    <img src="../assets/giardinoDegliAranci.jpg" class="img-fluid mx-auto d-block shadow" alt="itinerari">
+
+    <span><br></span>
+
+    <p class="fs-6 text-start">
+        La vostra giornata inizia con una visita al suggestivo Giardino degli Aranci, un gioiello nascosto sul colle
+        Aventino. Questo angolo di paradiso vi accoglie con alberi di arancio profumati e una vista panoramica
+        mozzafiato sulla città di Roma.
+    </p>
+    <p class="fs-6 text-start">
+        È il luogo ideale per una passeggiata romantica, un picnic tra gli alberi o
+        semplicemente per immergersi nella bellezza serena della natura. Il Giardino degli Aranci offre una fuga
+        perfetta dalla frenesia urbana, creando uno spazio intimo e incantevole per condividere momenti speciali.
+    </p>
+
+    <img src="../assets/IsolaTiberina.jpg" class="img-fluid mx-auto d-block shadow" alt="itinerari">
+
+    <span><br></span>
+
+    <p class="fs-6 text-start">
+        Nel pomeriggio, immergetevi nella bellezza romantica di Roma da una prospettiva veramente unica: il Tevere.
+        Salite a bordo di una barca e godetevi una tranquilla navigazione lungo il fiume che attraversa la città.
+        Quest'esperienza vi regalerà l'opportunità di ammirare i monumenti storici e gli edifici iconici di Roma, mentre
+        vi lasciate avvolgere dalla rilassante atmosfera dell'acqua. Una varietà di opzioni di tour in barca è
+        disponibile, alcune delle quali includono persino una cena romantica, rendendo questo momento unico una perfetta
+        occasione per creare ricordi preziosi con il vostro partner.
+    </p>
+
+    <img src="../assets/romaItalia.jpg" class="img-fluid mx-auto d-block shadow" alt="itinerari">
+
+    <span><br></span>
+
+    <p class="fs-6 text-start">
+        Concludendo il secondo giorno a Roma, avrete sperimentato momenti romantici e panorami senza pari. Dal Giardino
+        degli Aranci con la sua vista mozzafiato alla gita romantica in barca sul Tevere, avete creato momenti che
+        rimarranno nel vostro cuore.
+    </p>
+
+    <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center py-3">
+        <div class="col" *ngFor="let Viaggioinfamiglia of Viaggioinfamiglia">
+            <div class="card" style="border: 0;">
+                <img src="../assets/{{Viaggioinfamiglia.img}}" class="img-fluid shadow">
+            </div>
+        </div>
+    </div>
+
+</div>

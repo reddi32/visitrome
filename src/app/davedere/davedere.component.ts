@@ -60,7 +60,7 @@ export class DavedereComponent {
       new Cosavedere ("fontana-di-trevi.jpg")
     );
     this.fontanaDiTrevi.push(
-      new Cosavedere ("fontana-di-trevi-due.jpg")
+      new Cosavedere ("trevi.jpg")
     );
     this.gianicolo.push(
       new Cosavedere ("gianicolo.jpg")

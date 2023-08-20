@@ -1,1 +1,59 @@
-<p>giorno9 works!</p>
+<div class="container-fluid py-1">
+
+    <p class="fs-4 fw-bold text-start py-5">Giorno 3 - Autenticità e Vita Notturna</p>
+
+    <p class="fs-6 text-start py-3">
+        Benvenuti al terzo giorno del vostro affascinante viaggio a Roma, una giornata che vi condurrà attraverso luoghi
+        sacri, quartieri pittoreschi e serate indimenticabili. Siete pronti a immergervi nell'essenza autentica della
+        Città Eterna?
+    </p>
+
+    <img src="../assets/SanPietro.jpg" class="img-fluid mx-auto d-block shadow" alt="itinerari">
+
+    <span><br></span>
+
+    <p class="fs-6 text-start">
+        La vostra avventura inizia con una visita alla Basilica di San Pietro, un luogo di straordinaria spiritualità e
+        imponenza. Questo capolavoro architettonico, situato all'interno dello Stato del Vaticano.
+    </p>
+    <p class="fs-6 text-start">
+        Ammirate le opere d'arte, gli affreschi e la sontuosità di questa basilica, nonché la magnifica Piazza San
+        Pietro che la circonda.
+    </p>
+
+    <img src="../assets/trastevere-1.jpg" class="img-fluid mx-auto d-block shadow" alt="itinerari">
+
+    <span><br></span>
+
+    <p class="fs-6 text-start">
+        Nel pomeriggio, immergetevi nell'atmosfera autentica di Roma mentre vi avventurate nel quartiere di Trastevere.
+        I suoi vicoli stretti, le piazze accoglienti e l'architettura affascinante vi cattureranno. Esplorate i
+        bellissimi
+        vicoli suggestivi del quartiere e fermatevi negli accoglienti bar per un aperitivo o nei
+        pittoreschi ristoranti per una cena squisita, dove potrete assaporare autentici piatti romani.
+        Trastevere è un luogo dove storia e vita contemporanea si fondono, offrendo una prospettiva
+        autentica e unica sulla città.
+    </p>
+
+    <img src="../assets/Trastevere-1.jpg" class="img-fluid mx-auto d-block shadow" alt="itinerari">
+
+    <span><br></span>
+
+    <p class="fs-6 text-start">
+        Per concludere questa giornata straordinaria, immergetevi nell'atmosfera vivace di un ristorante tipico romano,
+        dove l'autenticità culinaria si sposa con l'esperienza musicale dal vivo. Godetevi una cena che delizia il
+        palato con i sapori tradizionali romani, mentre la musica crea un'atmosfera incantevole. Questa serata sarà un
+        mix perfetto di cibo, musica e compagnia, creando momenti indimenticabili.
+
+
+    </p>
+
+    <div class="row row-cols-1 row-cols-md-2 g-3 justify-content-center py-3">
+        <div class="col" *ngFor="let Viaggioinfamiglia of Viaggioinfamiglia">
+            <div class="card" style="border: 0;">
+                <img src="../assets/{{Viaggioinfamiglia.img}}" class="img-fluid shadow">
+            </div>
+        </div>
+    </div>
+
+</div>

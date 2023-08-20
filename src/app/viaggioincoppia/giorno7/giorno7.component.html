@@ -1,1 +1,62 @@
-<p>giorno7 works!</p>
+<div class="container-fluid py-1">
+
+    <p class="fs-4 fw-bold text-start py-5">Giorno 1 - Antica grandezza e piazze incantevoli</p>
+
+    <p class="fs-6 text-start py-3">
+        Benvenuti in una città intrisa di storia e fascino senza tempo: Roma! Nel vostro primo giorno di avventura, vi
+        guideremo attraverso
+        le attrazioni più iconiche di questa città millenaria. Preparatevi a immergervi nell'antica grandezza e
+        nell'energia vitale di Roma,
+        esplorando monumenti maestosi e incantevoli piazze.
+    </p>
+
+    <img src="../assets/colosseo-due-1.jpg" class="img-fluid mx-auto d-block shadow" alt="itinerari">
+
+    <span><br></span>
+
+    <p class="fs-6 text-start">
+        La vostra avventura inizia con una visita al simbolo indiscusso di Roma: il <a
+            href="/visitrome/attractionpost/4tP9FJb27DtbC5CtIhmswV">Colosseo</a>.
+        Questo anfiteatro imponente, costruito nell'80 d.C.,
+        è stato teatro di epiche battaglie gladiatorie e spettacoli pubblici.
+        Ammirate la maestosità dell'architettura romana e immergetevi nell'atmosfera storica mentre esplorate le sue
+        stanze e corridoi.
+    </p>
+    <p class="fs-6 text-start">
+        Successivamente, dirigetevi al <a href="/visitrome/attractionpost/5vcsumHciaDJjYRylKVrwD">Foro Romano</a>, il
+        cuore politico e commerciale dell'antica Roma. Passeggiate tra le
+        rovine degli antichi templi, basiliche e archi trionfali, lasciandovi trasportare indietro nel tempo alla vita
+        quotidiana dell'Impero Romano.
+    </p>
+
+    <img src="../assets/fori-interni-due-1.jpg" class="img-fluid mx-auto d-block shadow" alt="itinerari">
+
+    <span><br></span>
+
+    <p class="fs-6 text-start">
+        Nel pomeriggio, percorrete il centro storico di Roma, attraversando Piazza Navona, dove tre splendide fontane
+        ornano questa piazza vivace e affascinante. Proseguite verso Piazza di Spagna, dove la celebre Scalinata di
+        Spagna si estende sotto lo sguardo vigile della Chiesa di Trinità dei Monti. Infine, gettate una moneta nella
+        Fontana di Trevi, un rituale che, si dice, garantisce un ritorno a Roma.
+    </p>
+
+    <img src="../assets/fontana-di-trevi-due.jpg" class="img-fluid mx-auto d-block shadow" alt="itinerari">
+
+    <span><br></span>
+
+    <p class="fs-6 text-start">
+        Per concludere questa giornata memorabile, concedetevi una cena autentica in un ristorante tipico romano.
+        Deliziatevi con i sapori della cucina locale, dai piatti di pasta alle specialità a base di carne, accompagnati
+        da vini prelibati. Immergetevi nell'atmosfera accogliente e rilassata di un autentico ristorante romano,
+        completando così una giornata indimenticabile.
+    </p>
+
+    <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center py-3">
+        <div class="col" *ngFor="let Viaggioinfamiglia of Viaggioinfamiglia">
+            <div class="card" style="border: 0;">
+                <img src="../assets/{{Viaggioinfamiglia.img}}" class="img-fluid shadow">
+            </div>
+        </div>
+    </div>
+
+</div>
