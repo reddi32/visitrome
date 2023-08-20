@@ -53,7 +53,7 @@
              || (!attrazioniSelected && !piazzeSelected && !museiSelected && !parchiSelected && !sitoarcheologicoSelected)
             )}">
             <div class="container-fluid text-start">
-              <img [src]="attractionPost.fields.featuredImage.fields.file.url" class="img-fluid">
+              <img [src]="attractionPost.fields.featuredImage.fields.file.url" class="img-fluid shadow">
               <h2 class="fs-4 py-1">{{attractionPost.fields.title}}</h2>
               <p>{{attractionPost.fields.summary}}</p>
               <a [routerLink]="['/attractionpost', attractionPost.sys.id]" class="btn btn-outline-dark">Leggi di più</a>

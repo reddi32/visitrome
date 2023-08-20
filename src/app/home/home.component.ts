@@ -38,7 +38,7 @@ export class HomeComponent implements OnInit {
       new FirstCard("Colosseo.jpg", "Da vedere assolutamente", "Scopri le migliori attrazioni di Roma durante la tua visita.", "Scopri di più")
     );
     this.card3.push(
-      new FirstCard("Cupolone.jpg", "Roma top 10", "Vieni con noi per trovare l'ispirazione per la tua visita a Roma.", "Scopri di più")
+      new FirstCard("Cupolone.jpg", "I giardini di Roma", "Verdi rifugi cittadini: giardini di Roma, natura e tranquillità.", "Scopri di più")
     );
   }
 

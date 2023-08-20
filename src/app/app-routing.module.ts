@@ -27,6 +27,7 @@ import { RomainfamigliaPostComponent } from './romainfamiglia-post/romainfamigli
 import { ViaggioinfamigliaComponent } from './viaggioinfamiglia/viaggioinfamiglia.component';
 import { ViaggioconamiciComponent } from './viaggioconamici/viaggioconamici.component';
 import { ViaggioincoppiaComponent } from './viaggioincoppia/viaggioincoppia.component';
+import { GiardiniComponent } from './giardini/giardini.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -57,7 +58,8 @@ const routes: Routes = [
   { path: 'dovemangiarepost/:id', component: DovemangiarePostComponent},
   { path: 'viaggioinfamiglia', component: ViaggioinfamigliaComponent},
   { path: 'viaggioconamici', component: ViaggioconamiciComponent},
-  { path: 'viaggioincoppia', component: ViaggioincoppiaComponent}
+  { path: 'viaggioincoppia', component: ViaggioincoppiaComponent},
+  { path: 'giardini', component: GiardiniComponent}
 
 ];
 

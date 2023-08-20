@@ -6,6 +6,11 @@
   z-index: 999;
 }*/
 
+.navbar-toggler:focus {
+  box-shadow: none;
+  border-color: none;
+}
+
 .dropdown:hover > .dropdown-menu {
   display: block;
   margin-top: 0;

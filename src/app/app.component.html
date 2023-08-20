@@ -12,8 +12,8 @@
       </button>
       <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown disabled px-2" *ngFor="let item of items">
-            <a class="nav-link dropdown-toggle disabled" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+          <li class="nav-item dropdown px-2" *ngFor="let item of items">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"
               style="color: black;">{{item.name}}</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li *ngFor="let subitem of item.subitems"><a class="dropdown-item"

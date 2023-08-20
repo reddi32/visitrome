@@ -26,38 +26,45 @@
   <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center py-3">
     <div class="col" *ngFor="let FirstCard of card">
       <div class="card text-bg-dark">
-        <img src="../assets/{{FirstCard.img}}" class="card-img">
-        <div class="card-img-overlay">
-          <a class="card-title fs-6 fw-bold text-light text-center" routerLink="/cinquemotivipervisitareroma"><h5 class="fs-6 fw-bold text-light">{{FirstCard.title}}</h5></a>
-          <a class="card-text fs-6 text-center" routerLink="/cinquemotivipervisitareroma"><p class="card-text fs-6 text-center">{{FirstCard.paragraph}}</p></a>
-          <div class="text-center">
-            <a class="btn btn-light" routerLink="/cinquemotivipervisitareroma">{{FirstCard.link}}</a>
+        <a routerLink="/cinquemotivipervisitareroma">
+          <img src="../assets/{{FirstCard.img}}" class="card-img">
+          <div class="card-img-overlay">
+            <a class="card-title fs-6 fw-bold text-light text-center" routerLink="/cinquemotivipervisitareroma">
+              <h5 class="fs-6 fw-bold text-light">{{FirstCard.title}}</h5>
+            </a>
+            <a class="card-text fs-6 text-center" routerLink="/cinquemotivipervisitareroma">
+              <p class="card-text fs-6 text-center">{{FirstCard.paragraph}}</p>
+            </a>
           </div>
-        </div>
+        </a>
       </div>
     </div>
     <div class="col" *ngFor="let FirstCard of card2">
       <div class="card text-bg-dark">
-        <img src="../assets/{{FirstCard.img}}" class="card-img">
-        <div class="card-img-overlay">
-          <a class="card-title fs-6 fw-bold text-light text-center" routerLink="/davedere"><h5 class="fs-6 fw-bold text-light">{{FirstCard.title}}</h5></a>
-          <a class="card-text fs-6 text-center" routerLink="/davedere"><p class="card-text fs-6 text-center">{{FirstCard.paragraph}}</p></a>
-          <div class="text-center">
-            <a class="btn btn-light" routerLink="/davedere">{{FirstCard.link}}</a>
+        <a routerLink="/davedere">
+          <img src="../assets/{{FirstCard.img}}" class="card-img">
+          <div class="card-img-overlay">
+            <a class="card-title fs-6 fw-bold text-light text-center" routerLink="/davedere">
+              <h5 class="fs-6 fw-bold text-light">{{FirstCard.title}}</h5>
+            </a>
+            <a class="card-text fs-6 text-center" routerLink="/davedere">
+              <p class="card-text fs-6 text-center">{{FirstCard.paragraph}}</p>
+            </a>
           </div>
-        </div>
+        </a>
       </div>
     </div>
     <div class="col" *ngFor="let FirstCard of card3">
       <div class="card text-bg-dark">
-        <img src="../assets/{{FirstCard.img}}" class="card-img">
-        <div class="card-img-overlay">
-          <a class="card-title fs-6 fw-bold text-light text-center" routerLink="/davedere"><h5 class="fs-6 fw-bold text-light">{{FirstCard.title}}</h5></a>
-          <p class="card-text fs-6 text-center">{{FirstCard.paragraph}}</p>
-          <div class="text-center">
-            <a class="btn btn-light" href="/blogpost/574RmJU93IDu3zgq0JuUEB">{{FirstCard.link}}</a>
+        <a routerLink="/giardini">
+          <img src="../assets/{{FirstCard.img}}" class="card-img">
+          <div class="card-img-overlay">
+            <a class="card-title fs-6 fw-bold text-light text-center" routerLink="/giardini">
+              <h5 class="fs-6 fw-bold text-light">{{FirstCard.title}}</h5>
+            </a>
+            <p class="card-text fs-6 text-center">{{FirstCard.paragraph}}</p>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>

@@ -28,9 +28,6 @@ export class DavedereComponent {
     this.cosavedere.push(
       new Cosavedere ("Fori-Imperiali.jpg")
     );
-    this.cosavedere.push(
-      new Cosavedere ("fori-interni-due.jpg")
-    );
 
     this.pantheon.push(
       new Cosavedere ("pantheon-due.jpg")

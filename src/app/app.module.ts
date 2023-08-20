@@ -47,6 +47,7 @@ import { ViaggioincoppiaComponent } from './viaggioincoppia/viaggioincoppia.comp
 import { Giorno7Component } from './viaggioincoppia/giorno7/giorno7.component';
 import { Giorno8Component } from './viaggioincoppia/giorno8/giorno8.component';
 import { Giorno9Component } from './viaggioincoppia/giorno9/giorno9.component';
+import { GiardiniComponent } from './giardini/giardini.component';
 
 
 
@@ -91,6 +92,7 @@ import { Giorno9Component } from './viaggioincoppia/giorno9/giorno9.component';
     Giorno7Component,
     Giorno8Component,
     Giorno9Component,
+    GiardiniComponent,
   ],
   imports: [
     BrowserModule,
