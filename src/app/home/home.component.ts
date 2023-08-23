@@ -22,23 +22,23 @@ export class HomeComponent implements OnInit {
 
   constructor(private meta: Meta) {
     this.listaInfo.push(
-      new Info ("road-map.png", "Aereo, treno, autobus o macchina? È semplice, tutte le strade portano a Roma", "Arrivare a Roma", "Maggiori informazioni")
+      new Info ("road-map.webp", "Aereo, treno, autobus o macchina? È semplice, tutte le strade portano a Roma", "Arrivare a Roma", "Maggiori informazioni")
     );
     this.listaInfo2.push(
-      new Info ("tram.png", "Muoversi in tram, autobus, metro, treno... Il trasporto è semplice a Roma", "Andare in giro", "Maggiori informazioni")
+      new Info ("tram.webp", "Muoversi in tram, autobus, metro, treno... Il trasporto è semplice a Roma", "Andare in giro", "Maggiori informazioni")
     );
     this.listaInfo3.push(
-      new Info("colosseum-2.png", "Siete già a Roma e volete suggerimenti su cosa fare? Venite nei nostri InfoPoint", "Uffici turistici", "Maggiori informazioni")
+      new Info("colosseum-2.webp", "Siete già a Roma e volete suggerimenti su cosa fare? Venite nei nostri InfoPoint", "Uffici turistici", "Maggiori informazioni")
     );
 
     this.card.push(
-      new FirstCard("FontanaDiTrevi.jpg", "Cinque motivi per cui visitare Roma", "Perché visitare Roma?", "Scopri di più")
+      new FirstCard("FontanaDiTrevi.webp", "Cinque motivi per cui visitare Roma", "Perché visitare Roma?", "Scopri di più")
     );
     this.card2.push(
-      new FirstCard("Colosseo.jpg", "Da vedere assolutamente", "Scopri le migliori attrazioni di Roma durante la tua visita.", "Scopri di più")
+      new FirstCard("Colosseo.webp", "Da vedere assolutamente", "Scopri le migliori attrazioni di Roma durante la tua visita.", "Scopri di più")
     );
     this.card3.push(
-      new FirstCard("Cupolone.jpg", "I giardini di Roma", "Verdi rifugi cittadini: giardini di Roma, natura e tranquillità.", "Scopri di più")
+      new FirstCard("Cupolone.webp", "I giardini di Roma", "Verdi rifugi cittadini: giardini di Roma, natura e tranquillità.", "Scopri di più")
     );
   }
 

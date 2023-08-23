@@ -17,53 +17,53 @@ export class DavedereComponent {
 
   constructor(private meta: Meta) {
     this.cosavedere.push(
-      new Cosavedere ("Colosseo-cosa-vedere.jpg")
+      new Cosavedere ("Colosseo-cosa-vedere.webp")
     );
     this.cosavedere.push(
-      new Cosavedere ("colosseo-due.jpg")
+      new Cosavedere ("colosseo-due.webp")
     );
     this.cosavedere.push(
-      new Cosavedere ("arena-colosseo.jpg")
+      new Cosavedere ("arena-colosseo.webp")
     );
     this.cosavedere.push(
-      new Cosavedere ("Fori-Imperiali.jpg")
+      new Cosavedere ("Fori-Imperiali.webp")
     );
 
     this.pantheon.push(
-      new Cosavedere ("pantheon-due.jpg")
+      new Cosavedere ("pantheon-due.webp")
     );
     this.pantheon.push(
-      new Cosavedere ("cupola-pantheon.jpg")
+      new Cosavedere ("cupola-pantheon.webp")
     );
     this.sanPietro.push(
-      new Cosavedere ("san-pietro.jpg")
+      new Cosavedere ("san-pietro.webp")
     );
     this.sanPietro.push(
-      new Cosavedere ("vaticano.jpg")
+      new Cosavedere ("vaticano.webp")
     );
     this.sanPietro.push(
-      new Cosavedere ("giardini-vaticani.jpg")
+      new Cosavedere ("giardini-vaticani.webp")
     );
     this.sanPietro.push(
-      new Cosavedere ("san-pietro-interno.jpg")
+      new Cosavedere ("san-pietro-interno.webp")
     );
     this.castelSantAngelo.push(
-      new Cosavedere ("castel-sant'angelo.jpg")
+      new Cosavedere ("castel-sant'angelo.webp")
     );
     this.castelSantAngelo.push(
-      new Cosavedere ("castel-sant'angelo-due.jpg")
+      new Cosavedere ("castel-sant'angelo-due.webp")
     );
     this.fontanaDiTrevi.push(
-      new Cosavedere ("fontana-di-trevi.jpg")
+      new Cosavedere ("fontana-di-trevi.webp")
     );
     this.fontanaDiTrevi.push(
-      new Cosavedere ("trevi.jpg")
+      new Cosavedere ("trevi.webp")
     );
     this.gianicolo.push(
-      new Cosavedere ("gianicolo.jpg")
+      new Cosavedere ("gianicolo.webp")
     );
     this.gianicolo.push(
-      new Cosavedere ("gianicolo-due.jpg")
+      new Cosavedere ("gianicolo-due.webp")
     );
   }
 

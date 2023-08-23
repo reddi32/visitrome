@@ -20,13 +20,13 @@ export class ItinerariComponent implements OnInit {
 
   constructor(private meta: Meta, private firebase: EmailUtentiService, private formBuilder: FormBuilder) {
     this.itinerariInfo.push(
-      new Itinerari("family.jpg", "Venire a Roma in famiglia è davvero un’ottima idea! Ci sono tantissime cose da fare e tantissimi luoghi da scoprire, questo è sicuro.", "Una viaggio indimenticabile in famiglia", "Maggiori informazioni")
+      new Itinerari("family.webp", "Venire a Roma in famiglia è davvero un’ottima idea! Ci sono tantissime cose da fare e tantissimi luoghi da scoprire, questo è sicuro.", "Una viaggio indimenticabile in famiglia", "Maggiori informazioni")
     );
     this.itinerariInfo2.push(
-      new Itinerari("friends.jpg", "Avete voglia di divertirvi? Che ne direste di una vacanza con gli amici? Non dovete pensare a nulla perché abbiamo già la destinazione perfetta: Roma!", "Una vacanza con gli amici a Roma", "Maggiori informazioni")
+      new Itinerari("friends.webp", "Avete voglia di divertirvi? Che ne direste di una vacanza con gli amici? Non dovete pensare a nulla perché abbiamo già la destinazione perfetta: Roma!", "Una vacanza con gli amici a Roma", "Maggiori informazioni")
     );
     this.itinerariInfo3.push(
-      new Itinerari("couple.jpg", "Sei in cerca di ispirazione per un viaggio romantico a Roma? Lasciati conquistare dagli splendidi monumenti, le passeggiate romantiche e i ristoranti tipici della capitale.", "Una vacanza in coppia a Roma", "Maggiori informazioni")
+      new Itinerari("couple.webp", "Sei in cerca di ispirazione per un viaggio romantico a Roma? Lasciati conquistare dagli splendidi monumenti, le passeggiate romantiche e i ristoranti tipici della capitale.", "Una vacanza in coppia a Roma", "Maggiori informazioni")
     );
   }
 

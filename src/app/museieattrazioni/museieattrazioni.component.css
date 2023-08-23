@@ -19,7 +19,7 @@
 }
 
 .btn.btn-outline-dark.filter{
-  border-radius: 10rem;
+  border-radius: 5px;
 }
 .btn.btn-outline-dark:hover{
   background-color: black;

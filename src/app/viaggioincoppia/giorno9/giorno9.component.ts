@@ -13,10 +13,10 @@ export class Giorno9Component {
 
   constructor(private meta: Meta) {
     this.Viaggioinfamiglia.push(
-      new Viaggioinfamiglia ("castel.jpg")
+      new Viaggioinfamiglia ("castel.webp")
     );
     this.Viaggioinfamiglia.push(
-      new Viaggioinfamiglia ("SanPietro-1.jpg")
+      new Viaggioinfamiglia ("SanPietro-1.webp")
     );
   }
 
