@@ -21,14 +21,14 @@ export class AttrazioniComponent implements OnInit {
   categories = ['Attrazioni', 'Piazza', 'Museo', 'Parco', 'Sito archeologico'];
   selectedCategory: string | undefined;
 
-  loadedArticlesCount: number = 9; // Numero iniziale di articoli caricati
-  articlesPerPage: number = 9; // Numero di articoli da caricare ogni volta
-  totalArticles: any;
+  loadedArticlesCount: number = 60; // Numero iniziale di articoli caricati
+  //articlesPerPage: number = 9; // Numero di articoli da caricare ogni volta
+  //totalArticles: any;
   
-
+  /*
   loadMoreArticles() {
     this.loadedArticlesCount += this.articlesPerPage;
-  }
+  }*/
 
   onCheckboxChange(category: string) {
     if (this.selectedCategory === category) {
@@ -79,10 +79,10 @@ export class AttrazioniComponent implements OnInit {
   ngOnInit(): void {
     this.attractionPosts$ = this.contentfulsecondService.getAllEntriesAttraction();
   
-  // Imposta il numero totale di articoli
+  /* Imposta il numero totale di articoli
   this.attractionPosts$.subscribe(posts => {
     this.totalArticles = posts.items.length;
-  });
+  });*/
 
     this.route.params.subscribe(
       params => {

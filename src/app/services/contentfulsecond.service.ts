@@ -19,7 +19,10 @@ export class ContentfulsecondService {
   });
 
   getAllEntriesAttraction() {
-    const promise = this.client2.getEntries();
+    const promise = this.client2.getEntries(
+      {
+        content_type: 'attractionPost',
+        order: 'fields.title',});
     return from(promise);
   }
 
