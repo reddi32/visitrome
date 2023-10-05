@@ -21,7 +21,7 @@ export class AttrazioniComponent implements OnInit {
   categories = ['Attrazioni', 'Piazza', 'Museo', 'Parco', 'Sito archeologico'];
   selectedCategory: string | undefined;
 
-  loadedArticlesCount: number = 60; // Numero iniziale di articoli caricati
+  loadedArticlesCount: number = 100; // Numero iniziale di articoli caricati
   //articlesPerPage: number = 9; // Numero di articoli da caricare ogni volta
   //totalArticles: any;
   
