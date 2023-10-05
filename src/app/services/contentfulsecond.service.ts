@@ -22,7 +22,9 @@ export class ContentfulsecondService {
     const promise = this.client2.getEntries(
       {
         content_type: 'attractionPost',
-        order: 'fields.title',});
+        order: 'fields.title'
+      }
+    );
     return from(promise);
   }
 
