@@ -1,1 +1,36 @@
-<p>mostre-post works!</p>
+<div class="container-fluid text-center">
+    <div class="col" *ngIf="mostrePosts$ | async as mostrePosts">
+      <!--Container per i post del blog-->
+      <!--Thanks to dev Ciro De Cristoforo -> Link his github https://github.com/CirodeCristofaro-->
+      <div class="container-fluid text-start">
+        <h2 class="py-3">{{mostrePosts.fields.title}}</h2>
+        <img [src]="mostrePosts.fields.featuredImage.fields.file.url" class="img-fluid py-3">
+        <p class="fs-6 content py-3">
+          <markdown ngPreserveWhitespaces>
+            {{mostrePosts.fields.content}}
+          </markdown>
+        </p>
+        <p class="fs-6 location py-1">
+          <markdown ngPreserveWhitespaces>
+            {{mostrePosts.fields.location}}
+          </markdown>
+        </p>
+        <p class="fs-6 email py-1">
+          <markdown ngPreserveWhitespaces>
+            {{mostrePosts.fields.email}}
+          </markdown>
+        </p>
+        <p class="fs-6 website py-1">
+          <markdown ngPreserveWhitespaces>
+            {{mostrePosts.fields.website}}
+          </markdown>
+        </p>
+        <p class="fs-6 phone py-1">
+          <markdown ngPreserveWhitespaces>
+            {{mostrePosts.fields.phone}}
+          </markdown>
+        </p>
+      </div>
+    </div>
+  </div>
+  

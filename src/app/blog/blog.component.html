@@ -3,7 +3,7 @@
       <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center attraction-post-container" *ngIf="blogPosts$ | async as blogPosts">
         <div class="col" *ngFor="let blogPost of blogPosts.items">
           <div class="container-fluid text-start">
-              <img [src]="blogPost.fields.featuredImage.fields.file.url" class="img-fluid">
+              <img [src]="blogPost.fields.featuredImage.fields.file.url" class="img-fluid shadow">
               <h2 class="fs-4 py-1">{{blogPost.fields.title}}</h2>
               <p>{{blogPost.fields.summary}}</p>
               <a [routerLink]="['/blogpost', blogPost.sys.id]" class="btn btn-outline-dark">Leggi di più</a>

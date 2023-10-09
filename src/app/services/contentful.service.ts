@@ -16,7 +16,12 @@ export class ContentfulService {
   });
 
   getAllEntries() {
-    const promise = this.client.getEntries();
+    const promise = this.client.getEntries(
+      {
+        content_type: 'attrazioniDaVedere',
+        order: 'fields.title'
+      }
+    );
     return from(promise);
   }
 

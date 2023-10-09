@@ -1,17 +1,113 @@
-.container-fluid.text-center{
-    margin: 0 auto;
-    padding: 5% 10%;
-    box-sizing: border-box;
-}
-
-@media (max-width: 820px) {
-    .container-fluid.px-4.py-5 {
-        padding: 0 7.5%;
-    }
-}
-
-@media (max-width: 767px) {
-    .container-fluid.px-4.py-5{
+.container-fluid.text-center {
+    padding: 2.5% 10%;
+  }
+  
+  .img-fluid {
+    border-radius: 2.5%;
+    transition: all 0.2s;
+  }
+  
+  /*Img effect*/
+  .img-fluid:hover {
+    transform: scale(1.05);
+  }
+  
+  /*Posizione dei filtri*/
+  .container-fluid.text-center.form{
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  
+  .btn.btn-outline-dark.filter{
+    border-radius: 5px;
+  }
+  .btn.btn-outline-dark:hover{
+    background-color: black;
+    color: white;
+  }
+  
+  @media (max-width: 1368px) {
+    .container-fluid {
         padding: 0;
     }
-}
+  
+    .container-fluid.form {
+      padding: 0;
+    }
+  
+    .form-check{
+      padding: 0;
+    }
+  }
+  
+  @media (max-width: 1180px) {
+    .container-fluid {
+        padding: 0;
+    }
+  
+    .container-fluid.form {
+      padding: 0;
+    }
+  
+    .form-check{
+      padding: 0;
+    }
+  }
+  
+  @media (max-width: 820px) {
+    .container-fluid {
+        padding: 0 2%;
+    }
+    .form-check{
+      padding: 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container-fluid {
+        padding: 0;
+    }
+  
+    .form-check{
+      padding: 0;
+    }
+  }
+  
+  @media (max-width: 720px) {
+    .container-fluid {
+        padding: 0;
+    }
+  
+    .container-fluid.form {
+      padding: 0;
+    }
+  
+    .form-check{
+      padding: 0;
+    }
+  }
+  
+  @media (max-width: 653px) {
+    .container-fluid {
+        padding: 0;
+    }
+  
+    .form-check{
+      padding: 0;
+    }
+  }
+  
+  @media (max-width: 667px) {
+    .container-fluid {
+        padding: 0;
+    }
+  
+    .container-fluid.form {
+      padding: 0;
+    }
+  
+    .form-check{
+      padding: 0;
+    }
+  }
+  

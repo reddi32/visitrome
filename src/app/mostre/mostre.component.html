@@ -1,12 +1,12 @@
 <div class="container-fluid text-center">
     <div class="container-fluid">
       <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center attraction-post-container" *ngIf="mostrePosts$ | async as mostrePosts">
-        <div class="col" *ngFor="let mostrePosts$ of mostrePosts.items">
+        <div class="col" *ngFor="let mostrePost of mostrePosts.items">
           <div class="container-fluid text-start">
-              <img [src]="mostrePosts.fields.featuredImage.fields.file.url" class="img-fluid">
-              <h2 class="fs-4 py-1">{{mostrePosts.fields.title}}</h2>
-              <p>{{mostrePosts.fields.summary}}</p>
-              <a [routerLink]="['/mostrepost', mostrePosts.sys.id]" class="btn btn-outline-dark">Leggi di più</a>
+              <img [src]="mostrePost.fields.featuredImage.fields.file.url" class="img-fluid shadow">
+              <h2 class="fs-4 py-1">{{mostrePost.fields.title}}</h2>
+              <p>{{mostrePost.fields.summary}}</p>
+              <a [routerLink]="['/mostrepost', mostrePost.sys.id]" class="btn btn-outline-dark">Leggi di più</a>
           </div>
         </div>
       </div>

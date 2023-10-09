@@ -17,7 +17,12 @@ export class ContentfuleightService {
   });
 
   getAllEntriesMostre() {
-    const promise = this.client3.getEntries();
+    const promise = this.client3.getEntries(
+      {
+        content_type: 'mostre',
+        order: 'fields.title'
+      }
+    );
     return from(promise);
   }
 
