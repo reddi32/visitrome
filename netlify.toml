@@ -2,12 +2,6 @@
     publish="dist/visitrome2"
     command = "ng build --prod"
 [[redirects]]
-<<<<<<< HEAD
-from = "/*"
-to = "/index.html"
-status = 200
-=======
   from = "/*"
   to = "/index.html"
   status = 200
->>>>>>> 69e858a (bugfix)
