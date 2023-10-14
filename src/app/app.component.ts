@@ -16,8 +16,7 @@ export class AppComponent {
       {name: 'Musei e attrazioni', route: '/museieattrazioni'},
       {name: 'Roma Pass', route: '/romapass'},
       {name: 'Roma in famiglia', route: '/romainfamiglia'},
-      {name: 'Shopping', route: '/shopping'},
-      {name: 'Vita notturna', route: '/vitanotturna'}
+      {name: 'Shopping', route: '/shopping'}
     ]},
     {name: 'Calendario', subitems: [
       {name: 'Concerti', route: '/concert'},
