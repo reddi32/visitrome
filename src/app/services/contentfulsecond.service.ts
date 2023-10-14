@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { createClient, Entry } from 'contentful';
 import { from } from 'rxjs';
-import { attraction, concert } from 'src/environments/environment';
+import { attraction, concert } from '../../environments/environment';
 import { query } from 'src/environments/environment';
 
 

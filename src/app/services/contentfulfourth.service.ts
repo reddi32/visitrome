@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { createClient, Entry } from 'contentful';
 import { from } from 'rxjs';
-import { nightlife } from 'src/environments/environment';
+import { nightlife } from '../../environments/environment';
 
 
 @Injectable({

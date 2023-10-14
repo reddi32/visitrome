@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { createClient, Entry } from 'contentful';
 import { from } from 'rxjs';
-import { romainfamiglia } from 'src/environments/environment';
+import { romainfamiglia } from '../../environments/environment';
 
 
 @Injectable({

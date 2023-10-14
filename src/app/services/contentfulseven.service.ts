@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { createClient, Entry } from 'contentful';
 import { from } from 'rxjs';
-import { dovemangiare } from 'src/environments/environment';
+import { dovemangiare } from '../../environments/environment';
 
 
 @Injectable({

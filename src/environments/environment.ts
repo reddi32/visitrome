@@ -30,7 +30,7 @@ export const romainfamiglia = {
   production: false,
   spaceId: 'qc4xaf67kq5w',
   accessTokenFive: '3Y3h1ZE-ZHsnDpvTcwzqNdSikAe6KX4YFZCt9VFGFQw'
-}
+};
 
 export const shopping = {
   production: false,
