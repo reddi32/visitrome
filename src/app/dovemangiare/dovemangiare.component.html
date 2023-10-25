@@ -1,4 +1,3 @@
-<app-coming-soon></app-coming-soon>
 <!--
 <div class="container-fluid text-center">
   <div class="container-fluid">
@@ -16,3 +15,112 @@
     </div>
   </div>
 </div>-->
+
+
+<div class="container-fluid">
+  <!--Hero Image-->
+  <img src="../assets/dovemangiare.webp" class="img-fluid align-items-lg-center shadow" />
+
+  <!--Titolo e descrizione di Roma-->
+  <h1 class="fs-1 text-center roma">Scopri la nostra cucina</h1>
+  <p class="fs-5 text-center cibodescription">La capitale dell'Italia è ricca di ristoranti che propongono cibi dai
+    mille colori e sapori che rispecchiano perfettamente la sua immagine cosmopolita e generosa. Ce n’è davvero per
+    tutti i gusti! Preparate il vostro palato per venire a scoprire Roma che vi conquisterà con le sue delizie!
+  </p>
+
+
+  <!--Secondo titolo-->
+  <h1 class="fs-1 text-start roma">Ristoranti</h1>
+
+
+  <!--Card-->
+  <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center py-5">
+    <div class="col" *ngFor="let FirstCard of card">
+      <div class="card">
+        <img src="../assets/{{FirstCard.img}}" class="card-img" alt="...">
+        <h5 class="card-title py-2 fw-bold" style="color: black;">{{FirstCard.title}}</h5>
+        <p class="card-text" style="color: black;">{{FirstCard.paragraph}}</p>
+        <a href="#" class="text-start link">{{FirstCard.link}}</a>
+      </div>
+    </div>
+    <div class="col" *ngFor="let FirstCard of card2">
+      <div class="card">
+        <img src="../assets/{{FirstCard.img}}" class="card-img" alt="...">
+        <h5 class="card-title py-2 fw-bold" style="color: black;">{{FirstCard.title}}</h5>
+        <p class="card-text" style="color: black;">{{FirstCard.paragraph}}</p>
+        <a href="#" class="text-start link">{{FirstCard.link}}</a>
+      </div>
+    </div>
+    <div class="col" *ngFor="let FirstCard of card3">
+      <div class="card">
+        <img src="../assets/{{FirstCard.img}}" class="card-img" alt="...">
+        <h5 class="card-title py-2 fw-bold" style="color: black;">{{FirstCard.title}}</h5>
+        <p class="card-text" style="color: black;">{{FirstCard.paragraph}}</p>
+        <a href="#" class="text-start link">{{FirstCard.link}}</a>
+      </div>
+    </div>
+  </div>
+
+  <!--Tram experience-->
+  <div class="container-fluid text-center bg-dark shadow py-5"
+    style="border-radius: 15px; background-image: url('../../assets/ristotram.webp');">
+    <div class="col-md-6 mx-auto my-5 text-center">
+      <h1 class="display-3 fw-bold" style="color: #fffffc;">Tram experience</h1>
+      <p class="fs-5 fw-normal text-start mb-3" style="color: #fffffc;">
+        Intraprendi un viaggio gastronomico senza pari attraverso Roma. Prendi posto su un tram appositamente convertito
+        e
+        gira per la città mentre ti delizi con un pasto delizioso preparato da rinomati chef italiani.</p>
+      <a class="icon-link text-center lead fw-bold" href="https://ristotram.it/">
+        Prenota il tuo posto
+      </a>
+    </div>
+  </div>
+
+  <!--Secondo titolo-->
+  <h1 class="fs-1 text-start roma">Specialità romane</h1>
+
+
+  <!--Card-->
+  <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center py-5">
+    <div class="col" *ngFor="let cardInfo of listaInfo">
+      <div class="card">
+        <img src="../assets/{{cardInfo.img}}" class="card-img" alt="...">
+        <h5 class="card-title py-2 fw-bold" style="color: black;">{{cardInfo.titolo}}</h5>
+        <p class="card-text" style="color: black;">{{cardInfo.testo}}</p>
+        <a href="#" class="text-start link">{{cardInfo.testo2}}</a>
+      </div>
+    </div>
+    <div class="col" *ngFor="let cardInfo of listaInfo2">
+      <div class="card">
+        <img src="../assets/{{cardInfo.img}}" class="card-img" alt="...">
+        <h5 class="card-title py-2 fw-bold" style="color: black;">{{cardInfo.titolo}}</h5>
+        <p class="card-text" style="color: black;">{{cardInfo.testo}}</p>
+        <a href="#" class="text-start link">{{cardInfo.testo2}}</a>
+      </div>
+    </div>
+    <div class="col" *ngFor="let cardInfo of listaInfo3">
+      <div class="card">
+        <img src="../assets/{{cardInfo.img}}" class="card-img" alt="...">
+        <h5 class="card-title py-2 fw-bold" style="color: black;">{{cardInfo.titolo}}</h5>
+        <p class="card-text" style="color: black;">{{cardInfo.testo}}</p>
+        <a href="#" class="text-start link">{{cardInfo.testo2}}</a>
+      </div>
+    </div>
+  </div>
+
+  <!--Boat experience-->
+  <div class="container-fluid text-center bg-dark shadow py-5"
+    style="border-radius: 15px; background-image: url('../../assets/boatexperience.webp');">
+    <div class="col-md-6 mx-auto my-5 text-center">
+      <h1 class="display-3 fw-bold" style="color: #fffffc;">Boat experience</h1>
+      <p class="fs-5 fw-normal text-start mb-3" style="color: #fffffc;">
+        Salite a bordo del nostro battello sul Tevere a Roma per una cena gourmet indimenticabile con musica dal vivo in
+        un'atmosfera romantica, perfetta per occasioni speciali o per condividere momenti piacevoli con amici e
+        familiari. Un'opportunità unica per esplorare Roma da una prospettiva del tutto nuova.</p>
+      <a class="icon-link text-center lead fw-bold" href="https://ristotram.it/ristoboat/">
+        Prenota il tuo posto
+      </a>
+    </div>
+  </div>
+
+</div>
