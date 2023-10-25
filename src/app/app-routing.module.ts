@@ -28,6 +28,11 @@ import { ViaggioinfamigliaComponent } from './viaggioinfamiglia/viaggioinfamigli
 import { ViaggioconamiciComponent } from './viaggioconamici/viaggioconamici.component';
 import { ViaggioincoppiaComponent } from './viaggioincoppia/viaggioincoppia.component';
 import { GiardiniComponent } from './giardini/giardini.component';
+import { StreetfoodComponent } from './dovemangiare/streetfood/streetfood.component';
+import { CarciofiComponent } from './dovemangiare/carciofi/carciofi.component';
+import { DolciaromaComponent } from './dovemangiare/dolciaroma/dolciaroma.component';
+import { FrittidiromaComponent } from './dovemangiare/frittidiroma/frittidiroma.component';
+import { SpecialitaenogastronomicheComponent } from './dovemangiare/specialitaenogastronomiche/specialitaenogastronomiche.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -59,7 +64,12 @@ const routes: Routes = [
   { path: 'viaggioinfamiglia', component: ViaggioinfamigliaComponent},
   { path: 'viaggioconamici', component: ViaggioconamiciComponent},
   { path: 'viaggioincoppia', component: ViaggioincoppiaComponent},
-  { path: 'giardini', component: GiardiniComponent}
+  { path: 'giardini', component: GiardiniComponent},
+  { path: 'streetfood', component: StreetfoodComponent},
+  { path: 'carciofi', component: CarciofiComponent},
+  { path: 'dolciaroma', component: DolciaromaComponent},
+  { path: 'frittidiroma', component: FrittidiromaComponent},
+  { path: 'specialitaenogastronomiche', component: SpecialitaenogastronomicheComponent}
 
 ];
 

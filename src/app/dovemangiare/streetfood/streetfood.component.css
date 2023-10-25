@@ -1,0 +1,70 @@
+.container-fluid.py-1{
+    margin: 0 auto;
+    padding: 0 10%;
+    box-sizing: border-box;
+}
+
+.img-fluid {
+    border-radius: 10px;
+}
+
+/*Primo paragrafo*/
+.container-fluid.text-center.py-5 {
+    padding: 0;
+}
+
+/*Posizione dei titoli*/
+.fs-2.text-start.roma {
+    padding: 0;
+}
+
+
+@media (max-width: 912px) {
+    .container-fluid.py-1 {
+        padding: 0 5%;
+    }
+    /*Primo paragrafo*/
+    .fs-5.text-start {
+        padding: 0 5%;
+    }
+}
+
+@media (max-width: 820px) {
+    .container-fluid.py-1 {
+        padding: 0 5%;
+    }
+    /*Primo paragrafo*/
+    .fs-5.text-start {
+        padding: 0 5%;
+    }
+}
+
+@media (max-width: 767px) {
+    .container-fluid.py-1 {
+        padding: 0;
+    }
+    /*Primo paragrafo*/
+    .fs-5.text-start {
+        padding: 0;
+    }
+}
+
+@media (max-width: 540px) {
+    .container-fluid.py-1 {
+        padding: 0;
+    }
+    /*Primo paragrafo*/
+    .fs-5.text-start {
+        padding: 0;
+    }
+}
+
+@media (max-width: 412px) {
+    .container-fluid.py-1 {
+        padding: 0;
+    }
+    /*Primo paragrafo*/
+    .fs-5.text-start {
+        padding: 0;
+    }
+}
