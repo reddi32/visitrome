@@ -33,6 +33,7 @@ import { CarciofiComponent } from './dovemangiare/carciofi/carciofi.component';
 import { DolciaromaComponent } from './dovemangiare/dolciaroma/dolciaroma.component';
 import { FrittidiromaComponent } from './dovemangiare/frittidiroma/frittidiroma.component';
 import { SpecialitaenogastronomicheComponent } from './dovemangiare/specialitaenogastronomiche/specialitaenogastronomiche.component';
+import { RistorantiComponent } from './dovemangiare/ristoranti/ristoranti.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -69,7 +70,8 @@ const routes: Routes = [
   { path: 'carciofi', component: CarciofiComponent},
   { path: 'dolciaroma', component: DolciaromaComponent},
   { path: 'frittidiroma', component: FrittidiromaComponent},
-  { path: 'specialitaenogastronomiche', component: SpecialitaenogastronomicheComponent}
+  { path: 'specialitaenogastronomiche', component: SpecialitaenogastronomicheComponent},
+  { path: 'la-nostra-selezione-di-ristoranti', component: RistorantiComponent}
 
 ];
 

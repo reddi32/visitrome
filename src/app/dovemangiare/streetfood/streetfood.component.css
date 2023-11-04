@@ -12,6 +12,9 @@
 .container-fluid.text-center.py-5 {
     padding: 0;
 }
+.container-fluid.text-center.py-3 {
+    padding: 0;
+}
 
 /*Posizione dei titoli*/
 .fs-2.text-start.roma {
