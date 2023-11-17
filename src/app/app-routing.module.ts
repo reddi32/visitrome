@@ -66,12 +66,12 @@ const routes: Routes = [
   { path: 'viaggioconamici', component: ViaggioconamiciComponent},
   { path: 'viaggioincoppia', component: ViaggioincoppiaComponent},
   { path: 'giardini', component: GiardiniComponent},
-  { path: 'streetfood', component: StreetfoodComponent},
-  { path: 'carciofi', component: CarciofiComponent},
-  { path: 'dolciaroma', component: DolciaromaComponent},
-  { path: 'frittidiroma', component: FrittidiromaComponent},
-  { path: 'specialitaenogastronomiche', component: SpecialitaenogastronomicheComponent},
-  { path: 'la-nostra-selezione-di-ristoranti', component: RistorantiComponent}
+  { path: 'dovemangiare/streetfood', component: StreetfoodComponent},
+  { path: 'dovemangiare/carciofi', component: CarciofiComponent},
+  { path: 'dovemangiare/dolciaroma', component: DolciaromaComponent},
+  { path: 'dovemangiare/frittidiroma', component: FrittidiromaComponent},
+  { path: 'dovemangiare/specialitaenogastronomiche', component: SpecialitaenogastronomicheComponent},
+  { path: 'dovemangiare/la-nostra-selezione-di-ristoranti', component: RistorantiComponent}
 
 ];
 
