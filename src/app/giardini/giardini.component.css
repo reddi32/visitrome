@@ -4,26 +4,36 @@
     box-sizing: border-box;
 }
 
-.container {
-    padding: 0;
-}
-
 .img-fluid {
     border-radius: 10px;
 }
 
+.container.py-5 {
+    padding: 0;
+}
+.row.flex-lg-row.align-items-center.g-5 {
+    padding: 0;
+}
 
-
-@media (max-width: 1180px) {
-
+@media (max-width: 1135px) {
+    .container.py-5 {
+        padding: 0;
+    }
 
 }
 
 
 @media (max-width: 820px) {
     .container-fluid {
-        padding: 0 7.5%;
+        padding: 0 2.5%;
     }
+}
+
+@media (max-width: 744px) {
+    .container.px-4.py-5 {
+        padding: 0;
+    }
+
 }
 
 @media (max-width: 767px) {
