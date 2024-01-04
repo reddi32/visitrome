@@ -6,6 +6,7 @@
 
 .img-fluid {
     border-radius: 10px;
+    max-height: 492px;
 }
 
 /*Primo paragrafo*/

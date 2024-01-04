@@ -26,7 +26,7 @@ export class DovemangiareComponent {
       new Info ("spaghetti_mini.webp", "Roma è famosa per la sua cucina ricca, con specialità come la pasta cacio e pepe, la trippa alla romana e molto altro.", "Le specialità enogastronomiche di Roma", "Scopri di più")
     );
     this.listaInfo2.push(
-      new Info ("fioriZucca_mini.webp", "Tra le specialità si trovano le filettature di baccalà, i supplì al telefono, e la pizza fritta con vari ripieni deliziosi.", "I migliori fritti di Roma", "Scopri di più")
+      new Info ("fioriZucca_mini.webp", "Tra le specialità si trovano le filettature di baccalà, i supplì al telefono, e la pizza fritta con vari ripieni deliziosi e molto altro.", "I migliori fritti di Roma", "Scopri di più")
     );
     this.listaInfo3.push(
       new Info("Carciofo_alla_Giudea_mini.webp", "I carciofi alla romana sono un'autentica prelibatezza. Assaporarli è un'esperienza gastronomica che ti avvicinerà al cuore della cucina tradizionale romana.", "I migliori carciofi alla romana", "Scopri di più")

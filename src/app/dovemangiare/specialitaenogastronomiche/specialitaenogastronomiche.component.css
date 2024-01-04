@@ -14,12 +14,10 @@
     padding: 0;
 }
 
-.container.py-3 {
+.container-fluid.py-3 {
     padding: 0;
 }
-.row.py-3.row-cols-1.row-cols-sm-2.row-cols-lg-3 {
-    padding: 0;
-}
+
 
 /*Posizione dei titoli*/
 .fs-2.text-start.roma {
