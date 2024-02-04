@@ -18,12 +18,13 @@ export class ContentfulsecondService {
     accessToken: attraction.accessTokenTwo,
   });
 
-  getAllEntriesAttraction() {
+  getAllEntriesAttraction(skip?:number) {
     const promise = this.client2.getEntries(
       {
         content_type: 'attractionPost',
         order: 'fields.title',
-        limit: attraction.limit
+        limit: attraction.limit,
+        skip: skip
       }
     );
     return from(promise);

@@ -25,7 +25,7 @@ export class PaginationComponent implements OnInit,AfterViewInit{
   }
   
   ngAfterViewInit(): void {
-    console.log("ngAfterViewInit ",this.totalItems)
+  //  console.log("ngAfterViewInit ",this.totalItems)
   }
 
   pageClicked(page: number) {
