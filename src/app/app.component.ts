@@ -28,7 +28,7 @@ export class AppComponent {
       {name: 'Info', route: '/romapass'},
       {name: 'I nostri itinerari', route: '/itinerari'},
       {name: 'Muoversi per Roma', route: '/muoversiaroma'},
-      {name: 'Tuorist Infopoint', route: '/touristinfopoint'},
+      {name: 'Tourist Infopoint', route: '/touristinfopoint'},
     ]}
   ]
 
