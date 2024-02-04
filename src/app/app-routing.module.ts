@@ -34,6 +34,7 @@ import { DolciaromaComponent } from './dovemangiare/dolciaroma/dolciaroma.compon
 import { FrittidiromaComponent } from './dovemangiare/frittidiroma/frittidiroma.component';
 import { SpecialitaenogastronomicheComponent } from './dovemangiare/specialitaenogastronomiche/specialitaenogastronomiche.component';
 import { RistorantiComponent } from './dovemangiare/ristoranti/ristoranti.component';
+import { PaginationComponent } from './pagination/pagination.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -71,7 +72,8 @@ const routes: Routes = [
   { path: 'dovemangiare/dolciaroma', component: DolciaromaComponent},
   { path: 'dovemangiare/frittidiroma', component: FrittidiromaComponent},
   { path: 'dovemangiare/specialitaenogastronomiche', component: SpecialitaenogastronomicheComponent},
-  { path: 'dovemangiare/la-nostra-selezione-di-ristoranti', component: RistorantiComponent}
+  { path: 'dovemangiare/la-nostra-selezione-di-ristoranti', component: RistorantiComponent},
+  { path: 'pagination', component: PaginationComponent}
 
 ];
 

@@ -10,12 +10,16 @@ export class PaginationComponent {
   @Input() currentPage: any;
   @Input() itemsPerPage: any;
   totalPages = 0;
+  pages: number [] = [];
 
   constructor() {
-    debugger
+
+  }
+
+  ngOnInit(): void {
     if (this.totalItems) {
       this.totalPages = Math.ceil(this.totalItems / this.itemsPerPage);
-      alert(this.totalPages);
+      this.pages = Array.from({length: this.totalPages}, (_, i) => i+1);
     }
   }
 
