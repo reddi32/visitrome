@@ -26,11 +26,12 @@ export class AttrazioniComponent implements OnInit{
   //articlesPerPage: number = 9; // Numero di articoli da caricare ogni volta
   //totalArticles: any;
   
-  total: any;
+  total?: any;
   /*
   loadMoreArticles() {
     this.loadedArticlesCount += this.articlesPerPage;
   }*/
+  
 
   onCheckboxChange(category: string) {
     if (this.selectedCategory === category) {
@@ -74,11 +75,7 @@ export class AttrazioniComponent implements OnInit{
     }
   }
 
-  constructor(private contentfulsecondService: ContentfulsecondService, private route: ActivatedRoute, private meta: Meta) {}
-
-  attractionPosts$ : Observable<any> | undefined;
-
-  ngOnInit(): void {
+  constructor(private contentfulsecondService: ContentfulsecondService, private route: ActivatedRoute, private meta: Meta) {
     this.attractionPosts$ = this.contentfulsecondService.getAllEntriesAttraction();
   
     const promise = new Promise((resolve, reject) => {
@@ -102,6 +99,13 @@ export class AttrazioniComponent implements OnInit{
       this.total = valueOutsideSubscribe;
       console.log("ciao", this.total);
     });
+    
+
+  }
+
+  attractionPosts$ : Observable<any> | undefined;
+
+  ngOnInit(): void {
     
   /* Imposta il numero totale di articoli
   this.attractionPosts$.subscribe(posts => {
