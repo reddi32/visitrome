@@ -40,6 +40,7 @@ export class AttrazioniComponent implements OnInit{
   }
   changePage(page: number) {
     this.currentPage = page;
+    this.loadedArticlesCount = page * this.itemsPerPage;
   }
   /*
   loadMoreArticles() {
