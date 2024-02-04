@@ -15,14 +15,15 @@ export class ContentfulsecondService {
   /*Client per i post delle attrazioni turistiche*/
   private client2 = createClient({
     space: attraction.spaceIdTwo,
-    accessToken: attraction.accessTokenTwo
+    accessToken: attraction.accessTokenTwo,
   });
 
   getAllEntriesAttraction() {
     const promise = this.client2.getEntries(
       {
         content_type: 'attractionPost',
-        order: 'fields.title'
+        order: 'fields.title',
+        limit: attraction.limit
       }
     );
     return from(promise);

@@ -5,12 +5,13 @@ import { ContentfulsecondService } from '../services/contentfulsecond.service';
 import { Meta } from '@angular/platform-browser';
 import { query } from '@angular/animations';
 
+
 @Component({
   selector: 'app-museieattrazioni',
   templateUrl: './museieattrazioni.component.html',
   styleUrls: ['./museieattrazioni.component.css']
 })
-export class AttrazioniComponent implements OnInit {
+export class AttrazioniComponent implements OnInit{
 
   attrazioniSelected = false;
   piazzeSelected = false;
@@ -21,10 +22,11 @@ export class AttrazioniComponent implements OnInit {
   categories = ['Attrazioni', 'Piazza', 'Museo', 'Parco', 'Sito archeologico'];
   selectedCategory: string | undefined;
 
-  loadedArticlesCount: number = 100; // Numero iniziale di articoli caricati
+  loadedArticlesCount: number = 200; // Numero iniziale di articoli caricati
   //articlesPerPage: number = 9; // Numero di articoli da caricare ogni volta
   //totalArticles: any;
   
+  total: any;
   /*
   loadMoreArticles() {
     this.loadedArticlesCount += this.articlesPerPage;
@@ -79,6 +81,28 @@ export class AttrazioniComponent implements OnInit {
   ngOnInit(): void {
     this.attractionPosts$ = this.contentfulsecondService.getAllEntriesAttraction();
   
+    const promise = new Promise((resolve, reject) => {
+      this.attractionPosts$?.subscribe({
+        next: value => {
+          this.total = value.total;
+          console.log(this.total);
+          resolve(this.total); // Risolve la promise con il valore di myString
+        },
+        error: err => {
+          console.error('Observable emitted an error: ' + err);
+          reject(err); // Rejetti la promise in caso di errore
+        },
+        complete: () => console.log('Observable emitted the complete notification')
+      });
+    });
+    
+    // Utilizza la promise per ottenere il valore fuori dalla subscribe
+    promise.then(valueOutsideSubscribe => {
+      console.log('Value outside subscribe: ' + valueOutsideSubscribe);
+      this.total = valueOutsideSubscribe;
+      console.log("ciao", this.total);
+    });
+    
   /* Imposta il numero totale di articoli
   this.attractionPosts$.subscribe(posts => {
     this.totalArticles = posts.items.length;

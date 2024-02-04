@@ -12,6 +12,7 @@ export const attraction = {
   production: false,
   spaceIdTwo: 'xm2434p0m1pl',
   accessTokenTwo: 'h7aHJpMwryNrbf76SOjjOgzT6rTBDbQugKgo6_YJjJQ',
+  limit: 50
 };
 
 export const concert = {

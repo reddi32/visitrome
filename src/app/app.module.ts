@@ -54,7 +54,7 @@ import { DolciaromaComponent } from './dovemangiare/dolciaroma/dolciaroma.compon
 import { SpecialitaenogastronomicheComponent } from './dovemangiare/specialitaenogastronomiche/specialitaenogastronomiche.component';
 import { FrittidiromaComponent } from './dovemangiare/frittidiroma/frittidiroma.component';
 import { CarciofiComponent } from './dovemangiare/carciofi/carciofi.component';
-
+import { PaginationComponent } from './pagination/pagination.component';
 
 
 @NgModule({
@@ -105,6 +105,7 @@ import { CarciofiComponent } from './dovemangiare/carciofi/carciofi.component';
     SpecialitaenogastronomicheComponent,
     FrittidiromaComponent,
     CarciofiComponent,
+    PaginationComponent,
   ],
   imports: [
     BrowserModule,
@@ -112,7 +113,7 @@ import { CarciofiComponent } from './dovemangiare/carciofi/carciofi.component';
     MarkdownModule.forRoot(),
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
