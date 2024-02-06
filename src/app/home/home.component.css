@@ -91,6 +91,10 @@
     text-decoration: none;
 }
 
+.img-fluid.align-items-lg-center.shadow.mobile {
+    display: none;
+}
+
 @media (max-width: 1180px) {
   .fs-1.text-center.roma {
       padding: 2.5% 0;
@@ -197,4 +201,19 @@
     .container.col.p-4.justify-content-center {
         padding: 0;
     }
+
+    .container-fluid.text-center.py-5.nordvpn {
+        padding: 1% 10%;
+    }
+
+    .img-fluid.align-items-lg-center.shadow.desktop {
+        width: 100%;
+        display: none;
+    }
+
+    .img-fluid.align-items-lg-center.shadow.mobile {
+        width: 100%;
+        display: block;
+    }
+    
 }
