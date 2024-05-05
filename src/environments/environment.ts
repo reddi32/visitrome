@@ -6,6 +6,7 @@ export const environment = {
   production: false,
   spaceId: 'qtyaseyzmscl',
   accessToken: 'bOnleupfBDNofsw_7IZ6JM0f5GxuCxqpucwW0mfWruc',
+  limit: 50
 };
 
 export const attraction = {

@@ -15,12 +15,14 @@ export class ContentfulService {
     accessToken: environment.accessToken
   });
 
-  getAllEntries() {
+  getAllEntries(skip?:number) {
     const promise = this.client.getEntries(
-      /*{
+      {
         content_type: 'attrazioniDaVedere',
-        order: 'fields.title'
-      }*/
+        order: '-sys.createdAt',
+        limit: environment.limit,
+        skip: skip
+      }
     );
     return from(promise);
   }

@@ -11,4 +11,9 @@
         </div>
       </div>
     </div>
+    <div class="container-fluid page py-5" *ngIf="total">
+      <app-pagination [totalItems]="total" [itemsPerPage]="itemsPerPage" [currentPage]="currentPage" (onClick)="changePage($event)">
+  
+      </app-pagination>
+    </div>
 </div>
